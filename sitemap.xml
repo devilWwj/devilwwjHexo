@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+    
+  <url>
+    <loc>http://www.devilwwj.com/2015/05/21/android/</loc>
+    <lastmod>2015-05-21T14:49:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android自定义View总结</title>
+        <pubTime>2015-05-21T11:14:33.000Z</pubTime>
+        
+        <tag>android </tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://www.devilwwj.com/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://www.devilwwj.com/2015/05/19/create-myself-hexo-blog/</loc>
-    <lastmod>2015-05-21T12:20:34.000Z</lastmod>
+    <lastmod>2015-05-21T14:48:51.000Z</lastmod>
     <data>
         <display>
         <title>搭建目前最in的hexo技术博客</title>
@@ -25,27 +46,6 @@
     </data>
     </url>
 
-    
-  <url>
-    <loc>http://www.devilwwj.com/2015/05/21/android/</loc>
-    <lastmod>2015-05-21T11:19:03.000Z</lastmod>
-    <data>
-        <display>
-        <title>android-custom-view-1</title>
-        <pubTime>2015-05-21T11:14:33.000Z</pubTime>
-        
-        <tag>android </tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="http://www.devilwwj.com/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
   <url>
