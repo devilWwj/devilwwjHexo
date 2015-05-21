@@ -65,7 +65,7 @@
               
                 <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
               
-                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/日志/">日志</a></li></ul>
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/技术/">技术</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/日志/">日志</a></li></ul>
                   
                 <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
               
@@ -111,6 +111,45 @@
   <article class="article article-summary">
     <div class="article-summary-inner">
       
+<a href="/2015/05/21/android/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+      <div class="article-meta">
+        <p class="category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
+        <p class="date"><time datetime="2015-05-21T11:14:33.000Z" itemprop="datePublished">2015-05-21</time></p>
+      </div>
+      <h2 class="article-title">
+        <a href="/2015/05/21/android/" class="title">android-custom-view-1</a>
+      </h2>
+      <p class="article-excerpt">
+        
+        Android自定义View总结[toc]
+步骤
+自定义View的属性
+在View的构造方法获取我们自定义的属性值
+重写onMesure()方法
+重写onDraw()方法
+
+自定义View的属性在res/values/下建立attrs.xml，定义控件的属性和样式，如下所示：
+&amp;lt;declare-styleable name=&quot;CircleImageView&quot;&amp;gt;
+    &amp;lt;attr
+      </p>
+    </div>
+  </article>
+
+    
+  
+    
+    
+    
+    
+        
+  <article class="article article-summary">
+    <div class="article-summary-inner">
+      
 <a href="/2015/05/19/create-myself-hexo-blog/" class="thumbnail">
   
     <span style="background-image:url(/images/Snip20150519_5.png
@@ -135,10 +174,14 @@ step2 配置DNS解析来到我的账号-&amp;gt;我的域名，可以对域名�
   </article>
 
     
+      </div>
+    
   
     
     
     
+    
+      <div class="article-row">
     
         
   <article class="article article-summary">
@@ -191,7 +234,7 @@ Quick
       
         <li><a class="social-tooltip" title="github" href="https://github.com/devilWwj" target="_blank"><i id="icon-github" class="icon"></i></a></li>
       
-        <li><a class="social-tooltip" title="weibo" href="/" target="_blank"><i id="icon-weibo" class="icon"></i></a></li>
+        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/wulmaycry" target="_blank"><i id="icon-weibo" class="icon"></i></a></li>
       
         <li><a class="social-tooltip" title="rss" href="/atom.xml" target="_blank"><i id="icon-rss" class="icon"></i></a></li>
       
@@ -205,6 +248,25 @@ Quick
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/05/21/android/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
+              <p class="item-title"><a href="/2015/05/21/android/" class="title">android-custom-view-1</a></p>
+              <p class="item-date"><time datetime="2015-05-21T11:14:33.000Z" itemprop="datePublished">2015-05-21</time></p>
+            </div>
+          </li>
         
           <li>
             
@@ -254,7 +316,7 @@ Quick
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -264,7 +326,7 @@ Quick
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -274,7 +336,7 @@ Quick
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -284,7 +346,7 @@ Quick
   <div class="widget-wrap widget-float">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/个人/" style="font-size: NaNpx;">个人</a><a href="/tags/日志/" style="font-size: NaNpx;">日志</a>
+      <a href="/tags/android/" style="font-size: NaNpx;">android</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/个人/" style="font-size: NaNpx;">个人</a><a href="/tags/日志/" style="font-size: NaNpx;">日志</a>
     </div>
   </div>
 
