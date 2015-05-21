@@ -18,6 +18,10 @@ step2 配置DNS解析来到我的账号-&amp;gt;我的域名，可以对域名�
 <meta property="og:image" content="/images/Snip20150519_5.png">
 <meta property="og:image" content="/images/Snip20150519_8.png">
 <meta property="og:image" content="/images/Snip20150519_9.png">
+<meta property="og:image" content="/images/Snip20150519_11.png">
+<meta property="og:image" content="/images/Snip20150519_12.png">
+<meta property="og:image" content="/images/Snip20150521_1.png">
+<meta property="og:image" content="/images/Snip20150521_2.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建目前最in的hexo技术博客">
 <meta name="twitter:description" content="[toc]
@@ -151,10 +155,20 @@ step2 配置DNS解析来到我的账号-&amp;gt;我的域名，可以对域名�
 </tbody>
 </table>
 <p>如下图所示:<br><img src="/images/Snip20150519_9.png" alt=""></p>
-<h2 id="step3_创建github仓库">step3 创建github仓库</h2><h2 id="step4_下载Node-js">step4 下载Node.js</h2><h2 id="step5_安装npm">step5 安装npm</h2><h2 id="step7_安装hexo">step7 安装hexo</h2><h2 id="step8_创建hexo项目">step8 创建hexo项目</h2><h2 id="step9_本地测试hexo">step9 本地测试hexo</h2><h2 id="step10_部署到github">step10 部署到github</h2><h2 id="step11_绑定域名">step11 绑定域名</h2><h2 id="step12_更换皮肤">step12 更换皮肤</h2><h2 id="step13_增加Disqus评论系统">step13 增加Disqus评论系统</h2>
+<h2 id="step3_创建github仓库">step3 创建github仓库</h2><p>自行注册github账号，然后创建github仓库<br><img src="/images/Snip20150519_11.png" alt=""><br><img src="/images/Snip20150519_12.png" alt=""></p>
+<h2 id="step4_下载Node-js">step4 下载Node.js</h2><p><img src="/images/Snip20150521_1.png" alt=""></p>
+<h2 id="step5_安装npm">step5 安装npm</h2><p>安装最新版的Node.js之后，我们就可以使用npm命令</p>
+<p>在mac下遇到npm命令找不到的问题，解决方案如下：</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>node <span class="regexp">/usr/</span>bin/node</span><br><span class="line">sudo ln -s <span class="regexp">/usr/</span>local<span class="regexp">/lib/</span>node <span class="regexp">/usr/</span>lib/node</span><br><span class="line">sudo ln -s <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>npm <span class="regexp">/usr/</span>bin/npm</span><br><span class="line">sudo ln -s <span class="regexp">/usr/</span>local<span class="regexp">/bin/</span>node-waf <span class="regexp">/usr/</span>bin/node-waf</span><br></pre></td></tr></table></figure>
+<h2 id="step7_安装hexo">step7 安装hexo</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm <span class="keyword">install</span> -g hexo</span><br></pre></td></tr></table></figure>
+<h2 id="step8_创建hexo项目">step8 创建hexo项目</h2><p>通过命令行，在指定文件夹下创建项目：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> hexo init</span><br></pre></td></tr></table></figure></p>
+<p>到这里我们已经完成hexo的安装，具体效果如图所示：<br><img src="/images/Snip20150521_2.png" alt=""></p>
+<h2 id="step9_本地测试hexo">step9 本地测试hexo</h2><p>在命令行中输入sudo hexo server或者它的缩写sudo hexo s：<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo devilwwj$ sudo hexo s</span><br><span class="line">INFO  Hexo is running <span class="keyword">at</span> <span class="keyword">http</span>://<span class="number">0.0</span>.0.0:<span class="number">4000</span>/. Press Ctrl+C <span class="built_in">to</span> <span class="built_in">stop</span>.</span><br></pre></td></tr></table></figure></p>
+<p>然后我们可以在浏览器地址栏输入：localhost:4000，这样子我们可以本地测试我们搭建好的项目</p>
+<h2 id="step10_部署到github">step10 部署到github</h2><h2 id="step11_绑定域名">step11 绑定域名</h2><h2 id="step12_更换皮肤">step12 更换皮肤</h2><h2 id="step13_增加Disqus评论系统">step13 增加Disqus评论系统</h2>
       </div>
       <footer class="article-footer">
-        <a data-url="http://www.devilwwj.com/2015/05/19/create-myself-hexo-blog/" data-id="ci9y362j60003mi1z6aiyou31" class="article-share-link">分享到</a>
+        <a data-url="http://www.devilwwj.com/2015/05/19/create-myself-hexo-blog/" data-id="ci9y4ygt70003oh1zf22v3yiv" class="article-share-link">分享到</a>
         
           <a href="http://www.devilwwj.com/2015/05/19/create-myself-hexo-blog/#comments" class="article-comment-link">评论</a>
         
