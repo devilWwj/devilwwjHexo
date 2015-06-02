@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://www.devilwwj.com/2015/06/01/Cat-remember-1/</loc>
+    <lastmod>2015-06-02T02:11:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>养猫记-领养篇</title>
+        <pubTime>2015-06-01T15:27:52.000Z</pubTime>
+        
+        <tag>cat </tag>
+         
+         
+           
+             
+              <breadCrumb title="养猫记" url="http://www.devilwwj.com/categories/%E5%85%BB%E7%8C%AB%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.devilwwj.com/2015/06/02/ormlite/</loc>
+    <lastmod>2015-06-02T02:11:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android数据库框架ormlite使用精要</title>
+        <pubTime>2015-06-02T02:02:15.000Z</pubTime>
+        
+        <tag>android </tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://www.devilwwj.com/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.devilwwj.com/2015/05/21/android/</loc>

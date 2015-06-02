@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android数据库框架ormlite使用精要 | IT_xiao小巫</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Android 数据库框架ormlite 使用精要前言本篇博客记录一下笔者在实际开发中使用到的一个数据库框架，这个可以让我们快速实现数据库操作，避免频繁手写sql，提高我们的开发效率，减少出错的机率。
+ormlite是什么？首先可以去它的官网看看www.ormlite.com，它的英文全称是Object Relational Mapping，意思是对象关系映射；如果接触过Java EE开发的，一定">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android数据库框架ormlite使用精要">
+<meta property="og:url" content="http://www.devilwwj.com/2015/06/02/ormlite/index.html">
+<meta property="og:site_name" content="IT_xiao小巫">
+<meta property="og:description" content="Android 数据库框架ormlite 使用精要前言本篇博客记录一下笔者在实际开发中使用到的一个数据库框架，这个可以让我们快速实现数据库操作，避免频繁手写sql，提高我们的开发效率，减少出错的机率。
+ormlite是什么？首先可以去它的官网看看www.ormlite.com，它的英文全称是Object Relational Mapping，意思是对象关系映射；如果接触过Java EE开发的，一定">
+<meta property="og:image" content="http://www.devilwwj.com/images/Snip20150602_3.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android数据库框架ormlite使用精要">
+<meta name="twitter:description" content="Android 数据库框架ormlite 使用精要前言本篇博客记录一下笔者在实际开发中使用到的一个数据库框架，这个可以让我们快速实现数据库操作，避免频繁手写sql，提高我们的开发效率，减少出错的机率。
+ormlite是什么？首先可以去它的官网看看www.ormlite.com，它的英文全称是Object Relational Mapping，意思是对象关系映射；如果接触过Java EE开发的，一定">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
+  
+  
+
+
+  
+    <style type="text/css">
+      .logo { background-image:url(/images/logo.png); }
+    </style>
+  
+
+  
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+            <h2 class="subtitle-wrap">
+              <p class="subtitle">在浮躁的世界安安静静敲代码</p>
+            </h2>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/养猫记/">养猫记</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/技术/">技术</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/日志/">日志</a></li></ul>
+                  
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
+              
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="q" value="site:http://www.devilwwj.com"></form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header"><a class="page-title-link" href="/categories/技术/">技术</a></h1>
+            </div>
+            <div class="main-body-content">
+              
+  <article id="post-ormlite" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      Android数据库框架ormlite使用精要
+    </h1>
+  
+
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2015/06/02/ormlite/" class="article-date">
+  <time datetime="2015-06-02T02:02:15.000Z" itemprop="datePublished">2015-06-02</time>
+</a>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
+        <h1 id="Android_数据库框架ormlite_使用精要">Android 数据库框架ormlite 使用精要</h1><h2 id="前言">前言</h2><p>本篇博客记录一下笔者在实际开发中使用到的一个数据库框架，这个可以让我们快速实现数据库操作，避免频繁手写sql，提高我们的开发效率，减少出错的机率。</p>
+<h2 id="ormlite是什么？">ormlite是什么？</h2><p>首先可以去它的官网看看<a href="www.ormlite.com">www.ormlite.com</a>，它的英文全称是Object Relational Mapping，意思是对象关系映射；如果接触过Java EE开发的，一定知道Java Web开发就有一个类似的数据库映射框架——Hibernate。简单来说，就是我们定义一个实体类，利用这个框架，它可以帮我们吧这个实体映射到我们的数据库中，在Android中是SQLite，数据中的字段就是我们定义实体的成员变量。</p>
+<h2 id="为什么要用ormlite？">为什么要用ormlite？</h2><p><strong>先说说优点</strong></p>
+<ol>
+<li>轻量级</li>
+<li>使用简单，易上手</li>
+<li>封装完善</li>
+<li>文档全面</li>
+</ol>
+<p><strong>缺点</strong></p>
+<ol>
+<li>基于反射，效率较低</li>
+<li>缺少中文翻译文档</li>
+</ol>
+<h2 id="如何使用？">如何使用？</h2><h3 id="导入jar包到项目libs文件夹下">导入jar包到项目libs文件夹下</h3><p>到<a href="http://ormlite.com/releases/" target="_blank" rel="external">http://ormlite.com/releases/</a>下载相应版本的jar，下载最新的，目前是最新版本4.49。我们下载稳定的4.48即可。</p>
+<p><img src="http://www.devilwwj.com/images/Snip20150602_3.png" alt=""></p>
+<h3 id="继承OrmLiteSqliteOpenHelper类定义数据库帮助类">继承OrmLiteSqliteOpenHelper类定义数据库帮助类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.db;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"><span class="keyword">import</span> android.database.sqlite.SQLiteDatabase;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Img;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.PackageInfo;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Photographer;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Theme;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.Dao;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.support.ConnectionSource;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.table.TableUtils;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 功能：数据库帮助类</span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBHelper</span> <span class="keyword">extends</span> <span class="title">OrmLiteSqliteOpenHelper</span> </span>&#123;</span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 数据库名字</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String DB_NAME = <span class="string">"test.db"</span>;</span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 数据库版本</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> DB_VERSION = <span class="number">1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 用来存放Dao的地图</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">private</span> Map&lt;String, Dao&gt; daos = <span class="keyword">new</span> HashMap&lt;String, Dao&gt;();</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> DBHelper instance;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 获取单例</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> DBHelper <span class="title">getHelper</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        context = context.getApplicationContext();</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">synchronized</span> (DBHelper.class) &#123;</span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> DBHelper(context);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 构造方法</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DBHelper</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, DB_NAME, <span class="keyword">null</span>, DB_VERSION);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 这里创建表</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(SQLiteDatabase sqliteDatabase, ConnectionSource connectionSource)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 创建表</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            TableUtils.createTable(connectionSource, PackageInfo.class);</span><br><span class="line">            TableUtils.createTable(connectionSource, Photographer.class);</span><br><span class="line">            TableUtils.createTable(connectionSource, Theme.class);</span><br><span class="line">            TableUtils.createTable(connectionSource, Img.class);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 这里进行更新表操作</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onUpgrade</span><span class="params">(SQLiteDatabase sqLiteDatabase, ConnectionSource connectionSource, <span class="keyword">int</span> oldVersion,</span><br><span class="line">            <span class="keyword">int</span> newVersion)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span>  </span><br><span class="line">        &#123;  </span><br><span class="line">            TableUtils.dropTable(connectionSource, PackageInfo.class, <span class="keyword">true</span>);  </span><br><span class="line">            TableUtils.dropTable(connectionSource, Photographer.class, <span class="keyword">true</span>);  </span><br><span class="line">            TableUtils.dropTable(connectionSource, Theme.class, <span class="keyword">true</span>);  </span><br><span class="line">            TableUtils.dropTable(connectionSource, Img.class, <span class="keyword">true</span>);</span><br><span class="line">            onCreate(sqLiteDatabase, connectionSource);  </span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e)  </span><br><span class="line">        &#123;  </span><br><span class="line">            e.printStackTrace();  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 通过类来获得指定的Dao</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> Dao <span class="title">getDao</span><span class="params">(Class clazz)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        Dao dao = <span class="keyword">null</span>;</span><br><span class="line">        String className = clazz.getSimpleName();</span><br><span class="line">        <span class="keyword">if</span> (daos.containsKey(className)) &#123;</span><br><span class="line">            dao = <span class="keyword">super</span>.getDao(clazz);</span><br><span class="line">            daos.put(className, dao); </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dao;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 释放资源</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.close();</span><br><span class="line">        <span class="keyword">for</span> (String key : daos.keySet()) &#123;</span><br><span class="line">            Dao dao = daos.get(key);</span><br><span class="line">            dao = <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="定义实体类Bean，代表一张表">定义实体类Bean，代表一张表</h3><p>创建上面用到的Bean，在ormlite中，它代表数据库中的一张表，我们所定义的所有成员变量均可为表中的字段，只要我们按照它提供的注解方式来指定成员变量属性。</p>
+<p>举个栗子：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.ForeignCollection;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.DatabaseField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.ForeignCollectionField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.table.DatabaseTable;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 套餐</span><br><span class="line"> *<span class="javadoctag"> @author</span> wwj_748</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="annotation">@DatabaseTable</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PackageInfo</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</span><br><span class="line">    <span class="annotation">@DatabaseField</span>(id = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String pid;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String photographerId;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">    <span class="annotation">@DatabaseField</span>()</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> cost;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String description;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String detail;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 一个套餐可以对应多个主题</span></span><br><span class="line">    <span class="annotation">@ForeignCollectionField</span>(eager = <span class="keyword">true</span>) <span class="comment">// 必须</span></span><br><span class="line">    <span class="keyword">public</span> ForeignCollection&lt;Theme&gt; themes;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 外部对象，一个套餐只对应一个摄影师，一个摄影师可以对应多个套餐</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> Photographer photographer;</span><br><span class="line">    </span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Package [id="</span> + id + <span class="string">", pid="</span> + pid + <span class="string">", photographerId="</span></span><br><span class="line">                + photographerId + <span class="string">", name="</span> + name + <span class="string">", cost="</span> + cost</span><br><span class="line">                + <span class="string">", description="</span> + description + <span class="string">", detail="</span> + detail + <span class="string">"]"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面定义了一个套餐对象，我们来看一下它所用到的几个注解：<br>@DatabaseTable：表示定义了一个数据表，如果不指定名字，在Android中会以类名作为表名，如packageInfo就是SQLite数据库中的表名，我们也可以指定表名，@DatabaseTable(tableName = “tb_package”) 。</p>
+<p>DatabaseField：表示定义了数据中的一个字段，id表示数据中的一个主键，如果指定为generatedId，表示自动增长id，我们不需要给它赋值。其他字段，可以使用columnName来指定字段名，canBeNull表示是否为空，这些赋值可以按照以下来指定<br>-（id = true, canBeNull = false）</p>
+<ul>
+<li><p>(columnName = “name”)</p>
+<p>还有更多的注解用法，可以到官网查看它提供的文档，非常清楚详尽了，笔者这里不多说。</p>
+<h3 id="ormlite的外键约束（一对一、一对多、多对多关系）">ormlite的外键约束（一对一、一对多、多对多关系）</h3><p>使用这个框架需要比较注意的一点就是外键约束，这里笔者只讨论一对一、一对多的情况。<br>上一节我们定义了PackageInfo这个实体，里面有这样的定义：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 一个套餐可以对应多个主题</span></span><br><span class="line">    <span class="annotation">@ForeignCollectionField</span>(eager = <span class="keyword">true</span>) <span class="comment">// 必须</span></span><br><span class="line">    <span class="keyword">public</span> ForeignCollection&lt;Theme&gt; themes;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 外部对象，一个套餐只对应一个摄影师，一个摄影师可以对应多个套餐</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> Photographer photographer;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这里就用到了外键的约束，我们来分析一下：<br>一个套餐对应多个主题：1:n的关系<br>一个套餐对应一个摄影师：1:1的关系</p>
+<p>在n的一方，我们可以使用@ForeignCollectionField这样的注解，eager = true表示可以进行懒加载。</p>
+<p>如果是一对一，我们还是用@DatabaseField注解，但要指定(foreign = true)表示是一个外键。</p>
+<p>现在我们看一下多的一方是怎么定义的：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.ForeignCollection;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.DatabaseField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.ForeignCollectionField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.table.DatabaseTable;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 摄影主题</span><br><span class="line"> * </span><br><span class="line"> *<span class="javadoctag"> @author</span> wwj_748</span><br><span class="line"> * </span><br><span class="line"> */</span></span><br><span class="line"><span class="annotation">@DatabaseTable</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Theme</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</span><br><span class="line">    <span class="annotation">@DatabaseField</span>(id = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> String id;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String tid;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String photographerId;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String packageId; <span class="comment">// 隶属套餐</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String status; <span class="comment">// 后台审核状态</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String title; <span class="comment">// 标题</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String coverId; <span class="comment">// 封面Id</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String coverUrl; <span class="comment">// 封面img</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String detail;  <span class="comment">// 详情</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> photoCount; <span class="comment">// 图片个数</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String photos; <span class="comment">//图集</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String createTime; <span class="comment">// 上传时间</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String recordTime; <span class="comment">// 拍摄时间</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">double</span> cost; <span class="comment">// 花费</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String tags; <span class="comment">// 标签</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String address;<span class="comment">// 地址</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String loacationCode; <span class="comment">// 位置代码</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> popularCount; <span class="comment">// 热度</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(defaultValue = <span class="string">"0"</span>)</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> favStatus; <span class="comment">// 收藏状态</span></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 外部对象字段</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>, foreignAutoRefresh = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> PackageInfo mPackage;</span><br><span class="line">    </span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>, foreignAutoRefresh = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> Photographer photographer;</span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 这里需要注意的是：属性类型只能是ForeignCollection&lt;T&gt;或者Collection&lt;T&gt;</span><br><span class="line">     * 如果需要懒加载（延迟加载）可以在@ForeignCollectionField加上参数eager=false</span><br><span class="line">     * 这个属性也就说明一个部门对应着多个用户</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@ForeignCollectionField</span>(eager = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> ForeignCollection&lt;Img&gt; imgs;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>我们这里不关注其他字段，关注它的外键字段，前面我们说到，一个套餐对应多个主题，所以我们在主题这个实体类中也需要定义一个关联套餐的字段。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 外部对象字段</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>, foreignAutoRefresh = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> PackageInfo mPackage;</span><br></pre></td></tr></table></figure></p>
+<p><strong>注：要实现一对多关系，一定要这样定义，不然会出错。</strong></p>
+<h3 id="定义Bean的DAO，对数据库进行增、删、改、查">定义Bean的DAO，对数据库进行增、删、改、查</h3><p>这里笔者举个例子，大家以后开发根据这样来添加相应的业务逻辑方法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.db.DBHelper;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Theme;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.Dao;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 定义数据访问对象，对指定的表进行增删改查操作</span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThemeDao</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> Dao&lt;Theme, Integer&gt; themeDao;</span><br><span class="line">    <span class="keyword">private</span> DBHelper dbHelper;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 构造方法</span><br><span class="line">     * 获得数据库帮助类实例，通过传入Class对象得到相应的Dao</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ThemeDao</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            dbHelper = DBHelper.getHelper(context);</span><br><span class="line">            themeDao = dbHelper.getDao(Theme.class);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 添加一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Theme theme)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themeDao.create(theme);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 删除一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delete</span><span class="params">(Theme theme)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themeDao.delete(theme);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 更新一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(Theme theme)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themeDao.update(theme);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 查询一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> id</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Theme <span class="title">queryForId</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">        Theme theme = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            theme = themeDao.queryForId(id);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> theme;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 查询所有记录</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Theme&gt; <span class="title">queryForAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        List&lt;Theme&gt; themes = <span class="keyword">new</span> ArrayList&lt;Theme&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themes = themeDao.queryForAll();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> themes;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面笔者定义了一个Dao类，用来进行数据访问的，定义了增加、删除、更新、查询几个方法，我们在应用中就可以使用这个几个方法来帮助我们完成相关的操作。</p>
+<p>具体使用方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Theme theme = <span class="keyword">new</span> Theme()；</span><br><span class="line"><span class="comment">// 赋值</span></span><br><span class="line">theme.id = <span class="number">1</span>;</span><br><span class="line">theme.title = <span class="string">"主题"</span>;</span><br><span class="line">theme.detail = <span class="string">"主题详情"</span>；</span><br><span class="line"><span class="keyword">new</span> ThemeDao(context).add(theme);</span><br></pre></td></tr></table></figure>
+<h3 id="ormlite的批处理操作">ormlite的批处理操作</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="javadoc">/**</span><br><span class="line">     * 转化json对象为数据库对象</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     *<span class="javadoctag"> @throws</span> SQLException</span><br><span class="line">     *<span class="javadoctag"> @throws</span> Exception</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Theme <span class="title">ConvertTheme</span><span class="params">(Context context, <span class="keyword">final</span> JSONObject theme)</span> <span class="keyword">throws</span> SQLException, Exception </span>&#123;</span><br><span class="line">        JSONObject photographerObj = theme.getJSONObject(<span class="string">"photographer"</span>);</span><br><span class="line">        JSONObject packageObj = theme.getJSONObject(<span class="string">"package"</span>);</span><br><span class="line">        </span><br><span class="line">        ThemeDao themeDao = <span class="keyword">new</span> ThemeDao(context);</span><br><span class="line">        </span><br><span class="line">        PhotographDao photographDao = <span class="keyword">new</span> PhotographDao(context);</span><br><span class="line">        <span class="comment">// 根据id查询摄影师</span></span><br><span class="line">        Photographer mPhotographer = photographDao.queryForId(theme.optInt(<span class="string">"photographerId"</span>));</span><br><span class="line">        <span class="keyword">if</span> (mPhotographer == <span class="keyword">null</span>)</span><br><span class="line">            mPhotographer = <span class="keyword">new</span> Photographer();</span><br><span class="line"></span><br><span class="line">        mPhotographer.id = theme.optString(<span class="string">"photographerId"</span>);</span><br><span class="line">        mPhotographer.name = photographerObj.optString(<span class="string">"nickname"</span>);</span><br><span class="line">        mPhotographer.serviceArea = photographerObj.optString(<span class="string">"serviceArea"</span>);</span><br><span class="line">        mPhotographer.avatar = photographerObj.optString(<span class="string">"avatar"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 这里创建或更新摄影师</span></span><br><span class="line">        photographDao.createOrUpdate(mPhotographer);</span><br><span class="line">        </span><br><span class="line">        PackageDao packageDao = <span class="keyword">new</span> PackageDao(context);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 根据id查询套餐</span></span><br><span class="line">        PackageInfo mPackage = packageDao.queryForId(packageObj.optInt(<span class="string">"id"</span>));</span><br><span class="line">        <span class="keyword">if</span> (mPackage == <span class="keyword">null</span>) </span><br><span class="line">            mPackage = <span class="keyword">new</span> PackageInfo();</span><br><span class="line">        </span><br><span class="line">        mPackage.id = packageObj.optInt(<span class="string">"id"</span>);</span><br><span class="line">        mPackage.name = packageObj.optString(<span class="string">"title"</span>);</span><br><span class="line">        mPackage.cost = packageObj.optInt(<span class="string">"cost"</span>);</span><br><span class="line">        mPackage.detail = packageObj.optString(<span class="string">"detail"</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 这里创建或更新套餐</span></span><br><span class="line">        packageDao.createOrUpdate(mPackage);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 根据id查询作品</span></span><br><span class="line">        Theme mThemeTmp = themeDao.queryForId(</span><br><span class="line">                theme.optInt(<span class="string">"id"</span>));</span><br><span class="line">        <span class="keyword">if</span> (mThemeTmp == <span class="keyword">null</span>)</span><br><span class="line">            mThemeTmp = <span class="keyword">new</span> Theme(); </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">final</span> Theme mTheme = mThemeTmp;</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        mTheme.id = theme.optString(<span class="string">"id"</span>);</span><br><span class="line">        mTheme.title = theme.optString(<span class="string">"title"</span>);</span><br><span class="line">        <span class="comment">// mTheme.coverId = theme.optString("place");</span></span><br><span class="line">        <span class="comment">// mTheme.coverUrl = theme.optString("coverUrl");</span></span><br><span class="line">        mTheme.photographerId = theme.optString(<span class="string">"photographerId"</span>);</span><br><span class="line">        mTheme.detail = theme.optString(<span class="string">"detail"</span>);</span><br><span class="line">        <span class="comment">// mTheme.cost = theme.optDouble("cost");</span></span><br><span class="line">        <span class="comment">// mTheme.recordTime = theme.optString("recordTime");</span></span><br><span class="line">        mTheme.favStatus = theme.optInt(<span class="string">"isFav"</span>);</span><br><span class="line">        mTheme.photoCount = theme.optInt(<span class="string">"photoCount"</span>);</span><br><span class="line">        mTheme.tags = theme.optString(<span class="string">"tags"</span>);</span><br><span class="line">        mTheme.packageId = theme.optString(<span class="string">"packageId"</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 同步更新</span></span><br><span class="line">        mTheme.photographer = mPhotographer;</span><br><span class="line">        mTheme.mPackage = mPackage;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建或更新主题</span></span><br><span class="line">        themeDao.createOrUpdate(mTheme);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">final</span> ImgDao mDao = <span class="keyword">new</span> ImgDao(context);</span><br><span class="line">        Dao&lt;Img, Integer&gt; imgDao = mDao.getImgDao();</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        <span class="comment">// 执行批处理操作</span></span><br><span class="line">        imgDao.callBatchTasks(<span class="keyword">new</span> Callable&lt;Void&gt;() &#123;</span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Void <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">                JSONArray imgs = theme.getJSONArray(<span class="string">"photos"</span>);</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; imgs.length(); i++) &#123;</span><br><span class="line">                    JSONObject jsonObject = imgs.getJSONObject(i);</span><br><span class="line">                    Img mImg = mDao.queryForId(jsonObject.optInt(<span class="string">"id"</span>));</span><br><span class="line">                    <span class="keyword">if</span> (mImg == <span class="keyword">null</span>)</span><br><span class="line">                        mImg = <span class="keyword">new</span> Img();</span><br><span class="line"></span><br><span class="line">                    mImg.id = jsonObject.optString(<span class="string">"id"</span>);</span><br><span class="line">                    mImg.isCover = jsonObject.optInt(<span class="string">"isCover"</span>);</span><br><span class="line">                    mImg.imgUrl = jsonObject.optString(<span class="string">"url"</span>);</span><br><span class="line">                    mImg.theme = mTheme;</span><br><span class="line"></span><br><span class="line">                    mDao.createOrUpdate(mImg);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> mTheme;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>上面的代码就是把我们从服务端获取的json对象进行数据转化，我们对json数据进行解析，得到相应的数据库对象，再进行创建或更新的操作，如果涉及到较多的插入，就可以使用ormlite为我们提供的批处理回调方法，具体看代码。</p>
+<h3 id="在Android中使用">在Android中使用</h3><p>我们通过网络请求得到的json对象，然后直接调用上面写好的转化方法，这样我们就可以实现数据存储了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">getTheme</span><span class="params">(<span class="keyword">final</span> Theme mTheme)</span> </span>&#123;</span><br><span class="line">        DataFetcher.getHttpRequestAsync(</span><br><span class="line">                HttpRequest.getThemeInfoUrl(getActivity(), mTheme.id),</span><br><span class="line">                <span class="keyword">new</span> JsonResponseHandler(getActivity(),</span><br><span class="line">                        getString(R.string.tip_requesing_info)) &#123;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onSuccess</span><span class="params">(<span class="keyword">int</span> statusCode, Header[] headers,</span><br><span class="line">                            JSONObject response)</span> </span>&#123;</span><br><span class="line">                        <span class="keyword">super</span>.onSuccess(statusCode, headers, response);</span><br><span class="line">                        LogUtils.i(<span class="string">"info"</span>, response.toString());</span><br><span class="line">                        JSONObject jsonObject = response.optJSONObject(<span class="string">"msg"</span>);</span><br><span class="line"></span><br><span class="line">                        <span class="keyword">try</span> &#123;</span><br><span class="line">                            Converter.ConvertTheme(jsonObject,</span><br><span class="line">                                    ((BaseActivity) getActivity()).getHelper());</span><br><span class="line">                            <span class="comment">// 跳转到详情页</span></span><br><span class="line">                            Intent intent = <span class="keyword">new</span> Intent();</span><br><span class="line">                            intent.putExtra(<span class="string">"tid"</span>, mTheme.id);</span><br><span class="line">                            intent.setClass(getActivity(),</span><br><span class="line">                                    ThemeInfolActivity.class);</span><br><span class="line">                            startActivity(intent);</span><br><span class="line"></span><br><span class="line">                        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                            e.printStackTrace();</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onFailure</span><span class="params">(<span class="keyword">int</span> statusCode, Header[] headers,</span><br><span class="line">                            String responseString, Throwable throwable)</span> </span>&#123;</span><br><span class="line">                        <span class="keyword">super</span>.onFailure(statusCode, headers, responseString,</span><br><span class="line">                                throwable);</span><br><span class="line">                        <span class="keyword">if</span> (mTheme.detail != <span class="keyword">null</span>) &#123;</span><br><span class="line">                            Intent intent = <span class="keyword">new</span> Intent();</span><br><span class="line">                            intent.putExtra(<span class="string">"tid"</span>, mTheme.id);</span><br><span class="line">                            intent.setClass(getActivity(), ThemeInfolActivity.class);</span><br><span class="line">                            startActivity(intent);</span><br><span class="line">                        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                            Toast.makeText(getActivity(), responseString,</span><br><span class="line">                                    Toast.LENGTH_SHORT).show();</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                &#125;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>注：这里笔者使用的是android-async-http这个网络库。</p>
+
+      </div>
+      <footer class="article-footer">
+        <a data-url="http://www.devilwwj.com/2015/06/02/ormlite/" data-id="ciaeoveq50000r51zs2mpbjuc" class="article-share-link">分享到</a>
+        
+          <a href="http://www.devilwwj.com/2015/06/02/ormlite/#comments" class="article-comment-link">评论</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+
+      </footer>
+    </div>
+  </article>
+  
+    <section id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </section>
+  
+
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>关注我 :</p>
+    <ul class="social-links">
+      
+        <li><a class="social-tooltip" title="twitter" href="/" target="_blank"><i id="icon-twitter" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="facebook" href="/" target="_blank"><i id="icon-facebook" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="google_plus" href="/" target="_blank"><i id="icon-google_plus" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="github" href="https://github.com/devilWwj" target="_blank"><i id="icon-github" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/wulmaycry" target="_blank"><i id="icon-weibo" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="rss" href="/atom.xml" target="_blank"><i id="icon-rss" class="icon"></i></a></li>
+      
+    </ul>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/06/01/Cat-remember-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <p class="article-nav-title">养猫记-领养篇</p>
+      <i class="icon" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
+  
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/06/02/ormlite/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.devilwwj.com/images/Snip20150602_3.png
+)" alt="Android数据库框架ormlite使用精要" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
+              <p class="item-title"><a href="/2015/06/02/ormlite/" class="title">Android数据库框架ormlite使用精要</a></p>
+              <p class="item-date"><time datetime="2015-06-02T02:02:15.000Z" itemprop="datePublished">2015-06-02</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/06/01/Cat-remember-1/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/养猫记/">养猫记</a></p>
+              <p class="item-title"><a href="/2015/06/01/Cat-remember-1/" class="title">养猫记-领养篇</a></p>
+              <p class="item-date"><time datetime="2015-06-01T15:27:52.000Z" itemprop="datePublished">2015-06-01</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/05/23/hello-world/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/05/23/hello-world/" class="title">Hello World</a></p>
+              <p class="item-date"><time datetime="2015-05-23T07:45:02.000Z" itemprop="datePublished">2015-05-23</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/05/21/android/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
+              <p class="item-title"><a href="/2015/05/21/android/" class="title">Android自定义View总结</a></p>
+              <p class="item-date"><time datetime="2015-05-21T11:14:33.000Z" itemprop="datePublished">2015-05-21</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/05/19/create-myself-hexo-blog/" class="thumbnail">
+  
+    <span style="background-image:url(/images/Snip20150519_5.png
+)" alt="搭建目前最in的hexo技术博客" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/日志/">日志</a></p>
+              <p class="item-title"><a href="/2015/05/19/create-myself-hexo-blog/" class="title">搭建目前最in的hexo技术博客</a></p>
+              <p class="item-date"><time datetime="2015-05-19T06:33:36.000Z" itemprop="datePublished">2015-05-19</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/养猫记/">养猫记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cat/">cat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-float">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/android/" style="font-size: 20px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 devilwwj</p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'devilwwj';
+  
+  var disqus_url = 'http://www.devilwwj.com/2015/06/02/ormlite/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
+  <script src="/scrollLoading/main.js" type="text/javascript"></script>
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
