@@ -4,7 +4,7 @@
   <subtitle><![CDATA[在浮躁的世界安安静静敲代码]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.devilwwj.com/"/>
-  <updated>2015-06-03T10:35:28.000Z</updated>
+  <updated>2015-06-03T10:40:44.000Z</updated>
   <id>http://www.devilwwj.com/</id>
   
   <author>
@@ -19,11 +19,12 @@
     <link href="http://www.devilwwj.com/2015/06/03/android-skin-update/"/>
     <id>http://www.devilwwj.com/2015/06/03/android-skin-update/</id>
     <published>2015-06-03T07:08:24.000Z</published>
-    <updated>2015-06-03T10:35:28.000Z</updated>
+    <updated>2015-06-03T10:40:44.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Android更换皮肤解决方案">Android更换皮肤解决方案</h1><blockquote>
 <p>转载请注明出处：<a href="http://www.devilwwj.com/" target="_blank" rel="external">IT_xiao小巫</a></p>
 </blockquote>
 <p>本篇博客要给大家分享的一个关于Android应用换肤的Demo，大家可以到我的github去下载demo，以后博文涉及到的代码均会上传到github中统一管理。<br>github地址：<a href="https://github.com/devilWwj/Android-skin-update" target="_blank" rel="external">https://github.com/devilWwj/Android-skin-update</a></p>
+<p><img src="http://www.devilwwj.com/images/Snip20150603_1.png" alt=""></p>
 <h2 id="思路">思路</h2><p>换肤功能一般有什么？<br>元素一般有背景颜色、字体颜色、图片、布局等等</p>
 <p>我们知道Android中有主题Theme还有style，theme是针对整个activity的，而style可以针对指定控件，如果比较少的替换可以在app内做，但如果需要动态来做，可以选择下面这种思路：<br><strong>把app和skin分开，将skin做成一个apk，作为一个插件来提供给app使用，这样可以做到在线下载皮肤，然后动态更换皮肤</strong></p>
 <p>下面这个demo，小巫是建立了一个res的工程项目，简单提供了一个colors.xml，在里面指定了背景颜色和按钮颜色：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line">    &lt;color name="day_btn_color"&gt;#E61ABD&lt;/color&gt;</span><br><span class="line">    &lt;color name="day_background"&gt;#38F709&lt;/color&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;color name="night_btn_color"&gt;#000000&lt;/color&gt;</span><br><span class="line">    &lt;color name="night_background"&gt;#FFFFFF&lt;/color&gt;</span><br><span class="line">&lt;/resources&gt;</span><br></pre></td></tr></table></figure></p>
