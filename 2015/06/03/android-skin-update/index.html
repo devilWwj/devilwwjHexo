@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>android更换皮肤解决方案 | IT_xiao小巫</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Android更换皮肤解决方案
+转载请注明出处：IT_xiao小巫
+
+本篇博客要给大家分享的一个关于Android应用换肤的Demo，大家可以到我的github去下载demo，以后博文涉及到的代码均会上传到github中统一管理。github地址：https://github.com/devilWwj/Android-skin-update
+思路换肤功能一般有什么？元素一般有背景颜色、字体颜色、图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android更换皮肤解决方案">
+<meta property="og:url" content="http://www.devilwwj.com/2015/06/03/android-skin-update/index.html">
+<meta property="og:site_name" content="IT_xiao小巫">
+<meta property="og:description" content="Android更换皮肤解决方案
+转载请注明出处：IT_xiao小巫
+
+本篇博客要给大家分享的一个关于Android应用换肤的Demo，大家可以到我的github去下载demo，以后博文涉及到的代码均会上传到github中统一管理。github地址：https://github.com/devilWwj/Android-skin-update
+思路换肤功能一般有什么？元素一般有背景颜色、字体颜色、图">
+<meta property="og:image" content="http://www.devilwwj.com/images/Snip20150603_2.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="android更换皮肤解决方案">
+<meta name="twitter:description" content="Android更换皮肤解决方案
+转载请注明出处：IT_xiao小巫
+
+本篇博客要给大家分享的一个关于Android应用换肤的Demo，大家可以到我的github去下载demo，以后博文涉及到的代码均会上传到github中统一管理。github地址：https://github.com/devilWwj/Android-skin-update
+思路换肤功能一般有什么？元素一般有背景颜色、字体颜色、图">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
+  
+  
+
+
+  
+    <style type="text/css">
+      .logo { background-image:url(/images/logo.png); }
+    </style>
+  
+
+  
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+            <h2 class="subtitle-wrap">
+              <p class="subtitle">在浮躁的世界安安静静敲代码</p>
+            </h2>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/养猫记/">养猫记</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/技术/">技术</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/日志/">日志</a></li></ul>
+                  
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
+              
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="q" value="site:http://www.devilwwj.com"></form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header"><a class="page-title-link" href="/categories/技术/">技术</a></h1>
+            </div>
+            <div class="main-body-content">
+              
+  <article id="post-android-skin-update" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      android更换皮肤解决方案
+    </h1>
+  
+
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2015/06/03/android-skin-update/" class="article-date">
+  <time datetime="2015-06-03T07:08:24.000Z" itemprop="datePublished">2015-06-03</time>
+</a>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
+        <h1 id="Android更换皮肤解决方案">Android更换皮肤解决方案</h1><blockquote>
+<p>转载请注明出处：<a href="http://www.devilwwj.com/" target="_blank" rel="external">IT_xiao小巫</a></p>
+</blockquote>
+<p>本篇博客要给大家分享的一个关于Android应用换肤的Demo，大家可以到我的github去下载demo，以后博文涉及到的代码均会上传到github中统一管理。<br>github地址：<a href="https://github.com/devilWwj/Android-skin-update" target="_blank" rel="external">https://github.com/devilWwj/Android-skin-update</a></p>
+<h2 id="思路">思路</h2><p>换肤功能一般有什么？<br>元素一般有背景颜色、字体颜色、图片、布局等等</p>
+<p>我们知道Android中有主题Theme还有style，theme是针对整个activity的，而style可以针对指定控件，如果比较少的替换可以在app内做，但如果需要动态来做，可以选择下面这种思路：<br><strong>把app和skin分开，将skin做成一个apk，作为一个插件来提供给app使用，这样可以做到在线下载皮肤，然后动态更换皮肤</strong></p>
+<p>下面这个demo，小巫是建立了一个res的工程项目，简单提供了一个colors.xml，在里面指定了背景颜色和按钮颜色：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line">    &lt;color name="day_btn_color"&gt;#E61ABD&lt;/color&gt;</span><br><span class="line">    &lt;color name="day_background"&gt;#38F709&lt;/color&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;color name="night_btn_color"&gt;#000000&lt;/color&gt;</span><br><span class="line">    &lt;color name="night_background"&gt;#FFFFFF&lt;/color&gt;</span><br><span class="line">&lt;/resources&gt;</span><br></pre></td></tr></table></figure></p>
+<p>里面没有任何逻辑代码，只提供资源文件，然后我们导出为skin.apk文件，复制到目标项目的assets中去。<br><img src="http://www.devilwwj.com/images/Snip20150603_2.png" alt=""></p>
+<p>因为这里不涉及到下载皮肤这个操作，所以直接放到assets目录下，然后在程序中把assets下的apk文件复制到sd卡中.<br>在程序中提供一个皮肤包管理器<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.skin;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.FileOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"><span class="keyword">import</span> android.content.pm.PackageInfo;</span><br><span class="line"><span class="keyword">import</span> android.content.pm.PackageManager;</span><br><span class="line"><span class="keyword">import</span> android.content.res.AssetManager;</span><br><span class="line"><span class="keyword">import</span> android.content.res.Resources;</span><br><span class="line"><span class="keyword">import</span> android.os.AsyncTask;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 皮肤包管理器</span><br><span class="line"> * </span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> * </span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SkinPackageManager</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SkinPackageManager mInstance;</span><br><span class="line">    <span class="keyword">private</span> Context mContext;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 当前资源包名</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">public</span> String mPackageName;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 皮肤资源</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">public</span> Resources mResources;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SkinPackageManager</span><span class="params">(Context mContext)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>();</span><br><span class="line">        <span class="keyword">this</span>.mContext = mContext;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 获取单例</span><br><span class="line">     * </span><br><span class="line">     *<span class="javadoctag"> @param</span> mContext</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SkinPackageManager <span class="title">getInstance</span><span class="params">(Context mContext)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (mInstance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            mInstance = <span class="keyword">new</span> SkinPackageManager(mContext);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> mInstance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 从assets中复制apk到sd中</span><br><span class="line">     * </span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     *<span class="javadoctag"> @param</span> filename</span><br><span class="line">     *<span class="javadoctag"> @param</span> path</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">copyApkFromAssets</span><span class="params">(Context context, String filename,</span><br><span class="line">            String path)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> copyIsFinish = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 打开assets的输入流</span></span><br><span class="line">            InputStream is = context.getAssets().open(filename);</span><br><span class="line">            File file = <span class="keyword">new</span> File(path);</span><br><span class="line">            <span class="comment">// 创建一个新的文件</span></span><br><span class="line">            file.createNewFile();</span><br><span class="line">            FileOutputStream fos = <span class="keyword">new</span> FileOutputStream(file);</span><br><span class="line">            <span class="keyword">byte</span>[] temp = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">            <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> ((i = is.read(temp)) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                fos.write(temp, <span class="number">0</span>, i); <span class="comment">// 写入到文件</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            fos.close();</span><br><span class="line">            is.close();</span><br><span class="line">            copyIsFinish = <span class="keyword">true</span>;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> copyIsFinish;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 异步加载皮肤资源</span><br><span class="line">     * </span><br><span class="line">     *<span class="javadoctag"> @param</span> dexPath</span><br><span class="line">     *            需要加载的皮肤资源</span><br><span class="line">     *<span class="javadoctag"> @param</span> callback</span><br><span class="line">     *            回调接口</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinAsync</span><span class="params">(String dexPath, <span class="keyword">final</span> loadSkinCallBack callback)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> AsyncTask&lt;String, Void, Resources&gt;() &#123;</span><br><span class="line"></span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPreExecute</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                <span class="keyword">super</span>.onPreExecute();</span><br><span class="line">                <span class="keyword">if</span> (callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    callback.startloadSkin();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">protected</span> Resources <span class="title">doInBackground</span><span class="params">(String... params)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> (params.length == <span class="number">1</span>) &#123;</span><br><span class="line">                        <span class="comment">//</span></span><br><span class="line">                        String dexPath_tmp = params[<span class="number">0</span>];</span><br><span class="line">                        <span class="comment">// 得到包管理器</span></span><br><span class="line">                        PackageManager mpm = mContext.getPackageManager();</span><br><span class="line">                        <span class="comment">// 得到包信息</span></span><br><span class="line">                        PackageInfo mInfo = mpm.getPackageArchiveInfo(</span><br><span class="line">                                dexPath_tmp, PackageManager.GET_ACTIVITIES);</span><br><span class="line">                        mPackageName = mInfo.packageName;</span><br><span class="line"></span><br><span class="line">                        <span class="comment">// AssetManager实例</span></span><br><span class="line">                        AssetManager assetManager = AssetManager.class</span><br><span class="line">                                .newInstance();</span><br><span class="line">                        <span class="comment">// 通过反射调用addAssetPath方法</span></span><br><span class="line">                        Method addAssetPath = assetManager.getClass()</span><br><span class="line">                                .getMethod(<span class="string">"addAssetPath"</span>, String.class);</span><br><span class="line">                        addAssetPath.invoke(assetManager, dexPath_tmp);</span><br><span class="line"></span><br><span class="line">                        <span class="comment">// 得到资源实例</span></span><br><span class="line">                        Resources superRes = mContext.getResources();</span><br><span class="line">                        <span class="comment">// 实例化皮肤资源</span></span><br><span class="line">                        Resources skinResource = <span class="keyword">new</span> Resources(assetManager,</span><br><span class="line">                                superRes.getDisplayMetrics(),</span><br><span class="line">                                superRes.getConfiguration());</span><br><span class="line">                        <span class="comment">// 保存资源路径</span></span><br><span class="line">                        SkinConfig.getInstance(mContext).setSkinResourcePath(</span><br><span class="line">                                dexPath_tmp);</span><br><span class="line">                        <span class="keyword">return</span> skinResource;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPostExecute</span><span class="params">(Resources result)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">super</span>.onPostExecute(result);</span><br><span class="line">                mResources = result;</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 这里执行回调方法</span></span><br><span class="line">                <span class="keyword">if</span> (callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (mResources != <span class="keyword">null</span>) &#123;</span><br><span class="line">                        callback.loadSkinSuccess();</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        callback.loadSkinFail();</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;.execute(dexPath);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">interface</span> <span class="title">loadSkinCallBack</span> </span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startloadSkin</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinSuccess</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinFail</span><span class="params">()</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>重点关注这个类，里面提供了一个异步方法对包和asset进行操作，这里用到了反射机制，反射调用addAssetPath来添加assets的路径，这个路径就是我们skin.apk的路径。具体细节，各位查看代码。</p>
+<p>我们在Activity界面中使用上面提供的方法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.skin;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.app.Activity;</span><br><span class="line"><span class="keyword">import</span> android.content.res.Resources;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.os.Environment;</span><br><span class="line"><span class="keyword">import</span> android.util.Log;</span><br><span class="line"><span class="keyword">import</span> android.view.View;</span><br><span class="line"><span class="keyword">import</span> android.view.View.OnClickListener;</span><br><span class="line"><span class="keyword">import</span> android.widget.Button;</span><br><span class="line"><span class="keyword">import</span> android.widget.TextView;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.devilwwj.skin.SkinPackageManager.loadSkinCallBack;</span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 功能：切换皮肤</span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> <span class="keyword">implements</span> <span class="title">OnClickListener</span>,</span><br><span class="line">        <span class="title">ISkinUpdate</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String APK_NAME = <span class="string">"skin.apk"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String DEX_PATH = Environment</span><br><span class="line">            .getExternalStorageDirectory().getAbsolutePath() + <span class="string">"/skin.apk"</span>;</span><br><span class="line">    <span class="keyword">private</span> Button dayButton;</span><br><span class="line">    <span class="keyword">private</span> Button nightButton;</span><br><span class="line">    <span class="keyword">private</span> TextView textView;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> nightModel = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        dayButton = (Button) findViewById(R.id.btn_day);</span><br><span class="line">        nightButton = (Button) findViewById(R.id.btn_night);</span><br><span class="line">        textView = (TextView) findViewById(R.id.text);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 把apk文件复制到sd卡</span></span><br><span class="line">        SkinPackageManager.getInstance(<span class="keyword">this</span>).copyApkFromAssets(<span class="keyword">this</span>, APK_NAME,</span><br><span class="line">                DEX_PATH);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onResume</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onResume();</span><br><span class="line">        <span class="keyword">if</span> (SkinPackageManager.getInstance(<span class="keyword">this</span>).mResources != <span class="keyword">null</span>) &#123;</span><br><span class="line">            updateTheme();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">switch</span> (v.getId()) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.btn_day:</span><br><span class="line">            nightModel = <span class="keyword">false</span>;</span><br><span class="line">            loadSkin();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.btn_night:</span><br><span class="line">            nightModel = <span class="keyword">true</span>;</span><br><span class="line">            loadSkin();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 加载皮肤</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">loadSkin</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        SkinPackageManager.getInstance(<span class="keyword">this</span>).loadSkinAsync(DEX_PATH,</span><br><span class="line">                <span class="keyword">new</span> loadSkinCallBack() &#123;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startloadSkin</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                        Log.d(<span class="string">"xiaowu"</span>, <span class="string">"startloadSkin"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinSuccess</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                        Log.d(<span class="string">"xiaowu"</span>, <span class="string">"loadSkinSuccess"</span>);</span><br><span class="line">                        <span class="comment">// 然后这里更新主题</span></span><br><span class="line">                        updateTheme();</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinFail</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                        Log.d(<span class="string">"xiaowu"</span>, <span class="string">"loadSkinFail"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateTheme</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Resources mResource = SkinPackageManager.getInstance(<span class="keyword">this</span>).mResources;</span><br><span class="line">        <span class="keyword">if</span> (nightModel) &#123;</span><br><span class="line">            <span class="comment">// 如果是黑夜的模式，则加载黑夜的主题</span></span><br><span class="line">            <span class="keyword">int</span> id1 = mResource.getIdentifier(<span class="string">"night_btn_color"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            nightButton.setBackgroundColor(mResource.getColor(id1));</span><br><span class="line">            <span class="keyword">int</span> id2 = mResource.getIdentifier(<span class="string">"night_background"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            nightButton.setTextColor(mResource.getColor(id2));</span><br><span class="line">            textView.setTextColor(mResource.getColor(id2));</span><br><span class="line">            </span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 如果是白天模式，则加载白天的主题</span></span><br><span class="line">            <span class="keyword">int</span> id1 = mResource.getIdentifier(<span class="string">"day_btn_color"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            dayButton.setBackgroundColor(mResource.getColor(id1));</span><br><span class="line">            <span class="keyword">int</span> id2 = mResource.getIdentifier(<span class="string">"day_background"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            dayButton.setTextColor(mResource.getColor(id2));</span><br><span class="line">            textView.setTextColor(mResource.getColor(id2));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>我们可以保存一个模式，比如黑夜白天模式，每次启动按照前面保存的模式来显示皮肤。我们可以看到上面是通过调用getIdentifier方法来得到指定的资源的id，name是我们在资源文件中指定的名字。</p>
+<p>最后，各位自己跑一遍这样的流程：</p>
+<ol>
+<li>导出res的apk文件</li>
+<li>复制到目标项目的assets目录下</li>
+<li>查看切换皮肤的效果</li>
+</ol>
+<p>参考博文：<a href="http://blog.csdn.net/yuanzeyao/article/details/42390431" target="_blank" rel="external">http://blog.csdn.net/yuanzeyao/article/details/42390431</a></p>
+
+      </div>
+      <footer class="article-footer">
+        <a data-url="http://www.devilwwj.com/2015/06/03/android-skin-update/" data-id="ciagmbtog0000ee1z1nmywabq" class="article-share-link">分享到</a>
+        
+          <a href="http://www.devilwwj.com/2015/06/03/android-skin-update/#comments" class="article-comment-link">评论</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+
+      </footer>
+    </div>
+  </article>
+  
+    <section id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </section>
+  
+
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>关注我 :</p>
+    <ul class="social-links">
+      
+        <li><a class="social-tooltip" title="twitter" href="/" target="_blank"><i id="icon-twitter" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="facebook" href="/" target="_blank"><i id="icon-facebook" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="google_plus" href="/" target="_blank"><i id="icon-google_plus" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="github" href="https://github.com/devilWwj" target="_blank"><i id="icon-github" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/wulmaycry" target="_blank"><i id="icon-weibo" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="rss" href="/atom.xml" target="_blank"><i id="icon-rss" class="icon"></i></a></li>
+      
+    </ul>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/06/02/ormlite/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <p class="article-nav-title">Android数据库框架ormlite使用精要</p>
+      <i class="icon" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
+  
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/06/03/android-skin-update/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.devilwwj.com/images/Snip20150603_2.png
+)" alt="android更换皮肤解决方案" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
+              <p class="item-title"><a href="/2015/06/03/android-skin-update/" class="title">android更换皮肤解决方案</a></p>
+              <p class="item-date"><time datetime="2015-06-03T07:08:24.000Z" itemprop="datePublished">2015-06-03</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/06/02/ormlite/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.devilwwj.com/images/Snip20150602_3.png
+)" alt="Android数据库框架ormlite使用精要" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
+              <p class="item-title"><a href="/2015/06/02/ormlite/" class="title">Android数据库框架ormlite使用精要</a></p>
+              <p class="item-date"><time datetime="2015-06-02T02:02:15.000Z" itemprop="datePublished">2015-06-02</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/06/01/Cat-remember-1/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.devilwwj.com/images/P50524-184911-001.jpg
+)" alt="养猫记-领养篇" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/养猫记/">养猫记</a></p>
+              <p class="item-title"><a href="/2015/06/01/Cat-remember-1/" class="title">养猫记-领养篇</a></p>
+              <p class="item-date"><time datetime="2015-06-01T15:27:52.000Z" itemprop="datePublished">2015-06-01</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/05/23/hello-world/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/05/23/hello-world/" class="title">Hello World</a></p>
+              <p class="item-date"><time datetime="2015-05-23T07:45:02.000Z" itemprop="datePublished">2015-05-23</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/05/21/android/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
+              <p class="item-title"><a href="/2015/05/21/android/" class="title">Android自定义View总结</a></p>
+              <p class="item-date"><time datetime="2015-05-21T11:14:33.000Z" itemprop="datePublished">2015-05-21</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/养猫记/">养猫记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cat/">cat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-float">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/android/" style="font-size: 20px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 devilwwj</p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'devilwwj';
+  
+  var disqus_url = 'http://www.devilwwj.com/2015/06/03/android-skin-update/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
+  <script src="/scrollLoading/main.js" type="text/javascript"></script>
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
