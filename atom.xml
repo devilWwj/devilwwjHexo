@@ -4,7 +4,7 @@
   <subtitle><![CDATA[在浮躁的世界安安静静敲代码]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.devilwwj.com/"/>
-  <updated>2015-08-04T00:57:34.000Z</updated>
+  <updated>2015-08-10T01:33:37.000Z</updated>
   <id>http://www.devilwwj.com/</id>
   
   <author>
@@ -13,6 +13,136 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[A005-AS项目结构解析]]></title>
+    <link href="http://www.devilwwj.com/2015/08/10/A005-AS%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%A3%E6%9E%90/"/>
+    <id>http://www.devilwwj.com/2015/08/10/A005-AS项目结构解析/</id>
+    <published>2015-08-10T01:31:14.000Z</published>
+    <updated>2015-08-10T01:33:37.000Z</updated>
+    <content type="html"><![CDATA[<p>上一节课给大家介绍了如何使用AS进行开发我们的第一个Android应用程序——HelloWorld，本节课来给大家系统介绍一下在Android Studio中Android的项目结构是怎样的，每一个文件夹和文件具体含义是什么，在我们Android程序中有什么作用，大家不妨来看看接下来的内容。</p>
+<p>我们创建了一个Android Project，打开就如下图所示：<br><img src="http://img.blog.csdn.net/20150808144606324" alt="项目全貌"></p>
+<p>我们选择Project视图，就会有以下的项目文档结构：<br><img src="http://img.blog.csdn.net/20150808145148831" alt="Project视图"></p>
+<p>上面笔者标注的数字是接下来要讲解的内容。<br>我们先来看1：<br>我们创建Application的时候，要求我们输入项目名称，1就是我们创建的项目，AndroidDevelopCourse是项目名称，在实际开发中，我们要为我们项目取一个能明确表达产品的名称，一般使用英文来描述，比如我们的课程是“<strong>Android开发课程</strong>”。1展开之后是我们完整的项目文档结构。</p>
+<p>2： 我们的Android 模块，在AS当中，分为了Project（工作空间），Module（模块）两种概念，我们创建项目的时候会默认创建一个模块，这里的app就是我们的一个module，一个Android应用程序的文档结构。</p>
+<p>3：libs，存放项目的类库，例如我们项目中用到的.jar文件。</p>
+<p>4：src，Android项目的源文件目录，存放应用程序中所有用到的资源文件。</p>
+<p>5：androidTest，存放我们应用程序单元测试代码，我们可以在这里进行单元测试。</p>
+<p>6：main，Android项目的主目录，包含java目录存放.java源代码文件，res存放资源文件，包含图像、字符串资源等等，AndroidManifest.xml是项目的配置文件。</p>
+<p>7：build.gradle，Android项目的Gradle构建脚本，详细解释看以下注释：<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 表示使用com.android.application插件。</span></span><br><span class="line">apply plugin: <span class="string">'com.android.application'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置所有android构建过程需要的参数</span></span><br><span class="line">android &#123;</span><br><span class="line">    <span class="comment">// 用于编译的SDK版本</span></span><br><span class="line">    compileSdkVersion <span class="number">21</span></span><br><span class="line">    <span class="comment">// 用于Gradle编译项目的工具版本</span></span><br><span class="line">    buildToolsVersion <span class="string">"21.1.2"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 项目默认配置</span></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        <span class="comment">// 应用程序包名</span></span><br><span class="line">        applicationId <span class="string">"com.devilwwj.androiddevelopcourse"</span></span><br><span class="line">        <span class="comment">// 最低支持Android版本</span></span><br><span class="line">        minSdkVersion <span class="number">14</span></span><br><span class="line">        <span class="comment">// 目标版本</span></span><br><span class="line">        targetSdkVersion <span class="number">21</span></span><br><span class="line">        <span class="comment">// 版本号</span></span><br><span class="line">        versionCode <span class="number">1</span></span><br><span class="line">        <span class="comment">// 版本名称</span></span><br><span class="line">        versionName <span class="string">"1.0"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 编译类型。默认两个：release和debug</span></span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            <span class="comment">// 设置是否使用混淆</span></span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 混淆文件</span></span><br><span class="line">            proguardFiles getDefaultProguardFile(<span class="string">'proguard-android.txt'</span>), <span class="string">'proguard-rules.pro'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 用于配置引用的依赖</span></span><br><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">    <span class="keyword">compile</span> <span class="keyword">fileTree</span>(dir: <span class="string">'libs'</span>, <span class="keyword">include</span>: [<span class="string">'*.jar'</span>])</span><br><span class="line">    <span class="keyword">compile</span> <span class="string">'com.android.support:appcompat-v7:22.0.0'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>8：build，Android studio项目的编译目录。</p>
+<p>9：gradle，存放项目用到的构建工具。</p>
+<p>10：build.gradle，Android Studio项目的构建脚本<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Top-level build file where you can add configuration options common to all sub-projects/modules.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 用于设置驱动构建过程的代码</span></span><br><span class="line"><span class="keyword">buildscript</span> &#123;</span><br><span class="line">    <span class="comment">// 远程仓库</span></span><br><span class="line">    <span class="keyword">repositories</span></span><br><span class="line">        <span class="comment">// 这里依赖的远程仓库是jcenter</span></span><br><span class="line">        jcenter()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 声明了使用Android Studio gradle插件版本。</span></span><br><span class="line">    <span class="keyword">dependencies</span> &#123;</span><br><span class="line">        <span class="keyword">classpath</span> <span class="string">'com.android.tools.build:gradle:1.0.0'</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// NOTE: Do not place your application dependencies here; they belong</span></span><br><span class="line">        <span class="comment">// in the individual module build.gradle files</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">allprojects</span> &#123;</span><br><span class="line">    <span class="keyword">repositories</span> &#123;</span><br><span class="line">        jcenter()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>11：External Libraries，显示项目所依赖的所有类库。<br><img src="http://img.blog.csdn.net/20150808152436661" alt="项目依赖库"></p>
+<p>以上基本上就是完整的Android Studio项目的文档结构，有一些IDE的配置文件这里我们无需关注。</p>
+<p>如果大家想了解更多更详细关于Android Studio的使用，可以到Android Studio中文社区<a href="http://www.android-studio.org/" target="_blank" rel="external">http://www.android-studio.org/</a>，那么本节课就到这里了，写下大家，下次再见。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>上一节课给大家介绍了如何使用AS进行开发我们的第一个Android应用程序——HelloWorld，本节课来给大家系统介绍一下在Android Studio中Android的项目结构是怎样的，每一个文件夹和文件具体含义是什么，在我们Android程序中有什么作用，大家不妨来]]>
+    </summary>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/tags/Android/"/>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[A004-AS开发HelloWorld]]></title>
+    <link href="http://www.devilwwj.com/2015/08/10/A004-AS%E5%BC%80%E5%8F%91HelloWorld/"/>
+    <id>http://www.devilwwj.com/2015/08/10/A004-AS开发HelloWorld/</id>
+    <published>2015-08-10T01:30:29.000Z</published>
+    <updated>2015-08-10T01:33:21.000Z</updated>
+    <content type="html"><![CDATA[<p>前面的一节课已经给大家介绍了如何搭建Android开发环境。<br>本节课就来给大家介绍如何使用Android studio来开发我们第一个Android应用程序。</p>
+<p><img src="http://img.blog.csdn.net/20150806001040909" alt="创建项目1"></p>
+<p><img src="http://img.blog.csdn.net/20150806001114386" alt="创建项目2"></p>
+<p><img src="http://img.blog.csdn.net/20150806001147450" alt="创建项目3"></p>
+<p><img src="http://img.blog.csdn.net/20150806001221098" alt="创建项目4"></p>
+<p><img src="http://img.blog.csdn.net/20150806001300397" alt="创建项目5"></p>
+<p><img src="http://img.blog.csdn.net/20150806001325150" alt="创建项目6"></p>
+<p><img src="http://img.blog.csdn.net/20150806001346252" alt="创建项目7"></p>
+<p><img src="http://img.blog.csdn.net/20150806001401883" alt="创建项目8"></p>
+<p>以后每一个项目都会上传到git@OSC中，大家可以down下来参考。<br>(<a href="http://git.oschina.net/devilwwj/AndroidDevelopCourse" target="_blank" rel="external">http://git.oschina.net/devilwwj/AndroidDevelopCourse</a>)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前面的一节课已经给大家介绍了如何搭建Android开发环境。<br>本节课就来给大家介绍如何使用Android studio来开发我们第一个Android应用程序。</p>
+<p><img src="http://img.blog.csdn.net/201508060010]]>
+    </summary>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/tags/Android/"/>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[A003-Android开发环境搭建]]></title>
+    <link href="http://www.devilwwj.com/2015/08/10/A003-Android%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://www.devilwwj.com/2015/08/10/A003-Android开发环境搭建/</id>
+    <published>2015-08-10T01:30:04.000Z</published>
+    <updated>2015-08-10T01:32:04.000Z</updated>
+    <content type="html"><![CDATA[<p>上一节课给大家粗略的介绍了在实际开发当中会使用到的一些开发工具，本节课正式给大家介绍如何在我们的PC来大家开发环境，主要有两个步骤：</p>
+<ol>
+<li>配置JDK&amp;SDK环境变量</li>
+<li>在Android Studio中配置project structure</li>
+</ol>
+<p>关于在windows下如何配置Android环境变量本节课不说，各位自己去百度，已经有很多总结得很好的文章，按照步骤来做就行。在Mac配置Android开发环境跟Windows系统下是类似的，都离不开配置PATH, 如下图：<br><img src="http://img.blog.csdn.net/20150805082217869" alt="/etc/profile"></p>
+<h2 id="配置PATH">配置PATH</h2><p>PATH=”.;$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$SDK_HOME/tools:$SDK_HOME/platforms-tools:$SDK_HOME/build-tools”</p>
+<blockquote>
+<p>在mac下配置JDK：<a href="http://blog.csdn.net/wwj_748?viewmode=contents" target="_blank" rel="external">http://blog.csdn.net/wwj_748?viewmode=contents</a><br>windows下配置JDK环境变量<br>计算机-&gt;右键-&gt;属性-&gt;高级系统设置-&gt;环境变量<br>NAME:JAVA_HOME<br>VALUE:C:\Program Files\Java\jdk1.7.0_75</p>
+</blockquote>
+<p>以上配置完之后，我们可以在命令行去测试是否配置成功：<br><img src="http://img.blog.csdn.net/20150805082634821" alt="环境变量配置"></p>
+<h2 id="配置Android_Studio">配置Android Studio</h2><p><img src="http://img.blog.csdn.net/20150805082945039" alt="Project Structure"></p>
+<p>配置完毕之后，我们就可以使用AS来创建项目了，下一节课会告诉大家如何使用AS来开发我们的HelloWorld，谢谢大家。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>上一节课给大家粗略的介绍了在实际开发当中会使用到的一些开发工具，本节课正式给大家介绍如何在我们的PC来大家开发环境，主要有两个步骤：</p>
+<ol>
+<li>配置JDK&amp;SDK环境变量</li>
+<li>在Android Studio中配置project stru]]>
+    </summary>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/tags/Android/"/>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[A002-开发工具介绍]]></title>
+    <link href="http://www.devilwwj.com/2015/08/05/A002-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://www.devilwwj.com/2015/08/05/A002-开发工具介绍/</id>
+    <published>2015-08-05T03:02:19.000Z</published>
+    <updated>2015-08-10T01:29:36.000Z</updated>
+    <content type="html"><![CDATA[<p>关于Android的开发工具有很多，基本上都可以在SDK中找到，下面我们逐个来看一下：</p>
+<p>首先我们使用的是Java语言进行Android应用的开发，那么Java的运行环境是少不了的了，我们需要在我们的PC中配置好jdk的环境变量，才能让我们的IDE跑起来。前面博文，小巫发表过一篇如何在macosx中配置java环境变量，如果大家不记得如何配置的话，可以参考那边博文，关于SDK的环境变量配置类似：<br><a href="http://blog.csdn.net/wwj_748/article/details/44628111" target="_blank" rel="external">Mac osx 下搭建java开发环境</a></p>
+<p>本篇博客不讲环境配置，会再下一节课给大家演示如何配置。</p>
+<h2 id="JDK">JDK</h2><p>JDK(Java Development kit) Java语言软件开发工具包<br>主要是用来运行和编译我们的java程序，如果在我们的开发环境中没有JDK的话，是无法进行编译的，如果只是运行java程序，只需要安装jre即可。目前jdk最新版本是8.0，大家想下载最新版本的jdk，可以到oracle官网下载，这里不多说。</p>
+<h2 id="IDE">IDE</h2><p>Eclipse &amp; Android Studio(Google官方）<br>Google已经明确说明不再支持Eclipse，我们在官网也找不到ADT Bundle的更新，所以建议童鞋们尽早脱离Eclipse的束缚，投入到AS的怀抱中吧。基于如何下载和安装AS，大家尽管百度，建议购买VPN，因为AS的更新会比较频繁，有时候各种需要翻墙的工作，没有VPN基本上想死。</p>
+<h2 id="SDK">SDK</h2><p>SDK是我们Android开发工具包，主要包含以下几个工具类：</p>
+<ul>
+<li>SDK Tools</li>
+<li>Platform Tools</li>
+<li>Build Tools<br>这些都可以在我们下载的SDK中找到<br><img src="http://img.blog.csdn.net/20150804091926727" alt="SDK"></li>
+</ul>
+<h3 id="SDK_Tools">SDK Tools</h3><p>android – 用于创建更新项目、虚拟机、sdk<br>ddms – Dalvik虚拟机调试监控服务<br>draw9patch – 用于制作.9.png图片<br>emulator – 用于启动模拟器<br>Hierarchy Viewer – 用于检视UI的工具<br>traceview – 用于对Android应用程序以及Framework层的代码进行性能分析<br>monitor – 替代traceview的一个工具</p>
+<h3 id="Platform_Tools">Platform Tools</h3><p>adb – android调试桥<br>sqlite3 – 用于对SQLite数据库进行操作<br>dmtracedump – 生成函数调用图<br>fastboot – 主要用于刷机的命令</p>
+<h3 id="Build_Tools">Build Tools</h3><p>aapt – 用于查看、创建、更新zip格式的文档附件（zip, jar, apk)<br>aidl – 用于生成Android接口定义文件<br>dx – 用于将.class文件生成classes.dex文件<br>zipalign – 对apk文件进行优化</p>
+<p>以上所介绍的开发工具，都需要各位去熟悉掌握，具体的使用方法，官方还有网上的一些资源已经介绍得非常详细，小巫就不在这里继续总结了。<br>具体可以参考以下两个网址：<br><a href="http://developer.android.com/tools/help/index.html" target="_blank" rel="external">http://developer.android.com/tools/help/index.html
+</a><br><a href="http://wiki.eoeandroid.com/Android_Tools" target="_blank" rel="external">http://wiki.eoeandroid.com/Android_Tools
+</a></p>
+<p>本节课就到此结束，下节课会给大家演示如何搭建Android开发环境，谢谢大家！！！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>关于Android的开发工具有很多，基本上都可以在SDK中找到，下面我们逐个来看一下：</p>
+<p>首先我们使用的是Java语言进行Android应用的开发，那么Java的运行环境是少不了的了，我们需要在我们的PC中配置好jdk的环境变量，才能让我们的IDE跑起来。前面博]]>
+    </summary>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/tags/Android/"/>
+    
+      <category term="Android" scheme="http://www.devilwwj.com/categories/Android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[A001-课程介绍]]></title>

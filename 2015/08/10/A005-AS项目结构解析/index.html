@@ -3,20 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | IT_xiao小巫</title>
+  <title>A005-AS项目结构解析 | IT_xiao小巫</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="上一节课给大家介绍了如何使用AS进行开发我们的第一个Android应用程序——HelloWorld，本节课来给大家系统介绍一下在Android Studio中Android的项目结构是怎样的，每一个文件夹和文件具体含义是什么，在我们Android程序中有什么作用，大家不妨来看看接下来的内容。
+我们创建了一个Android Project，打开就如下图所示：
+我们选择Project视图，就会有以下的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://www.devilwwj.com/2015/05/23/hello-world/index.html">
+<meta property="og:title" content="A005-AS项目结构解析">
+<meta property="og:url" content="http://www.devilwwj.com/2015/08/10/A005-AS项目结构解析/index.html">
 <meta property="og:site_name" content="IT_xiao小巫">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta property="og:description" content="上一节课给大家介绍了如何使用AS进行开发我们的第一个Android应用程序——HelloWorld，本节课来给大家系统介绍一下在Android Studio中Android的项目结构是怎样的，每一个文件夹和文件具体含义是什么，在我们Android程序中有什么作用，大家不妨来看看接下来的内容。
+我们创建了一个Android Project，打开就如下图所示：
+我们选择Project视图，就会有以下的">
+<meta property="og:image" content="http://img.blog.csdn.net/20150808144606324">
+<meta property="og:image" content="http://img.blog.csdn.net/20150808145148831">
+<meta property="og:image" content="http://img.blog.csdn.net/20150808152436661">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="A005-AS项目结构解析">
+<meta name="twitter:description" content="上一节课给大家介绍了如何使用AS进行开发我们的第一个Android应用程序——HelloWorld，本节课来给大家系统介绍一下在Android Studio中Android的项目结构是怎样的，每一个文件夹和文件具体含义是什么，在我们Android程序中有什么作用，大家不妨来看看接下来的内容。
+我们创建了一个Android Project，打开就如下图所示：
+我们选择Project视图，就会有以下的">
   
   
     <link rel="icon" href="/favicon.png">
@@ -90,11 +96,11 @@ Quick">
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header">未分类</h1>
+              <h1 class="header"><a class="page-title-link" href="/categories/Android/">Android</a></h1>
             </div>
             <div class="main-body-content">
               
-  <article id="post-hello-world" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <article id="post-A005-AS项目结构解析" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
       <!--  -->
       
@@ -102,35 +108,44 @@ Quick">
           
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      A005-AS项目结构解析
     </h1>
   
 
         </header>
       
       <p class="article-byline">
-        <a href="/2015/05/23/hello-world/" class="article-date">
-  <time datetime="2015-05-23T07:45:02.000Z" itemprop="datePublished">2015-05-23</time>
+        <a href="/2015/08/10/A005-AS项目结构解析/" class="article-date">
+  <time datetime="2015-08-10T01:31:14.000Z" itemprop="datePublished">2015-08-10</time>
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>上一节课给大家介绍了如何使用AS进行开发我们的第一个Android应用程序——HelloWorld，本节课来给大家系统介绍一下在Android Studio中Android的项目结构是怎样的，每一个文件夹和文件具体含义是什么，在我们Android程序中有什么作用，大家不妨来看看接下来的内容。</p>
+<p>我们创建了一个Android Project，打开就如下图所示：<br><img src="http://img.blog.csdn.net/20150808144606324" alt="项目全貌"></p>
+<p>我们选择Project视图，就会有以下的项目文档结构：<br><img src="http://img.blog.csdn.net/20150808145148831" alt="Project视图"></p>
+<p>上面笔者标注的数字是接下来要讲解的内容。<br>我们先来看1：<br>我们创建Application的时候，要求我们输入项目名称，1就是我们创建的项目，AndroidDevelopCourse是项目名称，在实际开发中，我们要为我们项目取一个能明确表达产品的名称，一般使用英文来描述，比如我们的课程是“<strong>Android开发课程</strong>”。1展开之后是我们完整的项目文档结构。</p>
+<p>2： 我们的Android 模块，在AS当中，分为了Project（工作空间），Module（模块）两种概念，我们创建项目的时候会默认创建一个模块，这里的app就是我们的一个module，一个Android应用程序的文档结构。</p>
+<p>3：libs，存放项目的类库，例如我们项目中用到的.jar文件。</p>
+<p>4：src，Android项目的源文件目录，存放应用程序中所有用到的资源文件。</p>
+<p>5：androidTest，存放我们应用程序单元测试代码，我们可以在这里进行单元测试。</p>
+<p>6：main，Android项目的主目录，包含java目录存放.java源代码文件，res存放资源文件，包含图像、字符串资源等等，AndroidManifest.xml是项目的配置文件。</p>
+<p>7：build.gradle，Android项目的Gradle构建脚本，详细解释看以下注释：<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 表示使用com.android.application插件。</span></span><br><span class="line">apply plugin: <span class="string">'com.android.application'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置所有android构建过程需要的参数</span></span><br><span class="line">android &#123;</span><br><span class="line">    <span class="comment">// 用于编译的SDK版本</span></span><br><span class="line">    compileSdkVersion <span class="number">21</span></span><br><span class="line">    <span class="comment">// 用于Gradle编译项目的工具版本</span></span><br><span class="line">    buildToolsVersion <span class="string">"21.1.2"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 项目默认配置</span></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        <span class="comment">// 应用程序包名</span></span><br><span class="line">        applicationId <span class="string">"com.devilwwj.androiddevelopcourse"</span></span><br><span class="line">        <span class="comment">// 最低支持Android版本</span></span><br><span class="line">        minSdkVersion <span class="number">14</span></span><br><span class="line">        <span class="comment">// 目标版本</span></span><br><span class="line">        targetSdkVersion <span class="number">21</span></span><br><span class="line">        <span class="comment">// 版本号</span></span><br><span class="line">        versionCode <span class="number">1</span></span><br><span class="line">        <span class="comment">// 版本名称</span></span><br><span class="line">        versionName <span class="string">"1.0"</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 编译类型。默认两个：release和debug</span></span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            <span class="comment">// 设置是否使用混淆</span></span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 混淆文件</span></span><br><span class="line">            proguardFiles getDefaultProguardFile(<span class="string">'proguard-android.txt'</span>), <span class="string">'proguard-rules.pro'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 用于配置引用的依赖</span></span><br><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">    <span class="keyword">compile</span> <span class="keyword">fileTree</span>(dir: <span class="string">'libs'</span>, <span class="keyword">include</span>: [<span class="string">'*.jar'</span>])</span><br><span class="line">    <span class="keyword">compile</span> <span class="string">'com.android.support:appcompat-v7:22.0.0'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>8：build，Android studio项目的编译目录。</p>
+<p>9：gradle，存放项目用到的构建工具。</p>
+<p>10：build.gradle，Android Studio项目的构建脚本<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Top-level build file where you can add configuration options common to all sub-projects/modules.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 用于设置驱动构建过程的代码</span></span><br><span class="line"><span class="keyword">buildscript</span> &#123;</span><br><span class="line">    <span class="comment">// 远程仓库</span></span><br><span class="line">    <span class="keyword">repositories</span></span><br><span class="line">        <span class="comment">// 这里依赖的远程仓库是jcenter</span></span><br><span class="line">        jcenter()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 声明了使用Android Studio gradle插件版本。</span></span><br><span class="line">    <span class="keyword">dependencies</span> &#123;</span><br><span class="line">        <span class="keyword">classpath</span> <span class="string">'com.android.tools.build:gradle:1.0.0'</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// NOTE: Do not place your application dependencies here; they belong</span></span><br><span class="line">        <span class="comment">// in the individual module build.gradle files</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">allprojects</span> &#123;</span><br><span class="line">    <span class="keyword">repositories</span> &#123;</span><br><span class="line">        jcenter()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>11：External Libraries，显示项目所依赖的所有类库。<br><img src="http://img.blog.csdn.net/20150808152436661" alt="项目依赖库"></p>
+<p>以上基本上就是完整的Android Studio项目的文档结构，有一些IDE的配置文件这里我们无需关注。</p>
+<p>如果大家想了解更多更详细关于Android Studio的使用，可以到Android Studio中文社区<a href="http://www.android-studio.org/" target="_blank" rel="external">http://www.android-studio.org/</a>，那么本节课就到这里了，写下大家，下次再见。</p>
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://www.devilwwj.com/2015/05/23/hello-world/" data-id="cid58x4rt000fht1zmvlsbmo3" class="article-share-link">分享到</a>
+        <a data-url="http://www.devilwwj.com/2015/08/10/A005-AS项目结构解析/" data-id="cid58x4se0010ht1zsyj68s0b" class="article-share-link">分享到</a>
         
-          <a href="http://www.devilwwj.com/2015/05/23/hello-world/#comments" class="article-comment-link">评论</a>
+          <a href="http://www.devilwwj.com/2015/08/10/A005-AS项目结构解析/#comments" class="article-comment-link">评论</a>
         
         
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+
       </footer>
     </div>
   </article>
@@ -168,20 +183,10 @@ Quick">
     
 <nav id="article-nav">
   
-    <a href="/2015/06/01/Cat-remember-1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <p class="article-nav-title">
-        
-          养猫记-领养篇
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
   
-  
-    <a href="/2015/05/21/android/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/08/10/A004-AS开发HelloWorld/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
-      <p class="article-nav-title">Android自定义View总结</p>
+      <p class="article-nav-title">A004-AS开发HelloWorld</p>
       <i class="icon" id="icon-chevron-left"></i>
     </a>
   
@@ -381,7 +386,7 @@ Quick">
 <script>
   var disqus_shortname = 'devilwwj';
   
-  var disqus_url = 'http://www.devilwwj.com/2015/05/23/hello-world/';
+  var disqus_url = 'http://www.devilwwj.com/2015/08/10/A005-AS项目结构解析/';
   
   (function(){
     var dsq = document.createElement('script');
