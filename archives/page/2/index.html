@@ -15,694 +15,1023 @@
 <meta name="twitter:title" content="IT_xiao小巫">
 <meta name="twitter:description" content="IT_xiao小巫的blog | Android | java | Mac">
   
+    <link rel="alternative" href="/atom.xml" title="IT_xiao小巫" type="application/atom+xml">
+  
   
     <link rel="icon" href="/favicon.png">
   
-
   <link rel="stylesheet" href="/css/style.css" type="text/css">
-  
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  
-  
-    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
-  
-  
-
-
-  
-    <style type="text/css">
-      .logo { background-image:url(/images/logo.png); }
-    </style>
-  
-
-  
-    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
-    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-
 </head>
-
 <body>
-  <div id="wrap">
-    <header id="header">
-  <div id="header-outer" class="outer">
-    <div class="container">
-      <div class="container-inner">
-        <div id="header-title">
-          <h1 class="logo-wrap">
-            <a href="/" class="logo"></a>
-          </h1>
-          
-            <h2 class="subtitle-wrap">
-              <p class="subtitle">在浮躁的世界安安静静敲代码</p>
-            </h2>
-          
-        </div>
-        <div id="header-inner" class="nav-container">
-          <a id="main-nav-toggle" class="nav-icon"></a>
-          <div class="nav-container-inner">
-            <ul id="main-nav">
-              
-                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
-              
-                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Android/">Android</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/养猫记/">养猫记</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/技术/">技术</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/日志/">日志</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/随笔/">随笔</a></li></ul>
-                  
-                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
-              
-            </ul>
-            <nav id="sub-nav">
-              <div id="search-form-wrap">
-                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="q" value="site:http://www.devilwwj.com"></form>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">devilwwj</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">在浮躁的世界安安静静敲代码</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 20px;">Android</a><a href="/tags/android/" style="font-size: 16.67px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a><a href="/tags/随笔/" style="font-size: 13.33px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
     </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">devilwwj</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="null" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">devilwwj</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">在浮躁的世界安安静静敲代码</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-A003-Android开发环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/10/A003-Android开发环境搭建/" class="article-date">
+  	<time datetime="2015-08-10T01:30:04.000Z" itemprop="datePublished">2015-08-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/10/A003-Android开发环境搭建/">A003-Android开发环境搭建</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>上一节课给大家粗略的介绍了在实际开发当中会使用到的一些开发工具，本节课正式给大家介绍如何在我们的PC来大家开发环境，主要有两个步骤：</p>
+<ol>
+<li>配置JDK&amp;SDK环境变量</li>
+<li>在Android Studio中配置project structure</li>
+</ol>
+<p>关于在windows下如何配置Android环境变量本节课不说，各位自己去百度，已经有很多总结得很好的文章，按照步骤来做就行。在Mac配置Android开发环境跟Windows系统下是类似的，都离不开配置PATH, 如下图：<br><img src="http://img.blog.csdn.net/20150805082217869" alt="/etc/profile"></p>
+<h2 id="配置PATH">配置PATH</h2><p>PATH=”.;$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$SDK_HOME/tools:$SDK_HOME/platforms-tools:$SDK_HOME/build-tools”</p>
+<blockquote>
+<p>在mac下配置JDK：<a href="http://blog.csdn.net/wwj_748?viewmode=contents" target="_blank" rel="external">http://blog.csdn.net/wwj_748?viewmode=contents</a><br>windows下配置JDK环境变量<br>计算机-&gt;右键-&gt;属性-&gt;高级系统设置-&gt;环境变量<br>NAME:JAVA_HOME<br>VALUE:C:\Program Files\Java\jdk1.7.0_75</p>
+</blockquote>
+<p>以上配置完之后，我们可以在命令行去测试是否配置成功：<br><img src="http://img.blog.csdn.net/20150805082634821" alt="环境变量配置"></p>
+<h2 id="配置Android_Studio">配置Android Studio</h2><p><img src="http://img.blog.csdn.net/20150805082945039" alt="Project Structure"></p>
+<p>配置完毕之后，我们就可以使用AS来创建项目了，下一节课会告诉大家如何使用AS来开发我们的HelloWorld，谢谢大家。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Android/">Android</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
-</header>
-    <div class="container">
-      <div class="main-body container-inner">
-        <div class="main-body-inner">
-          <section id="main">
-            <div class="main-body-header">
+  
+</article>
 
-              <h1 class="header"><i class="icon" id="icon-archive"></i>归档</h1>
-            </div>
-            <div class="main-body-content">
-              
+
+
+
+
+
+
   
+    <article id="post-A002-开发工具介绍" class="article article-type-post" itemscope itemprop="blogPost">
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year"><i class="icon" id="icon-calendar-o"></i>2015</a>
-        </div>
-        <div class="archives">
-    
-    
-    
-      <div class="article-row">
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
-      
-<a href="/2015/08/10/A003-Android开发环境搭建/" class="thumbnail">
-  
-    <span style="background-image:url(http://img.blog.csdn.net/20150805082217869
-)" alt="A003-Android开发环境搭建" class="thumbnail-image"></span>
-  
+    <div class="article-meta">
+      <a href="/2015/08/05/A002-开发工具介绍/" class="article-date">
+  	<time datetime="2015-08-05T03:02:19.000Z" itemprop="datePublished">2015-08-05</time>
 </a>
-
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-        <p class="date"><time datetime="2015-08-10T01:30:04.000Z" itemprop="datePublished">2015-08-10</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/08/10/A003-Android开发环境搭建/" class="title">A003-Android开发环境搭建</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        上一节课给大家粗略的介绍了在实际开发当中会使用到的一些开发工具，本节课正式给大家介绍如何在我们的PC来大家开发环境，主要有两个步骤：
-
-配置JDK&amp;amp;SDK环境变量
-在Android Studio中配置project structure
-
-关于在windows下如何配置Android环境变量本节课不说，各位自己去百度，已经有很多总结得很好的文章，按照步骤来做就行。在Mac配置Android开
-      </p>
     </div>
-  </article>
-
-    
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
-    
-    
+      <header class="article-header">
         
-  <article class="article article-summary">
-    <div class="article-summary-inner">
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/05/A002-开发工具介绍/">A002-开发工具介绍</a>
+    </h1>
+  
+
+      </header>
       
-<a href="/2015/08/05/A002-开发工具介绍/" class="thumbnail">
-  
-    <span style="background-image:url(http://img.blog.csdn.net/20150804091926727
-)" alt="A002-开发工具介绍" class="thumbnail-image"></span>
-  
-</a>
-
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-        <p class="date"><time datetime="2015-08-05T03:02:19.000Z" itemprop="datePublished">2015-08-05</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/08/05/A002-开发工具介绍/" class="title">A002-开发工具介绍</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        关于Android的开发工具有很多，基本上都可以在SDK中找到，下面我们逐个来看一下：
-首先我们使用的是Java语言进行Android应用的开发，那么Java的运行环境是少不了的了，我们需要在我们的PC中配置好jdk的环境变量，才能让我们的IDE跑起来。前面博文，小巫发表过一篇如何在macosx中配置java环境变量，如果大家不记得如何配置的话，可以参考那边博文，关于SDK的环境变量配置类似：Ma
-      </p>
-    </div>
-  </article>
-
     
-      </div>
-    
-  
-    
-    
-    
-    
-      <div class="article-row">
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
+    <div class="article-entry" itemprop="articleBody">
       
-<a href="/2015/08/04/A001-课程介绍/" class="thumbnail">
-  
-    <span style="background-image:url(www.devilwwj.com/images/Snip20150804_10.png
-)" alt="A001-课程介绍" class="thumbnail-image"></span>
-  
-</a>
+        <p>关于Android的开发工具有很多，基本上都可以在SDK中找到，下面我们逐个来看一下：</p>
+<p>首先我们使用的是Java语言进行Android应用的开发，那么Java的运行环境是少不了的了，我们需要在我们的PC中配置好jdk的环境变量，才能让我们的IDE跑起来。前面博文，小巫发表过一篇如何在macosx中配置java环境变量，如果大家不记得如何配置的话，可以参考那边博文，关于SDK的环境变量配置类似：<br><a href="http://blog.csdn.net/wwj_748/article/details/44628111" target="_blank" rel="external">Mac osx 下搭建java开发环境</a></p>
+<p>本篇博客不讲环境配置，会再下一节课给大家演示如何配置。</p>
+<h2 id="JDK">JDK</h2><p>JDK(Java Development kit) Java语言软件开发工具包<br>主要是用来运行和编译我们的java程序，如果在我们的开发环境中没有JDK的话，是无法进行编译的，如果只是运行java程序，只需要安装jre即可。目前jdk最新版本是8.0，大家想下载最新版本的jdk，可以到oracle官网下载，这里不多说。</p>
+<h2 id="IDE">IDE</h2><p>Eclipse &amp; Android Studio(Google官方）<br>Google已经明确说明不再支持Eclipse，我们在官网也找不到ADT Bundle的更新，所以建议童鞋们尽早脱离Eclipse的束缚，投入到AS的怀抱中吧。基于如何下载和安装AS，大家尽管百度，建议购买VPN，因为AS的更新会比较频繁，有时候各种需要翻墙的工作，没有VPN基本上想死。</p>
+<h2 id="SDK">SDK</h2><p>SDK是我们Android开发工具包，主要包含以下几个工具类：</p>
+<ul>
+<li>SDK Tools</li>
+<li>Platform Tools</li>
+<li>Build Tools<br>这些都可以在我们下载的SDK中找到<br><img src="http://img.blog.csdn.net/20150804091926727" alt="SDK"></li>
+</ul>
+<h3 id="SDK_Tools">SDK Tools</h3><p>android – 用于创建更新项目、虚拟机、sdk<br>ddms – Dalvik虚拟机调试监控服务<br>draw9patch – 用于制作.9.png图片<br>emulator – 用于启动模拟器<br>Hierarchy Viewer – 用于检视UI的工具<br>traceview – 用于对Android应用程序以及Framework层的代码进行性能分析<br>monitor – 替代traceview的一个工具</p>
+<h3 id="Platform_Tools">Platform Tools</h3><p>adb – android调试桥<br>sqlite3 – 用于对SQLite数据库进行操作<br>dmtracedump – 生成函数调用图<br>fastboot – 主要用于刷机的命令</p>
+<h3 id="Build_Tools">Build Tools</h3><p>aapt – 用于查看、创建、更新zip格式的文档附件（zip, jar, apk)<br>aidl – 用于生成Android接口定义文件<br>dx – 用于将.class文件生成classes.dex文件<br>zipalign – 对apk文件进行优化</p>
+<p>以上所介绍的开发工具，都需要各位去熟悉掌握，具体的使用方法，官方还有网上的一些资源已经介绍得非常详细，小巫就不在这里继续总结了。<br>具体可以参考以下两个网址：<br><a href="http://developer.android.com/tools/help/index.html" target="_blank" rel="external">http://developer.android.com/tools/help/index.html
+</a><br><a href="http://wiki.eoeandroid.com/Android_Tools" target="_blank" rel="external">http://wiki.eoeandroid.com/Android_Tools
+</a></p>
+<p>本节课就到此结束，下节课会给大家演示如何搭建Android开发环境，谢谢大家！！！</p>
 
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-        <p class="date"><time datetime="2015-08-04T00:22:35.000Z" itemprop="datePublished">2015-08-04</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/08/04/A001-课程介绍/" class="title">A001-课程介绍</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        课程目标针对人群：Android初学者&amp;amp;稍有基础的Android学员课程要求：Java编程语言基础&amp;amp;面向对象思维课程计划：大约70个课时课程目标：熟练掌握Android基础知识和掌握主流开发框架的使用，熟悉app开发流程
-
-如果大家只是入门，可以学习本套课程，如果大家有相应的基础，可以通过本套课程进行巩固，学习一些新的东西。
-
-授课方式真实API教学最新Android Studio
-      </p>
-    </div>
-  </article>
-
-    
-  
-    
-    
-    
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
       
-<a href="/2015/07/04/rental-record/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/随笔/">随笔</a></p>
-        <p class="date"><time datetime="2015-07-04T12:41:43.000Z" itemprop="datePublished">2015-07-04</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/07/04/rental-record/" class="title">租房记</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        租房记
-2015年7月4日，这一天我跟呆呆两个人走了一天，在地铁沿线附近找出租房，最终在员村附近找到了我们即将要一起居住的出租房，作为我们奋斗的起点，写这篇文章是为了记录一下这次找房子给我带来的一些体验和感触。2015年的七月，是我毕业刚好满一年的时间，时间过得飞快，想不到毕业一年后，我竟然和女友一起去找房子，回想大学四年也没有谈过恋爱的我，却能在毕业后找到女朋友，这也是比较戏剧化的事情，想想现在
-      </p>
     </div>
-  </article>
-
     
-      </div>
-    
-  
-    
-    
-    
-    
-      <div class="article-row">
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
+    <div class="article-info article-info-index">
       
-<a href="/2015/06/13/influene-the-person-around-with-you/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/随笔/">随笔</a></p>
-        <p class="date"><time datetime="2015-06-13T04:39:32.000Z" itemprop="datePublished">2015-06-13</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/06/13/influene-the-person-around-with-you/" class="title">就算我们不能改变世界，我们还能影响身边的人</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        正文：    就算改变不了世界，至少我们还能影响身边的人，想想你们身上传播的是正能量么？这个是学习一位同行的视频看到的，这里也分享一下，因为自己本身就是一直正能量过来的，不然也不会有今天，虽然今天的我好不到哪里去，但至少比以前强很多了，我们常常看到别人为什么比自己牛逼，却没想过别人怎么做到让自己牛逼的，他们都做了些什么事情？我不相信整天抱怨，抱怨生活不顺，抱怨工资没别人高的人会吸引到正能量的人，我
-      </p>
-    </div>
-  </article>
-
-    
-  
-    
-    
-    
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
       
-<a href="/2015/06/03/android-skin-update/" class="thumbnail">
-  
-    <span style="background-image:url(http://www.devilwwj.com/images/Snip20150603_1.png
-)" alt="android更换皮肤解决方案" class="thumbnail-image"></span>
-  
-</a>
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+	</div>
 
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
-        <p class="date"><time datetime="2015-06-03T07:08:24.000Z" itemprop="datePublished">2015-06-03</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/06/03/android-skin-update/" class="title">android更换皮肤解决方案</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        Android更换皮肤解决方案
-转载请注明出处：IT_xiao小巫
-
-本篇博客要给大家分享的一个关于Android应用换肤的Demo，大家可以到我的github去下载demo，以后博文涉及到的代码均会上传到github中统一管理。github地址：https://github.com/devilWwj/Android-skin-update
-
-思路换肤功能一般有什么？元素一般有背景颜色、字体颜色、
-      </p>
-    </div>
-  </article>
-
-    
-      </div>
-    
-  
-    
-    
-    
-    
-      <div class="article-row">
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
       
-<a href="/2015/06/02/ormlite/" class="thumbnail">
-  
-    <span style="background-image:url(http://www.devilwwj.com/images/Snip20150602_3.png
-)" alt="Android数据库框架ormlite使用精要" class="thumbnail-image"></span>
-  
-</a>
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Android/">Android</a>
+	</div>
 
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
-        <p class="date"><time datetime="2015-06-02T02:02:15.000Z" itemprop="datePublished">2015-06-02</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/06/02/ormlite/" class="title">Android数据库框架ormlite使用精要</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        Android 数据库框架ormlite 使用精要前言本篇博客记录一下笔者在实际开发中使用到的一个数据库框架，这个可以让我们快速实现数据库操作，避免频繁手写sql，提高我们的开发效率，减少出错的机率。
-ormlite是什么？首先可以去它的官网看看www.ormlite.com，它的英文全称是Object Relational Mapping，意思是对象关系映射；如果接触过Java EE开发的，一定
-      </p>
-    </div>
-  </article>
 
-    
-  
-    
-    
-    
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
       
-<a href="/2015/06/01/Cat-remember-1/" class="thumbnail">
-  
-    <span style="background-image:url(http://www.devilwwj.com/images/P50524-184911-001.jpg
-)" alt="养猫记-领养篇" class="thumbnail-image"></span>
-  
-</a>
-
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/养猫记/">养猫记</a></p>
-        <p class="date"><time datetime="2015-06-01T15:27:52.000Z" itemprop="datePublished">2015-06-01</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/06/01/Cat-remember-1/" class="title">养猫记-领养篇</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        2015年5月24日这天，小黑猫被我从别人那里抓回来，这是我第二次去抓它，第一次由于下班之后天黑，喂食它的大妈没出现，它一直躲在车底盘下，爬上爬下怎么也抓不住它，它旁边又有一只成年母猫守着，而那只母猫并不是它的母亲，听阿宅说，那只母猫不养自己的孩子，却养别人家的孩子，总之关系很乱，我也搞不清楚。先说一下小巫为什么会有念头领养一只猫咪，其实这个念头似乎有了很久了，小的时候在家里也见过野猫，但都是比较
-      </p>
+      <div class="clearfix"></div>
     </div>
-  </article>
-
     
-      </div>
-    
+  </div>
   
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-A001-课程介绍" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/04/A001-课程介绍/" class="article-date">
+  	<time datetime="2015-08-04T00:22:35.000Z" itemprop="datePublished">2015-08-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
-    
-    
-      <div class="article-row">
-    
+      <header class="article-header">
         
-  <article class="article article-summary">
-    <div class="article-summary-inner">
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/04/A001-课程介绍/">A001-课程介绍</a>
+    </h1>
+  
+
+      </header>
       
-<a href="/2015/05/23/hello-world/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-
-      <div class="article-meta">
-        <p class="category"></p>
-        <p class="date"><time datetime="2015-05-23T07:45:02.000Z" itemprop="datePublished">2015-05-23</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/05/23/hello-world/" class="title">Hello World</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-      </p>
-    </div>
-  </article>
-
     
-  
-    
-    
-    
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
+    <div class="article-entry" itemprop="articleBody">
       
-<a href="/2015/05/21/android/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
+        <h1 id="课程目标">课程目标</h1><p>针对人群：Android初学者&amp;稍有基础的Android学员<br>课程要求：Java编程语言基础&amp;面向对象思维<br>课程计划：大约70个课时课程目标：熟练掌握Android基础知识和掌握主流开发框架的使用，熟悉app开发流程</p>
+<blockquote>
+<p>如果大家只是入门，可以学习本套课程，如果大家有相应的基础，可以通过本套课程进行巩固，学习一些新的东西。</p>
+</blockquote>
+<h1 id="授课方式">授课方式</h1><p>真实API教学<br>最新Android Studio<br>开发工具接地气实战<br>PPT &amp; Git代码管理<br><img src="www.devilwwj.com/images/Snip20150804_10.png" alt=""></p>
+<blockquote>
+<p>使用原生Android API进行教学讲解<br>抛弃Eclipse，使用Android Studio作为开发工具课程内容紧扣实际开发，提供使用Demo代码和ppt都会上传到开源中国代码仓库中，供各位学习参考<a href="http://git.oschina.net/devilwwj/AndroidDevelopCourse" target="_blank" rel="external">http://git.oschina.net/devilwwj/AndroidDevelopCourse</a><br>博客会同步发表在CSDN和简书当中，如果大家对课程有什么不明白的地方可以给我留言，不要私聊我，一般我不会回复。本节是课程介绍，下一节课将会给大家介绍实际开发中经常用到的开发工具，谢谢大家。</p>
+</blockquote>
 
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/技术/">技术</a></p>
-        <p class="date"><time datetime="2015-05-21T11:14:33.000Z" itemprop="datePublished">2015-05-21</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2015/05/21/android/" class="title">Android自定义View总结</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        Android自定义View总结步骤
-自定义View的属性
-在View的构造方法获取我们自定义的属性值
-重写onMesure()方法
-重写onDraw()方法
-
-自定义View的属性在res/values/下建立attrs.xml，定义控件的属性和样式，如下所示：
-&amp;lt;declare-styleable name=&quot;CircleImageView&quot;&amp;gt;
-    &amp;lt;attr name=
-      </p>
+      
     </div>
-  </article>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+	</div>
 
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Android/">Android</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
     
-      </div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-rental-record" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/04/rental-record/" class="article-date">
+  	<time datetime="2015-07-04T12:41:43.000Z" itemprop="datePublished">2015-07-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
   
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/04/rental-record/">租房记</a>
+    </h1>
   
-    </div></section>
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="租房记">租房记</h1><blockquote>
+<p>2015年7月4日，这一天我跟呆呆两个人走了一天，在地铁沿线附近找出租房，最终在员村附近找到了我们即将要一起居住的出租房，作为我们奋斗的起点，写这篇文章是为了记录一下这次找房子给我带来的一些体验和感触。<br>2015年的七月，是我毕业刚好满一年的时间，时间过得飞快，想不到毕业一年后，我竟然和女友一起去找房子，回想大学四年也没有谈过恋爱的我，却能在毕业后找到女朋友，这也是比较戏剧化的事情，想想现在自己心智确实成长了不少，不像以往那么幼稚了，至少思想上不会那么幼稚。关于我的事情不多说，这里主要是谈谈这天找房子的一些想法，我从毕业到现在，如果算上刚找到的这个房子的话，可以说换了三次地方，每次换地方都感觉是一次升华（这是扯淡），一次进阶（主要是房租每次加倍，进毛阶）。为什么我换房子那么频繁，基本上半年就换了一次，这个主要是自己不在是一个人了，刚毕业的时候，我还单身，自己没啥钱，住的比较随便，只要去公司方便，价格便宜就可以了；后来帆哥乱入，我就跟他一起合租房子，那时租的地方，环境不是特别好，没有什么家私，最主要的是没空调，我就在哪里热了整个夏天，那是14年的时候了，很苦逼。14年11份，我跳槽离来到现在已经工作半年多的公司，因为我是一个很讨厌等待、人多并且拥挤的人，所以我就想换个房子离地铁方便，虽然也挤，但最起码不用把时间花在等待挤车上。就在2015年放完年假回来，我跟帆哥就搬到离地铁沿线比较近的东圃，环境比之前的要好，两房一厅，独立卫生间，有空调（草泥马，这个空调是坏的），就是附近没啥吃的地方，但整体上还是比较满意的，所以很开心就签了合同，准备住上一段时间。谁知道计划赶不上变化，我跟交往了还不到半年的女友，感情突飞猛进，度过了3个月的魔咒，互相觉得是可以互相依靠的人，所以我也就打算，等她毕业后就跟她一起住了，主要是我喜欢干净的地方，然后我的好舍友个人卫生习惯实在不敢恭维，分开住对大家都好，不用大眼瞪小眼的。7月份，呆呆也准备要毕业离开象牙塔，工作没稳定的她，我是她的依靠，所以我又只能换一个既能满足我方便上班，又能满足她舒适的需求的地方。这就是我要换房子的缘由。说到在大城市找出租房一般会通过什么途径，第一种就是上网找房源，比如上58同城、赶集网查找租房信息，这种方式非常不靠谱，一般会遇到信息不对称，虚假信息等等问题，我花了很多时间在网上查找资源，发现都是些不靠谱的信息，等我根据信息去找房子的时候，只想骂娘，什么垃圾网站，什么垃圾信息，会感觉整个社会都是灰暗的，怎么骗子辣么多，到后面直接放弃。第二种就是选定地方，找房产中介，这个稍微靠谱，信息基本上一致，但要收取高额中介费，一般式房租的50%，就是说如果你要租一个1500的房子，就要给750元的中介费，也是有点坑，尤其对刚毕业不久的童鞋。这些房子呢，基本上是要押二付一，我们算算这笔账哈，假如要租个一房一厅，价格1500左右，那就是第一个月要交1500 * 2 + 1500 + 750 = 5250元，草泥马的，如果一个人如果月薪连5000都不到的童鞋，岂不是连饭都吃不上，所以生活还是苦逼的，尤其对刚毕业不久的大学生们，注定要在大城市苦逼一段时间，这是必经之路。其他方式的找房子不在讨论范围，比如你是高富帅，有熟人这些就另外说了。我跟呆呆在地铁沿线，下了几个站，找了一遍，发现我们想居住的地方，如果要住的话只能住环境特差，然后价格非常贵的出租屋，因为想在黄金地段租房子，除非住小区房（辣么贵），不然只能住屌丝房，一千多块，还没有家私配置那种，所以如果你是屌丝在黄金地段租房绝对是个坑。这不我意识到是一个坑，果断放弃了，我们去了稍微远一点的下一站，然后就是被网上的租房信息坑，又果断放弃，再后来去到了稍微离工作地方远的员村，算不上黄金地段，但租房子的人多，能找到好一点的也非常艰难，我跟呆呆已经找了一天了，也是累得够呛，也准备要打退堂鼓了，去其他地方再看看，我想起之前看的地方，想再去看看，我就带着呆呆过去看，找到电话打过去，发现还有一个不错的一房一厅还没看过，找到一个负责租房的中介（这个不是房地产那样的中介，是帮忙房东做中介，她只收30%的中介费），最后带我们过去看房，发现找了那么多地方，对比了一下，然后问了呆呆的意见，我们都挺满意这个地方的，所以最后决定不考虑直接在下定金把这个地方租了，因为我也怕过几天这个房子就被别人给租了。整个租房的过程虽然波折，但也是一种不错的体验，因为可以让我们意识到，在大城市生活，如果不努力去改变的话，就只能一直疲于租房，为别人打工，最后啥也没有得到，只能一直处于社会的最底层。<br>过多一个星期我们还要面临搬家之苦，所以一般人时不会随便换房子的，因为搬家太折腾，假如东西多的话，只能叫搬家公司帮忙运东西了，这也是一笔钱。最后向在大城市的童鞋说一句话，租房不易，且租且珍惜。</p>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/随笔/">随笔</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-influene-the-person-around-with-you" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/13/influene-the-person-around-with-you/" class="article-date">
+  	<time datetime="2015-06-13T04:39:32.000Z" itemprop="datePublished">2015-06-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/13/influene-the-person-around-with-you/">就算我们不能改变世界，我们还能影响身边的人</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>正文：<br>    就算改变不了世界，至少我们还能影响身边的人，想想你们身上传播的是正能量么？这个是学习一位同行的视频看到的，这里也分享一下，因为自己本身就是一直正能量过来的，不然也不会有今天，虽然今天的我好不到哪里去，但至少比以前强很多了，我们常常看到别人为什么比自己牛逼，却没想过别人怎么做到让自己牛逼的，他们都做了些什么事情？我不相信整天抱怨，抱怨生活不顺，抱怨工资没别人高的人会吸引到正能量的人，我们选择加入一个团队也是一样的，你也不会想加入一个不积极向上的团队，因为团队里面的人并不能给你带来什么成长的体验。我们经常提到要求高薪，高职位，我觉得应该从自己身上考虑一下，假如给你这样的职位，你是否能承受这样的压力，能否把属于你的工作很好的执行下去，如果你不能说yes，还是继续积累经验，提升自己的能力，哪天等你真正牛逼了，不用你自己提，会有人找上来跟你谈合作，如果不相信，你牛逼给我看看。然而不管你怎么做，总会有比你牛逼的人存在，而你要做的不是跟他们比较，而是突破自己成为一个靠谱的人，说个实在话，不靠谱，谁鸟你啊。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/随笔/">随笔</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-android-skin-update" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/03/android-skin-update/" class="article-date">
+  	<time datetime="2015-06-03T07:08:24.000Z" itemprop="datePublished">2015-06-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/03/android-skin-update/">android更换皮肤解决方案</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android更换皮肤解决方案">Android更换皮肤解决方案</h1><blockquote>
+<p>转载请注明出处：<a href="http://www.devilwwj.com/" target="_blank" rel="external">IT_xiao小巫</a></p>
+</blockquote>
+<p>本篇博客要给大家分享的一个关于Android应用换肤的Demo，大家可以到我的github去下载demo，以后博文涉及到的代码均会上传到github中统一管理。<br>github地址：<a href="https://github.com/devilWwj/Android-skin-update" target="_blank" rel="external">https://github.com/devilWwj/Android-skin-update</a></p>
+<p><img src="http://www.devilwwj.com/images/Snip20150603_1.png" alt=""></p>
+<h2 id="思路">思路</h2><p>换肤功能一般有什么？<br>元素一般有背景颜色、字体颜色、图片、布局等等</p>
+<p>我们知道Android中有主题Theme还有style，theme是针对整个activity的，而style可以针对指定控件，如果比较少的替换可以在app内做，但如果需要动态来做，可以选择下面这种思路：<br><strong>把app和skin分开，将skin做成一个apk，作为一个插件来提供给app使用，这样可以做到在线下载皮肤，然后动态更换皮肤</strong></p>
+<p>下面这个demo，小巫是建立了一个res的工程项目，简单提供了一个colors.xml，在里面指定了背景颜色和按钮颜色：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line">    &lt;color name="day_btn_color"&gt;#E61ABD&lt;/color&gt;</span><br><span class="line">    &lt;color name="day_background"&gt;#38F709&lt;/color&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;color name="night_btn_color"&gt;#000000&lt;/color&gt;</span><br><span class="line">    &lt;color name="night_background"&gt;#FFFFFF&lt;/color&gt;</span><br><span class="line">&lt;/resources&gt;</span><br></pre></td></tr></table></figure></p>
+<p>里面没有任何逻辑代码，只提供资源文件，然后我们导出为skin.apk文件，复制到目标项目的assets中去。<br><img src="http://www.devilwwj.com/images/Snip20150603_2.png" alt=""></p>
+<p>因为这里不涉及到下载皮肤这个操作，所以直接放到assets目录下，然后在程序中把assets下的apk文件复制到sd卡中.<br>在程序中提供一个皮肤包管理器<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.skin;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.FileOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.InputStream;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"><span class="keyword">import</span> android.content.pm.PackageInfo;</span><br><span class="line"><span class="keyword">import</span> android.content.pm.PackageManager;</span><br><span class="line"><span class="keyword">import</span> android.content.res.AssetManager;</span><br><span class="line"><span class="keyword">import</span> android.content.res.Resources;</span><br><span class="line"><span class="keyword">import</span> android.os.AsyncTask;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 皮肤包管理器</span><br><span class="line"> * </span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> * </span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SkinPackageManager</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SkinPackageManager mInstance;</span><br><span class="line">    <span class="keyword">private</span> Context mContext;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 当前资源包名</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">public</span> String mPackageName;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 皮肤资源</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">public</span> Resources mResources;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SkinPackageManager</span><span class="params">(Context mContext)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>();</span><br><span class="line">        <span class="keyword">this</span>.mContext = mContext;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 获取单例</span><br><span class="line">     * </span><br><span class="line">     *<span class="javadoctag"> @param</span> mContext</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SkinPackageManager <span class="title">getInstance</span><span class="params">(Context mContext)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (mInstance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            mInstance = <span class="keyword">new</span> SkinPackageManager(mContext);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> mInstance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 从assets中复制apk到sd中</span><br><span class="line">     * </span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     *<span class="javadoctag"> @param</span> filename</span><br><span class="line">     *<span class="javadoctag"> @param</span> path</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">copyApkFromAssets</span><span class="params">(Context context, String filename,</span><br><span class="line">            String path)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> copyIsFinish = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 打开assets的输入流</span></span><br><span class="line">            InputStream is = context.getAssets().open(filename);</span><br><span class="line">            File file = <span class="keyword">new</span> File(path);</span><br><span class="line">            <span class="comment">// 创建一个新的文件</span></span><br><span class="line">            file.createNewFile();</span><br><span class="line">            FileOutputStream fos = <span class="keyword">new</span> FileOutputStream(file);</span><br><span class="line">            <span class="keyword">byte</span>[] temp = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">            <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> ((i = is.read(temp)) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                fos.write(temp, <span class="number">0</span>, i); <span class="comment">// 写入到文件</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            fos.close();</span><br><span class="line">            is.close();</span><br><span class="line">            copyIsFinish = <span class="keyword">true</span>;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> copyIsFinish;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 异步加载皮肤资源</span><br><span class="line">     * </span><br><span class="line">     *<span class="javadoctag"> @param</span> dexPath</span><br><span class="line">     *            需要加载的皮肤资源</span><br><span class="line">     *<span class="javadoctag"> @param</span> callback</span><br><span class="line">     *            回调接口</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinAsync</span><span class="params">(String dexPath, <span class="keyword">final</span> loadSkinCallBack callback)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> AsyncTask&lt;String, Void, Resources&gt;() &#123;</span><br><span class="line"></span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPreExecute</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                <span class="keyword">super</span>.onPreExecute();</span><br><span class="line">                <span class="keyword">if</span> (callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    callback.startloadSkin();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">protected</span> Resources <span class="title">doInBackground</span><span class="params">(String... params)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> (params.length == <span class="number">1</span>) &#123;</span><br><span class="line">                        <span class="comment">//</span></span><br><span class="line">                        String dexPath_tmp = params[<span class="number">0</span>];</span><br><span class="line">                        <span class="comment">// 得到包管理器</span></span><br><span class="line">                        PackageManager mpm = mContext.getPackageManager();</span><br><span class="line">                        <span class="comment">// 得到包信息</span></span><br><span class="line">                        PackageInfo mInfo = mpm.getPackageArchiveInfo(</span><br><span class="line">                                dexPath_tmp, PackageManager.GET_ACTIVITIES);</span><br><span class="line">                        mPackageName = mInfo.packageName;</span><br><span class="line"></span><br><span class="line">                        <span class="comment">// AssetManager实例</span></span><br><span class="line">                        AssetManager assetManager = AssetManager.class</span><br><span class="line">                                .newInstance();</span><br><span class="line">                        <span class="comment">// 通过反射调用addAssetPath方法</span></span><br><span class="line">                        Method addAssetPath = assetManager.getClass()</span><br><span class="line">                                .getMethod(<span class="string">"addAssetPath"</span>, String.class);</span><br><span class="line">                        addAssetPath.invoke(assetManager, dexPath_tmp);</span><br><span class="line"></span><br><span class="line">                        <span class="comment">// 得到资源实例</span></span><br><span class="line">                        Resources superRes = mContext.getResources();</span><br><span class="line">                        <span class="comment">// 实例化皮肤资源</span></span><br><span class="line">                        Resources skinResource = <span class="keyword">new</span> Resources(assetManager,</span><br><span class="line">                                superRes.getDisplayMetrics(),</span><br><span class="line">                                superRes.getConfiguration());</span><br><span class="line">                        <span class="comment">// 保存资源路径</span></span><br><span class="line">                        SkinConfig.getInstance(mContext).setSkinResourcePath(</span><br><span class="line">                                dexPath_tmp);</span><br><span class="line">                        <span class="keyword">return</span> skinResource;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPostExecute</span><span class="params">(Resources result)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">super</span>.onPostExecute(result);</span><br><span class="line">                mResources = result;</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 这里执行回调方法</span></span><br><span class="line">                <span class="keyword">if</span> (callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (mResources != <span class="keyword">null</span>) &#123;</span><br><span class="line">                        callback.loadSkinSuccess();</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        callback.loadSkinFail();</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;.execute(dexPath);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">interface</span> <span class="title">loadSkinCallBack</span> </span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startloadSkin</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinSuccess</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinFail</span><span class="params">()</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>重点关注这个类，里面提供了一个异步方法对包和asset进行操作，这里用到了反射机制，反射调用addAssetPath来添加assets的路径，这个路径就是我们skin.apk的路径。具体细节，各位查看代码。</p>
+<p>我们在Activity界面中使用上面提供的方法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.skin;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.app.Activity;</span><br><span class="line"><span class="keyword">import</span> android.content.res.Resources;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.os.Environment;</span><br><span class="line"><span class="keyword">import</span> android.util.Log;</span><br><span class="line"><span class="keyword">import</span> android.view.View;</span><br><span class="line"><span class="keyword">import</span> android.view.View.OnClickListener;</span><br><span class="line"><span class="keyword">import</span> android.widget.Button;</span><br><span class="line"><span class="keyword">import</span> android.widget.TextView;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.devilwwj.skin.SkinPackageManager.loadSkinCallBack;</span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 功能：切换皮肤</span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> <span class="keyword">implements</span> <span class="title">OnClickListener</span>,</span><br><span class="line">        <span class="title">ISkinUpdate</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String APK_NAME = <span class="string">"skin.apk"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String DEX_PATH = Environment</span><br><span class="line">            .getExternalStorageDirectory().getAbsolutePath() + <span class="string">"/skin.apk"</span>;</span><br><span class="line">    <span class="keyword">private</span> Button dayButton;</span><br><span class="line">    <span class="keyword">private</span> Button nightButton;</span><br><span class="line">    <span class="keyword">private</span> TextView textView;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> nightModel = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        dayButton = (Button) findViewById(R.id.btn_day);</span><br><span class="line">        nightButton = (Button) findViewById(R.id.btn_night);</span><br><span class="line">        textView = (TextView) findViewById(R.id.text);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 把apk文件复制到sd卡</span></span><br><span class="line">        SkinPackageManager.getInstance(<span class="keyword">this</span>).copyApkFromAssets(<span class="keyword">this</span>, APK_NAME,</span><br><span class="line">                DEX_PATH);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onResume</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onResume();</span><br><span class="line">        <span class="keyword">if</span> (SkinPackageManager.getInstance(<span class="keyword">this</span>).mResources != <span class="keyword">null</span>) &#123;</span><br><span class="line">            updateTheme();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">switch</span> (v.getId()) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.btn_day:</span><br><span class="line">            nightModel = <span class="keyword">false</span>;</span><br><span class="line">            loadSkin();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.btn_night:</span><br><span class="line">            nightModel = <span class="keyword">true</span>;</span><br><span class="line">            loadSkin();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 加载皮肤</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">loadSkin</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        SkinPackageManager.getInstance(<span class="keyword">this</span>).loadSkinAsync(DEX_PATH,</span><br><span class="line">                <span class="keyword">new</span> loadSkinCallBack() &#123;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startloadSkin</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                        Log.d(<span class="string">"xiaowu"</span>, <span class="string">"startloadSkin"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinSuccess</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                        Log.d(<span class="string">"xiaowu"</span>, <span class="string">"loadSkinSuccess"</span>);</span><br><span class="line">                        <span class="comment">// 然后这里更新主题</span></span><br><span class="line">                        updateTheme();</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">loadSkinFail</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                        Log.d(<span class="string">"xiaowu"</span>, <span class="string">"loadSkinFail"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateTheme</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Resources mResource = SkinPackageManager.getInstance(<span class="keyword">this</span>).mResources;</span><br><span class="line">        <span class="keyword">if</span> (nightModel) &#123;</span><br><span class="line">            <span class="comment">// 如果是黑夜的模式，则加载黑夜的主题</span></span><br><span class="line">            <span class="keyword">int</span> id1 = mResource.getIdentifier(<span class="string">"night_btn_color"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            nightButton.setBackgroundColor(mResource.getColor(id1));</span><br><span class="line">            <span class="keyword">int</span> id2 = mResource.getIdentifier(<span class="string">"night_background"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            nightButton.setTextColor(mResource.getColor(id2));</span><br><span class="line">            textView.setTextColor(mResource.getColor(id2));</span><br><span class="line">            </span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 如果是白天模式，则加载白天的主题</span></span><br><span class="line">            <span class="keyword">int</span> id1 = mResource.getIdentifier(<span class="string">"day_btn_color"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            dayButton.setBackgroundColor(mResource.getColor(id1));</span><br><span class="line">            <span class="keyword">int</span> id2 = mResource.getIdentifier(<span class="string">"day_background"</span>, <span class="string">"color"</span>,</span><br><span class="line">                    <span class="string">"com.devilwwj.res"</span>);</span><br><span class="line">            dayButton.setTextColor(mResource.getColor(id2));</span><br><span class="line">            textView.setTextColor(mResource.getColor(id2));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>我们可以保存一个模式，比如黑夜白天模式，每次启动按照前面保存的模式来显示皮肤。我们可以看到上面是通过调用getIdentifier方法来得到指定的资源的id，name是我们在资源文件中指定的名字。</p>
+<p>最后，各位自己跑一遍这样的流程：</p>
+<ol>
+<li>导出res的apk文件</li>
+<li>复制到目标项目的assets目录下</li>
+<li>查看切换皮肤的效果</li>
+</ol>
+<p>参考博文：<a href="http://blog.csdn.net/yuanzeyao/article/details/42390431" target="_blank" rel="external">http://blog.csdn.net/yuanzeyao/article/details/42390431</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-ormlite" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/02/ormlite/" class="article-date">
+  	<time datetime="2015-06-02T02:02:15.000Z" itemprop="datePublished">2015-06-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/02/ormlite/">Android数据库框架ormlite使用精要</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android_数据库框架ormlite_使用精要">Android 数据库框架ormlite 使用精要</h1><h2 id="前言">前言</h2><p>本篇博客记录一下笔者在实际开发中使用到的一个数据库框架，这个可以让我们快速实现数据库操作，避免频繁手写sql，提高我们的开发效率，减少出错的机率。</p>
+<h2 id="ormlite是什么？">ormlite是什么？</h2><p>首先可以去它的官网看看<a href="www.ormlite.com">www.ormlite.com</a>，它的英文全称是Object Relational Mapping，意思是对象关系映射；如果接触过Java EE开发的，一定知道Java Web开发就有一个类似的数据库映射框架——Hibernate。简单来说，就是我们定义一个实体类，利用这个框架，它可以帮我们吧这个实体映射到我们的数据库中，在Android中是SQLite，数据中的字段就是我们定义实体的成员变量。</p>
+<h2 id="为什么要用ormlite？">为什么要用ormlite？</h2><p><strong>先说说优点</strong></p>
+<ol>
+<li>轻量级</li>
+<li>使用简单，易上手</li>
+<li>封装完善</li>
+<li>文档全面</li>
+</ol>
+<p><strong>缺点</strong></p>
+<ol>
+<li>基于反射，效率较低</li>
+<li>缺少中文翻译文档</li>
+</ol>
+<h2 id="如何使用？">如何使用？</h2><h3 id="导入jar包到项目libs文件夹下">导入jar包到项目libs文件夹下</h3><p>到<a href="http://ormlite.com/releases/" target="_blank" rel="external">http://ormlite.com/releases/</a>下载相应版本的jar，下载最新的，目前是最新版本4.49。我们下载稳定的4.48即可。</p>
+<p><img src="http://www.devilwwj.com/images/Snip20150602_3.png" alt=""></p>
+<h3 id="继承OrmLiteSqliteOpenHelper类定义数据库帮助类">继承OrmLiteSqliteOpenHelper类定义数据库帮助类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.db;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"><span class="keyword">import</span> android.database.sqlite.SQLiteDatabase;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Img;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.PackageInfo;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Photographer;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Theme;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.Dao;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.support.ConnectionSource;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.table.TableUtils;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 功能：数据库帮助类</span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBHelper</span> <span class="keyword">extends</span> <span class="title">OrmLiteSqliteOpenHelper</span> </span>&#123;</span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 数据库名字</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String DB_NAME = <span class="string">"test.db"</span>;</span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 数据库版本</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> DB_VERSION = <span class="number">1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 用来存放Dao的地图</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">private</span> Map&lt;String, Dao&gt; daos = <span class="keyword">new</span> HashMap&lt;String, Dao&gt;();</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> DBHelper instance;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 获取单例</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> DBHelper <span class="title">getHelper</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        context = context.getApplicationContext();</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">synchronized</span> (DBHelper.class) &#123;</span><br><span class="line">                <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> DBHelper(context);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 构造方法</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DBHelper</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, DB_NAME, <span class="keyword">null</span>, DB_VERSION);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 这里创建表</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(SQLiteDatabase sqliteDatabase, ConnectionSource connectionSource)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 创建表</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            TableUtils.createTable(connectionSource, PackageInfo.class);</span><br><span class="line">            TableUtils.createTable(connectionSource, Photographer.class);</span><br><span class="line">            TableUtils.createTable(connectionSource, Theme.class);</span><br><span class="line">            TableUtils.createTable(connectionSource, Img.class);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 这里进行更新表操作</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onUpgrade</span><span class="params">(SQLiteDatabase sqLiteDatabase, ConnectionSource connectionSource, <span class="keyword">int</span> oldVersion,</span><br><span class="line">            <span class="keyword">int</span> newVersion)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span>  </span><br><span class="line">        &#123;  </span><br><span class="line">            TableUtils.dropTable(connectionSource, PackageInfo.class, <span class="keyword">true</span>);  </span><br><span class="line">            TableUtils.dropTable(connectionSource, Photographer.class, <span class="keyword">true</span>);  </span><br><span class="line">            TableUtils.dropTable(connectionSource, Theme.class, <span class="keyword">true</span>);  </span><br><span class="line">            TableUtils.dropTable(connectionSource, Img.class, <span class="keyword">true</span>);</span><br><span class="line">            onCreate(sqLiteDatabase, connectionSource);  </span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e)  </span><br><span class="line">        &#123;  </span><br><span class="line">            e.printStackTrace();  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 通过类来获得指定的Dao</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> Dao <span class="title">getDao</span><span class="params">(Class clazz)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        Dao dao = <span class="keyword">null</span>;</span><br><span class="line">        String className = clazz.getSimpleName();</span><br><span class="line">        <span class="keyword">if</span> (daos.containsKey(className)) &#123;</span><br><span class="line">            dao = <span class="keyword">super</span>.getDao(clazz);</span><br><span class="line">            daos.put(className, dao); </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dao;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 释放资源</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.close();</span><br><span class="line">        <span class="keyword">for</span> (String key : daos.keySet()) &#123;</span><br><span class="line">            Dao dao = daos.get(key);</span><br><span class="line">            dao = <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="定义实体类Bean，代表一张表">定义实体类Bean，代表一张表</h3><p>创建上面用到的Bean，在ormlite中，它代表数据库中的一张表，我们所定义的所有成员变量均可为表中的字段，只要我们按照它提供的注解方式来指定成员变量属性。</p>
+<p>举个栗子：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.ForeignCollection;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.DatabaseField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.ForeignCollectionField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.table.DatabaseTable;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 套餐</span><br><span class="line"> *<span class="javadoctag"> @author</span> wwj_748</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="annotation">@DatabaseTable</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PackageInfo</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</span><br><span class="line">    <span class="annotation">@DatabaseField</span>(id = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String pid;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String photographerId;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">    <span class="annotation">@DatabaseField</span>()</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> cost;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String description;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String detail;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 一个套餐可以对应多个主题</span></span><br><span class="line">    <span class="annotation">@ForeignCollectionField</span>(eager = <span class="keyword">true</span>) <span class="comment">// 必须</span></span><br><span class="line">    <span class="keyword">public</span> ForeignCollection&lt;Theme&gt; themes;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 外部对象，一个套餐只对应一个摄影师，一个摄影师可以对应多个套餐</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> Photographer photographer;</span><br><span class="line">    </span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Package [id="</span> + id + <span class="string">", pid="</span> + pid + <span class="string">", photographerId="</span></span><br><span class="line">                + photographerId + <span class="string">", name="</span> + name + <span class="string">", cost="</span> + cost</span><br><span class="line">                + <span class="string">", description="</span> + description + <span class="string">", detail="</span> + detail + <span class="string">"]"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面定义了一个套餐对象，我们来看一下它所用到的几个注解：<br>@DatabaseTable：表示定义了一个数据表，如果不指定名字，在Android中会以类名作为表名，如packageInfo就是SQLite数据库中的表名，我们也可以指定表名，@DatabaseTable(tableName = “tb_package”) 。</p>
+<p>DatabaseField：表示定义了数据中的一个字段，id表示数据中的一个主键，如果指定为generatedId，表示自动增长id，我们不需要给它赋值。其他字段，可以使用columnName来指定字段名，canBeNull表示是否为空，这些赋值可以按照以下来指定<br>-（id = true, canBeNull = false）</p>
+<ul>
+<li><p>(columnName = “name”)</p>
+<p>还有更多的注解用法，可以到官网查看它提供的文档，非常清楚详尽了，笔者这里不多说。</p>
+<h3 id="ormlite的外键约束（一对一、一对多、多对多关系）">ormlite的外键约束（一对一、一对多、多对多关系）</h3><p>使用这个框架需要比较注意的一点就是外键约束，这里笔者只讨论一对一、一对多的情况。<br>上一节我们定义了PackageInfo这个实体，里面有这样的定义：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 一个套餐可以对应多个主题</span></span><br><span class="line">    <span class="annotation">@ForeignCollectionField</span>(eager = <span class="keyword">true</span>) <span class="comment">// 必须</span></span><br><span class="line">    <span class="keyword">public</span> ForeignCollection&lt;Theme&gt; themes;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 外部对象，一个套餐只对应一个摄影师，一个摄影师可以对应多个套餐</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> Photographer photographer;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这里就用到了外键的约束，我们来分析一下：<br>一个套餐对应多个主题：1:n的关系<br>一个套餐对应一个摄影师：1:1的关系</p>
+<p>在n的一方，我们可以使用@ForeignCollectionField这样的注解，eager = true表示可以进行懒加载。</p>
+<p>如果是一对一，我们还是用@DatabaseField注解，但要指定(foreign = true)表示是一个外键。</p>
+<p>现在我们看一下多的一方是怎么定义的：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.ForeignCollection;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.DatabaseField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.field.ForeignCollectionField;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.table.DatabaseTable;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 摄影主题</span><br><span class="line"> * </span><br><span class="line"> *<span class="javadoctag"> @author</span> wwj_748</span><br><span class="line"> * </span><br><span class="line"> */</span></span><br><span class="line"><span class="annotation">@DatabaseTable</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Theme</span> <span class="keyword">implements</span> <span class="title">Serializable</span></span>&#123;</span><br><span class="line">    <span class="annotation">@DatabaseField</span>(id = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> String id;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String tid;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String photographerId;</span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String packageId; <span class="comment">// 隶属套餐</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String status; <span class="comment">// 后台审核状态</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String title; <span class="comment">// 标题</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String coverId; <span class="comment">// 封面Id</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String coverUrl; <span class="comment">// 封面img</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String detail;  <span class="comment">// 详情</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> photoCount; <span class="comment">// 图片个数</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String photos; <span class="comment">//图集</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String createTime; <span class="comment">// 上传时间</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String recordTime; <span class="comment">// 拍摄时间</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">double</span> cost; <span class="comment">// 花费</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String tags; <span class="comment">// 标签</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String address;<span class="comment">// 地址</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> String loacationCode; <span class="comment">// 位置代码</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> popularCount; <span class="comment">// 热度</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(defaultValue = <span class="string">"0"</span>)</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> favStatus; <span class="comment">// 收藏状态</span></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 外部对象字段</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>, foreignAutoRefresh = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> PackageInfo mPackage;</span><br><span class="line">    </span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>, foreignAutoRefresh = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> Photographer photographer;</span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 这里需要注意的是：属性类型只能是ForeignCollection&lt;T&gt;或者Collection&lt;T&gt;</span><br><span class="line">     * 如果需要懒加载（延迟加载）可以在@ForeignCollectionField加上参数eager=false</span><br><span class="line">     * 这个属性也就说明一个部门对应着多个用户</span><br><span class="line">     */</span></span><br><span class="line">    <span class="annotation">@ForeignCollectionField</span>(eager = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> ForeignCollection&lt;Img&gt; imgs;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>我们这里不关注其他字段，关注它的外键字段，前面我们说到，一个套餐对应多个主题，所以我们在主题这个实体类中也需要定义一个关联套餐的字段。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 外部对象字段</span></span><br><span class="line">    <span class="annotation">@DatabaseField</span>(foreign = <span class="keyword">true</span>, foreignAutoRefresh = <span class="keyword">true</span>)</span><br><span class="line">    <span class="keyword">public</span> PackageInfo mPackage;</span><br></pre></td></tr></table></figure></p>
+<p><strong>注：要实现一对多关系，一定要这样定义，不然会出错。</strong></p>
+<h3 id="定义Bean的DAO，对数据库进行增、删、改、查">定义Bean的DAO，对数据库进行增、删、改、查</h3><p>这里笔者举个例子，大家以后开发根据这样来添加相应的业务逻辑方法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.devilwwj.ormlite.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.db.DBHelper;</span><br><span class="line"><span class="keyword">import</span> com.devilwwj.ormlite.model.Theme;</span><br><span class="line"><span class="keyword">import</span> com.j256.ormlite.dao.Dao;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 定义数据访问对象，对指定的表进行增删改查操作</span><br><span class="line"> *<span class="javadoctag"> @author</span> devilwwj</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThemeDao</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> Dao&lt;Theme, Integer&gt; themeDao;</span><br><span class="line">    <span class="keyword">private</span> DBHelper dbHelper;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 构造方法</span><br><span class="line">     * 获得数据库帮助类实例，通过传入Class对象得到相应的Dao</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ThemeDao</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            dbHelper = DBHelper.getHelper(context);</span><br><span class="line">            themeDao = dbHelper.getDao(Theme.class);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 添加一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Theme theme)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themeDao.create(theme);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 删除一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delete</span><span class="params">(Theme theme)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themeDao.delete(theme);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 更新一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(Theme theme)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themeDao.update(theme);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 查询一条记录</span><br><span class="line">     *<span class="javadoctag"> @param</span> id</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Theme <span class="title">queryForId</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">        Theme theme = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            theme = themeDao.queryForId(id);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> theme;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 查询所有记录</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Theme&gt; <span class="title">queryForAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        List&lt;Theme&gt; themes = <span class="keyword">new</span> ArrayList&lt;Theme&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            themes = themeDao.queryForAll();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> themes;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面笔者定义了一个Dao类，用来进行数据访问的，定义了增加、删除、更新、查询几个方法，我们在应用中就可以使用这个几个方法来帮助我们完成相关的操作。</p>
+<p>具体使用方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Theme theme = <span class="keyword">new</span> Theme()；</span><br><span class="line"><span class="comment">// 赋值</span></span><br><span class="line">theme.id = <span class="number">1</span>;</span><br><span class="line">theme.title = <span class="string">"主题"</span>;</span><br><span class="line">theme.detail = <span class="string">"主题详情"</span>；</span><br><span class="line"><span class="keyword">new</span> ThemeDao(context).add(theme);</span><br></pre></td></tr></table></figure>
+<h3 id="ormlite的批处理操作">ormlite的批处理操作</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="javadoc">/**</span><br><span class="line">     * 转化json对象为数据库对象</span><br><span class="line">     *<span class="javadoctag"> @param</span> context</span><br><span class="line">     *<span class="javadoctag"> @param</span> theme</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     *<span class="javadoctag"> @throws</span> SQLException</span><br><span class="line">     *<span class="javadoctag"> @throws</span> Exception</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Theme <span class="title">ConvertTheme</span><span class="params">(Context context, <span class="keyword">final</span> JSONObject theme)</span> <span class="keyword">throws</span> SQLException, Exception </span>&#123;</span><br><span class="line">        JSONObject photographerObj = theme.getJSONObject(<span class="string">"photographer"</span>);</span><br><span class="line">        JSONObject packageObj = theme.getJSONObject(<span class="string">"package"</span>);</span><br><span class="line">        </span><br><span class="line">        ThemeDao themeDao = <span class="keyword">new</span> ThemeDao(context);</span><br><span class="line">        </span><br><span class="line">        PhotographDao photographDao = <span class="keyword">new</span> PhotographDao(context);</span><br><span class="line">        <span class="comment">// 根据id查询摄影师</span></span><br><span class="line">        Photographer mPhotographer = photographDao.queryForId(theme.optInt(<span class="string">"photographerId"</span>));</span><br><span class="line">        <span class="keyword">if</span> (mPhotographer == <span class="keyword">null</span>)</span><br><span class="line">            mPhotographer = <span class="keyword">new</span> Photographer();</span><br><span class="line"></span><br><span class="line">        mPhotographer.id = theme.optString(<span class="string">"photographerId"</span>);</span><br><span class="line">        mPhotographer.name = photographerObj.optString(<span class="string">"nickname"</span>);</span><br><span class="line">        mPhotographer.serviceArea = photographerObj.optString(<span class="string">"serviceArea"</span>);</span><br><span class="line">        mPhotographer.avatar = photographerObj.optString(<span class="string">"avatar"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 这里创建或更新摄影师</span></span><br><span class="line">        photographDao.createOrUpdate(mPhotographer);</span><br><span class="line">        </span><br><span class="line">        PackageDao packageDao = <span class="keyword">new</span> PackageDao(context);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 根据id查询套餐</span></span><br><span class="line">        PackageInfo mPackage = packageDao.queryForId(packageObj.optInt(<span class="string">"id"</span>));</span><br><span class="line">        <span class="keyword">if</span> (mPackage == <span class="keyword">null</span>) </span><br><span class="line">            mPackage = <span class="keyword">new</span> PackageInfo();</span><br><span class="line">        </span><br><span class="line">        mPackage.id = packageObj.optInt(<span class="string">"id"</span>);</span><br><span class="line">        mPackage.name = packageObj.optString(<span class="string">"title"</span>);</span><br><span class="line">        mPackage.cost = packageObj.optInt(<span class="string">"cost"</span>);</span><br><span class="line">        mPackage.detail = packageObj.optString(<span class="string">"detail"</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 这里创建或更新套餐</span></span><br><span class="line">        packageDao.createOrUpdate(mPackage);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 根据id查询作品</span></span><br><span class="line">        Theme mThemeTmp = themeDao.queryForId(</span><br><span class="line">                theme.optInt(<span class="string">"id"</span>));</span><br><span class="line">        <span class="keyword">if</span> (mThemeTmp == <span class="keyword">null</span>)</span><br><span class="line">            mThemeTmp = <span class="keyword">new</span> Theme(); </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">final</span> Theme mTheme = mThemeTmp;</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        mTheme.id = theme.optString(<span class="string">"id"</span>);</span><br><span class="line">        mTheme.title = theme.optString(<span class="string">"title"</span>);</span><br><span class="line">        <span class="comment">// mTheme.coverId = theme.optString("place");</span></span><br><span class="line">        <span class="comment">// mTheme.coverUrl = theme.optString("coverUrl");</span></span><br><span class="line">        mTheme.photographerId = theme.optString(<span class="string">"photographerId"</span>);</span><br><span class="line">        mTheme.detail = theme.optString(<span class="string">"detail"</span>);</span><br><span class="line">        <span class="comment">// mTheme.cost = theme.optDouble("cost");</span></span><br><span class="line">        <span class="comment">// mTheme.recordTime = theme.optString("recordTime");</span></span><br><span class="line">        mTheme.favStatus = theme.optInt(<span class="string">"isFav"</span>);</span><br><span class="line">        mTheme.photoCount = theme.optInt(<span class="string">"photoCount"</span>);</span><br><span class="line">        mTheme.tags = theme.optString(<span class="string">"tags"</span>);</span><br><span class="line">        mTheme.packageId = theme.optString(<span class="string">"packageId"</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 同步更新</span></span><br><span class="line">        mTheme.photographer = mPhotographer;</span><br><span class="line">        mTheme.mPackage = mPackage;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建或更新主题</span></span><br><span class="line">        themeDao.createOrUpdate(mTheme);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">final</span> ImgDao mDao = <span class="keyword">new</span> ImgDao(context);</span><br><span class="line">        Dao&lt;Img, Integer&gt; imgDao = mDao.getImgDao();</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        <span class="comment">// 执行批处理操作</span></span><br><span class="line">        imgDao.callBatchTasks(<span class="keyword">new</span> Callable&lt;Void&gt;() &#123;</span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Void <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">                JSONArray imgs = theme.getJSONArray(<span class="string">"photos"</span>);</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; imgs.length(); i++) &#123;</span><br><span class="line">                    JSONObject jsonObject = imgs.getJSONObject(i);</span><br><span class="line">                    Img mImg = mDao.queryForId(jsonObject.optInt(<span class="string">"id"</span>));</span><br><span class="line">                    <span class="keyword">if</span> (mImg == <span class="keyword">null</span>)</span><br><span class="line">                        mImg = <span class="keyword">new</span> Img();</span><br><span class="line"></span><br><span class="line">                    mImg.id = jsonObject.optString(<span class="string">"id"</span>);</span><br><span class="line">                    mImg.isCover = jsonObject.optInt(<span class="string">"isCover"</span>);</span><br><span class="line">                    mImg.imgUrl = jsonObject.optString(<span class="string">"url"</span>);</span><br><span class="line">                    mImg.theme = mTheme;</span><br><span class="line"></span><br><span class="line">                    mDao.createOrUpdate(mImg);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> mTheme;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>上面的代码就是把我们从服务端获取的json对象进行数据转化，我们对json数据进行解析，得到相应的数据库对象，再进行创建或更新的操作，如果涉及到较多的插入，就可以使用ormlite为我们提供的批处理回调方法，具体看代码。</p>
+<h3 id="在Android中使用">在Android中使用</h3><p>我们通过网络请求得到的json对象，然后直接调用上面写好的转化方法，这样我们就可以实现数据存储了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">getTheme</span><span class="params">(<span class="keyword">final</span> Theme mTheme)</span> </span>&#123;</span><br><span class="line">        DataFetcher.getHttpRequestAsync(</span><br><span class="line">                HttpRequest.getThemeInfoUrl(getActivity(), mTheme.id),</span><br><span class="line">                <span class="keyword">new</span> JsonResponseHandler(getActivity(),</span><br><span class="line">                        getString(R.string.tip_requesing_info)) &#123;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onSuccess</span><span class="params">(<span class="keyword">int</span> statusCode, Header[] headers,</span><br><span class="line">                            JSONObject response)</span> </span>&#123;</span><br><span class="line">                        <span class="keyword">super</span>.onSuccess(statusCode, headers, response);</span><br><span class="line">                        LogUtils.i(<span class="string">"info"</span>, response.toString());</span><br><span class="line">                        JSONObject jsonObject = response.optJSONObject(<span class="string">"msg"</span>);</span><br><span class="line"></span><br><span class="line">                        <span class="keyword">try</span> &#123;</span><br><span class="line">                            Converter.ConvertTheme(jsonObject,</span><br><span class="line">                                    ((BaseActivity) getActivity()).getHelper());</span><br><span class="line">                            <span class="comment">// 跳转到详情页</span></span><br><span class="line">                            Intent intent = <span class="keyword">new</span> Intent();</span><br><span class="line">                            intent.putExtra(<span class="string">"tid"</span>, mTheme.id);</span><br><span class="line">                            intent.setClass(getActivity(),</span><br><span class="line">                                    ThemeInfolActivity.class);</span><br><span class="line">                            startActivity(intent);</span><br><span class="line"></span><br><span class="line">                        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                            e.printStackTrace();</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="annotation">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onFailure</span><span class="params">(<span class="keyword">int</span> statusCode, Header[] headers,</span><br><span class="line">                            String responseString, Throwable throwable)</span> </span>&#123;</span><br><span class="line">                        <span class="keyword">super</span>.onFailure(statusCode, headers, responseString,</span><br><span class="line">                                throwable);</span><br><span class="line">                        <span class="keyword">if</span> (mTheme.detail != <span class="keyword">null</span>) &#123;</span><br><span class="line">                            Intent intent = <span class="keyword">new</span> Intent();</span><br><span class="line">                            intent.putExtra(<span class="string">"tid"</span>, mTheme.id);</span><br><span class="line">                            intent.setClass(getActivity(), ThemeInfolActivity.class);</span><br><span class="line">                            startActivity(intent);</span><br><span class="line">                        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                            Toast.makeText(getActivity(), responseString,</span><br><span class="line">                                    Toast.LENGTH_SHORT).show();</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                &#125;);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>注：这里笔者使用的是android-async-http这个网络库。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Cat-remember-1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/01/Cat-remember-1/" class="article-date">
+  	<time datetime="2015-06-01T15:27:52.000Z" itemprop="datePublished">2015-06-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/01/Cat-remember-1/">养猫记-领养篇</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2015年5月24日这天，小黑猫被我从别人那里抓回来，这是我第二次去抓它，第一次由于下班之后天黑，喂食它的大妈没出现，它一直躲在车底盘下，爬上爬下怎么也抓不住它，它旁边又有一只成年母猫守着，而那只母猫并不是它的母亲，听阿宅说，那只母猫不养自己的孩子，却养别人家的孩子，总之关系很乱，我也搞不清楚。先说一下小巫为什么会有念头领养一只猫咪，其实这个念头似乎有了很久了，小的时候在家里也见过野猫，但都是比较野的，人一靠近就会很凶的哈人，我也挺怕的，那时候猫在我的印象中就是一个不温和的动物，跟家里养的狗不一样。长大后，总是忙着学业，似乎没怎么闲过来，看似很认真的样子，却也没成为多出色的人，记得在大学的时候，看了一部叫做《夏目友人帐》的动漫，这是我看过最治愈的动漫了，真如我自己一样，一直在尝试治愈自己，所以才会对这部动漫感到治愈吧。如果看过这部动漫的人，一定会知道伴随主人公夏目的一只大肥猫，叫做斑，它是一只妖怪，有一天被主人公阴差阳错破了封印，把它放了出来，为了得到夏目的奶奶遗留给夏目的友人帐，就跟夏目定下约定，守护在他身边帮他它把友人帐的姓名还给跟夏目奶奶决斗过的妖怪，在跟夏目相处的过程中，斑逐渐跟主人公产生羁绊，它一直默默的守护在夏目身边，并帮他排除万难。具体的细节，大家可以去看这部动漫，一共四季，非常好看。也许正是这部动漫，让我有了养一只猫的念头，并对猫有了比较向往的情景。在以往有好多次，都想抓住机会去领养一只猫，因为一些比较好的品种价格都比较贵，所以就打消去买一只，而更好的选择是去领养一只流浪猫，终于在今年五月份，阿宅告诉我他们楼下有很多流浪猫，并且帮我留意了一只小黑猫，我看到之后也很兴奋，并且想抓住这次机会领养一只，经过两次的折腾，并且是在下雨天，我跟呆呆风雨不阻一起去他们楼下去抓，最后在喂养这些流浪猫的大妈的协助下，把小黑猫抓住了，用一个袋子把猫咪带回到宿舍里。整个过程还不算太艰辛，最终小黑猫成为了我今后回家的一个责任，用心去呵护它，喂养它是我每天要做的事情，相信它也会很庆幸拥有我这么一个爱猫之人，有很多称呼，铲屎管，猫奴，我想这些都是美好的称呼，也有幸拥有我这只可爱好动的小黑猫。<br>最后奉上，领养回来，小黑猫的一张美照：<br><img src="http://www.devilwwj.com/images/P50524-184911-001.jpg" alt=""></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cat/">cat</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/养猫记/">养猫记</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/05/23/hello-world/" class="article-date">
+  	<time datetime="2015-05-23T07:45:02.000Z" itemprop="datePublished">2015-05-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/23/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-android" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/05/21/android/" class="article-date">
+  	<time datetime="2015-05-21T11:14:33.000Z" itemprop="datePublished">2015-05-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/21/android/">Android自定义View总结</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android自定义View总结">Android自定义View总结</h1><h2 id="步骤">步骤</h2><ol>
+<li>自定义View的属性</li>
+<li>在View的构造方法获取我们自定义的属性值</li>
+<li>重写onMesure()方法</li>
+<li>重写onDraw()方法</li>
+</ol>
+<h2 id="自定义View的属性">自定义View的属性</h2><p>在res/values/下建立attrs.xml，定义控件的属性和样式，如下所示：</p>
+<pre><code>&lt;declare-styleable <span class="variable">name=</span><span class="string">"CircleImageView"</span>&gt;
+    &lt;attr <span class="variable">name=</span><span class="string">"border_width"</span> <span class="variable">format=</span><span class="string">"dimension"</span> /&gt;
+    &lt;attr <span class="variable">name=</span><span class="string">"border_color"</span> <span class="variable">format=</span><span class="string">"color"</span> /&gt;
+&lt;/declare-styleable&gt;
+</code></pre><p>format为取值类型，有以下类型：</p>
+<ul>
+<li>string 字符串</li>
+<li>color 颜色值，如#ffffff</li>
+<li>dimension 尺寸，xml中设置为dp/dip, 字体为sp</li>
+<li>integer 数值 1</li>
+<li>enum 枚举类型</li>
+<li>reference 引用，如@drawable/ic_launcher</li>
+<li>float 浮点类型 如1.0</li>
+<li>boolean 布尔类型 true或false</li>
+<li>fraction 百分数 如100%</li>
+<li>flag 位或运算</li>
+</ul>
+<p>在xml布局文件中，声明我们的自定义View，示例代码：</p>
+<pre><code>&lt;com.infzm.o2o.view.CircleImageView
+       xmlns:<span class="variable">app=</span><span class="string">"http://schemas.android.com/apk/res-auto"</span>
+       android:<span class="variable">id=</span><span class="string">"@+id/iv_head_icon"</span>
+       android:<span class="variable">layout_width=</span><span class="string">"wrap_content"</span>
+       android:<span class="variable">layout_height=</span><span class="string">"59dp"</span>
+       android:<span class="variable">layout_marginBottom=</span><span class="string">"15dp"</span>
+       android:<span class="variable">layout_marginLeft=</span><span class="string">"15dp"</span>
+       android:<span class="variable">src=</span><span class="string">"@drawable/ic_profile_user_default"</span>
+       app:<span class="variable">border_color=</span><span class="string">"@color/white"</span>
+       app:<span class="variable">border_width=</span><span class="string">"2dp"</span> &gt;
+</code></pre><p>注意需要引入命名空间，xmlns:app=”<a href="http://schemas.android.com/apk/res-auto&quot;，不然无法使用我们的属性" target="_blank" rel="external">http://schemas.android.com/apk/res-auto&quot;，不然无法使用我们的属性</a></p>
+<h2 id="在View的构造方法获取我们自定义的属性值">在View的构造方法获取我们自定义的属性值</h2><p>重写3个构造方法，示例代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">CircleImageView</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>(context);</span><br><span class="line"></span><br><span class="line">       init();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">CircleImageView</span><span class="params">(Context context, AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">this</span>(context, attrs, <span class="number">0</span>);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">CircleImageView</span><span class="params">(Context context, AttributeSet attrs, <span class="keyword">int</span> defStyle)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">super</span>(context, attrs, defStyle);</span><br><span class="line"></span><br><span class="line">       TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView, defStyle, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">       <span class="comment">// 获取边界的宽度</span></span><br><span class="line">       mBorderWidth = a.getDimensionPixelSize(R.styleable.CircleImageView_border_width, DEFAULT_BORDER_WIDTH);</span><br><span class="line">       <span class="comment">// 获取边界的颜色</span></span><br><span class="line">       mBorderColor = a.getColor(R.styleable.CircleImageView_border_color, DEFAULT_BORDER_COLOR);</span><br><span class="line"></span><br><span class="line">       <span class="comment">// 回收TypedArray,以便后面重用</span></span><br><span class="line">       a.recycle();</span><br><span class="line"></span><br><span class="line">       init();</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="重写onMesure()方法">重写onMesure()方法</h2><p>这个方法用来计算View的大小，如果需要计算View的大小，则需要重写此方法。<br>示例代码：</p>
+<pre><code>@Override  
+<span class="keyword">protected</span> <span class="keyword">void</span> onMeasure(<span class="built_in">int</span> widthMeasureSpec, <span class="built_in">int</span> heightMeasureSpec) {  
+    <span class="built_in">int</span> widthMode = MeasureSpec.getMode(widthMeasureSpec);  
+    <span class="built_in">int</span> heightMode = MeasureSpec.getMode(heightMeasureSpec);  
+    <span class="built_in">int</span> widthSize = MeasureSpec.getSize(widthMeasureSpec);  
+    <span class="built_in">int</span> heightSize = MeasureSpec.getSize(heightMeasureSpec);  
+
+    <span class="built_in">int</span> <span class="variable">width</span>;  
+    <span class="built_in">int</span> <span class="variable">height</span>;  
+
+    ...   
+
+    <span class="keyword">if</span> (widthMode == MeasureSpec.EXACTLY) {  
+        <span class="comment">// Parent has told us how big to be. So be it.  </span>
+        <span class="variable">width</span> = widthSize;  
+    } <span class="keyword">else</span> {  
+        <span class="keyword">if</span> (mLayout != <span class="keyword">null</span> &amp;&amp; mEllipsize == <span class="keyword">null</span>) {  
+            des = desired(mLayout);  
+        }  
+
+    ...  
+
+    setMeasuredDimension(<span class="variable">width</span>, <span class="variable">height</span>);   
+    }
+</code></pre><p>这里有几个点需要提一下是specMode，我们视图的规格模式，有三种类型：</p>
+<ol>
+<li>MeasureSpec.EXACTLY：父视图希望子视图的大小应该是specSize中指定的，一般是设置了明确的值或者说是MATCH_PARENT。</li>
+<li>MeasureSpec.AT_MOST：子视图的大小最多是specSize中指定的值，不建议子视图大小超过specSize中给定的值，一般为WRAP_CONTENT。</li>
+<li>MeasureSpec.UNSPECIFIED：可以随意指定视图的大小。</li>
+</ol>
+<p>最终我们会调用setMesuredDimension(width, height);来设置最终视图的大小，width和height就是我们计算得来的值。</p>
+<h2 id="重写onDraw()方法">重写onDraw()方法</h2><p>我们通过这个方法来绘制我们的视图，示例代码：</p>
+<pre><code>   <span class="annotation">@Override</span>
+<span class="keyword">protected</span> <span class="typename">void</span> onDraw(Canvas canvas) {
+    <span class="keyword">if</span> (getDrawable() == <span class="literal">null</span>) {
+        <span class="keyword">return</span>;
+    }
+
+    canvas.drawCircle(getWidth() <span class="regexp">/ 2, getHeight() /</span> <span class="number">2</span>, mDrawableRadius, mBitmapPaint);
+    <span class="keyword">if</span> (mBorderWidth != <span class="number">0</span>) {
+        canvas.drawCircle(getWidth() <span class="regexp">/ 2, getHeight() /</span> <span class="number">2</span>, mBorderRadius, mBorderPaint);
+    }
+}
+</code></pre><p>比如示例代码中，我们通过画布来绘制一个圆形。</p>
+<p>最后附上开源控件，自定义圆形头像的解析：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.infzm.o2o.view;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.infzm.o2o.R;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"><span class="keyword">import</span> android.content.res.TypedArray;</span><br><span class="line"><span class="keyword">import</span> android.graphics.Bitmap;</span><br><span class="line"><span class="keyword">import</span> android.graphics.BitmapShader;</span><br><span class="line"><span class="keyword">import</span> android.graphics.Canvas;</span><br><span class="line"><span class="keyword">import</span> android.graphics.Color;</span><br><span class="line"><span class="keyword">import</span> android.graphics.Matrix;</span><br><span class="line"><span class="keyword">import</span> android.graphics.Paint;</span><br><span class="line"><span class="keyword">import</span> android.graphics.RectF;</span><br><span class="line"><span class="keyword">import</span> android.graphics.Shader;</span><br><span class="line"><span class="keyword">import</span> android.graphics.drawable.BitmapDrawable;</span><br><span class="line"><span class="keyword">import</span> android.graphics.drawable.ColorDrawable;</span><br><span class="line"><span class="keyword">import</span> android.graphics.drawable.Drawable;</span><br><span class="line"><span class="keyword">import</span> android.net.Uri;</span><br><span class="line"><span class="keyword">import</span> android.util.AttributeSet;</span><br><span class="line"><span class="keyword">import</span> android.widget.ImageView;</span><br><span class="line"></span><br><span class="line"><span class="javadoc">/**</span><br><span class="line"> * 自定义圆形头像</span><br><span class="line"> *<span class="javadoctag"> @author</span> wwj_748</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CircleImageView</span> <span class="keyword">extends</span> <span class="title">ImageView</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="javadoc">/**</span><br><span class="line">	 * 缩放类型</span><br><span class="line">	 */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * 位图配置</span><br><span class="line">     * ARGB_8888代表</span><br><span class="line">     * A:透明度:8</span><br><span class="line">     * R:红色:8</span><br><span class="line">     * G:绿:8</span><br><span class="line">     * B:蓝:8</span><br><span class="line">     * 表示图片每个像素点占8+8+8+8 = 32位</span><br><span class="line">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Bitmap.Config BITMAP_CONFIG = Bitmap.Config.ARGB_8888;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> COLORDRAWABLE_DIMENSION = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> DEFAULT_BORDER_WIDTH = <span class="number">0</span>; <span class="comment">// 默认边界宽度</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> DEFAULT_BORDER_COLOR = Color.BLACK; <span class="comment">// 默认边界颜色</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> RectF mDrawableRect = <span class="keyword">new</span> RectF();</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> RectF mBorderRect = <span class="keyword">new</span> RectF();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Matrix mShaderMatrix = <span class="keyword">new</span> Matrix();</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Paint mBitmapPaint = <span class="keyword">new</span> Paint();</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Paint mBorderPaint = <span class="keyword">new</span> Paint();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> mBorderColor = DEFAULT_BORDER_COLOR;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> mBorderWidth = DEFAULT_BORDER_WIDTH;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Bitmap mBitmap;</span><br><span class="line">    <span class="keyword">private</span> BitmapShader mBitmapShader; <span class="comment">// 位图渲染</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> mBitmapWidth; <span class="comment">// 位图宽度</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> mBitmapHeight; <span class="comment">// 位图高度</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> mDrawableRadius; <span class="comment">// 图片半径</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> mBorderRadius;  <span class="comment">// 带边框的的图片半径</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> mReady;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> mSetupPending;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CircleImageView</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context);</span><br><span class="line"></span><br><span class="line">        init();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CircleImageView</span><span class="params">(Context context, AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(context, attrs, <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CircleImageView</span><span class="params">(Context context, AttributeSet attrs, <span class="keyword">int</span> defStyle)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs, defStyle);</span><br><span class="line"></span><br><span class="line">        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView, defStyle, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取边界的宽度</span></span><br><span class="line">        mBorderWidth = a.getDimensionPixelSize(R.styleable.CircleImageView_border_width, DEFAULT_BORDER_WIDTH);</span><br><span class="line">        <span class="comment">// 获取边界的颜色</span></span><br><span class="line">        mBorderColor = a.getColor(R.styleable.CircleImageView_border_color, DEFAULT_BORDER_COLOR);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 回收TypedArray,以便后面重用</span></span><br><span class="line">        a.recycle();</span><br><span class="line"></span><br><span class="line">        init();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.setScaleType(SCALE_TYPE);</span><br><span class="line">        mReady = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (mSetupPending) &#123;</span><br><span class="line">            setup();</span><br><span class="line">            mSetupPending = <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ScaleType <span class="title">getScaleType</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> SCALE_TYPE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setScaleType</span><span class="params">(ScaleType scaleType)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (scaleType != SCALE_TYPE) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(String.format(<span class="string">"ScaleType %s not supported."</span>, scaleType));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onDraw</span><span class="params">(Canvas canvas)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (getDrawable() == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 绘制圆形图片</span></span><br><span class="line">        canvas.drawCircle(getWidth() / <span class="number">2</span>, getHeight() / <span class="number">2</span>, mDrawableRadius, mBitmapPaint);</span><br><span class="line">        <span class="keyword">if</span> (mBorderWidth != <span class="number">0</span>) &#123; <span class="comment">// 如果边界不为0，怎绘制带边框的圆形图片</span></span><br><span class="line">            canvas.drawCircle(getWidth() / <span class="number">2</span>, getHeight() / <span class="number">2</span>, mBorderRadius, mBorderPaint);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onSizeChanged</span><span class="params">(<span class="keyword">int</span> w, <span class="keyword">int</span> h, <span class="keyword">int</span> oldw, <span class="keyword">int</span> oldh)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onSizeChanged(w, h, oldw, oldh);</span><br><span class="line">        setup();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getBorderColor</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> mBorderColor;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setBorderColor</span><span class="params">(<span class="keyword">int</span> borderColor)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (borderColor == mBorderColor) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        mBorderColor = borderColor;</span><br><span class="line">        mBorderPaint.setColor(mBorderColor);</span><br><span class="line">        invalidate();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getBorderWidth</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> mBorderWidth;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setBorderWidth</span><span class="params">(<span class="keyword">int</span> borderWidth)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (borderWidth == mBorderWidth) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        mBorderWidth = borderWidth;</span><br><span class="line">        setup();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setImageBitmap</span><span class="params">(Bitmap bm)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.setImageBitmap(bm);</span><br><span class="line">        mBitmap = bm;</span><br><span class="line">        setup();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setImageDrawable</span><span class="params">(Drawable drawable)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.setImageDrawable(drawable);</span><br><span class="line">        mBitmap = getBitmapFromDrawable(drawable);</span><br><span class="line">        setup();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setImageResource</span><span class="params">(<span class="keyword">int</span> resId)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.setImageResource(resId);</span><br><span class="line">        mBitmap = getBitmapFromDrawable(getDrawable());</span><br><span class="line">        setup();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setImageURI</span><span class="params">(Uri uri)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.setImageURI(uri);</span><br><span class="line">        mBitmap = getBitmapFromDrawable(getDrawable());</span><br><span class="line">        setup();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="javadoc">/**</span><br><span class="line">     * Drawable转Bitmap</span><br><span class="line">     *<span class="javadoctag"> @param</span> drawable</span><br><span class="line">     *<span class="javadoctag"> @return</span></span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> Bitmap <span class="title">getBitmapFromDrawable</span><span class="params">(Drawable drawable)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (drawable == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (drawable <span class="keyword">instanceof</span> BitmapDrawable) &#123;</span><br><span class="line">            <span class="keyword">return</span> ((BitmapDrawable) drawable).getBitmap();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Bitmap bitmap;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (drawable <span class="keyword">instanceof</span> ColorDrawable) &#123;</span><br><span class="line">                bitmap = Bitmap.createBitmap(COLORDRAWABLE_DIMENSION, COLORDRAWABLE_DIMENSION, BITMAP_CONFIG);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), BITMAP_CONFIG);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            Canvas canvas = <span class="keyword">new</span> Canvas(bitmap);</span><br><span class="line">            drawable.setBounds(<span class="number">0</span>, <span class="number">0</span>, canvas.getWidth(), canvas.getHeight());</span><br><span class="line">            drawable.draw(canvas);</span><br><span class="line">            <span class="keyword">return</span> bitmap;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (OutOfMemoryError e) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!mReady) &#123;</span><br><span class="line">            mSetupPending = <span class="keyword">true</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (mBitmap == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 构建渲染器</span></span><br><span class="line">        mBitmapShader = <span class="keyword">new</span> BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 设置反锯齿</span></span><br><span class="line">        mBitmapPaint.setAntiAlias(<span class="keyword">true</span>);</span><br><span class="line">        <span class="comment">// 设置画笔渲染器</span></span><br><span class="line">        mBitmapPaint.setShader(mBitmapShader);</span><br><span class="line">        <span class="comment">// 设置画笔样式</span></span><br><span class="line">        mBorderPaint.setStyle(Paint.Style.STROKE);</span><br><span class="line">        mBorderPaint.setAntiAlias(<span class="keyword">true</span>);</span><br><span class="line">        mBorderPaint.setColor(mBorderColor);</span><br><span class="line">        mBorderPaint.setStrokeWidth(mBorderWidth);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 得到位图宽高</span></span><br><span class="line">        mBitmapHeight = mBitmap.getHeight();</span><br><span class="line">        mBitmapWidth = mBitmap.getWidth();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 设置含边框显示区域</span></span><br><span class="line">        mBorderRect.set(<span class="number">0</span>, <span class="number">0</span>, getWidth(), getHeight());</span><br><span class="line">        <span class="comment">// 计算半径</span></span><br><span class="line">        mBorderRadius = Math.min((mBorderRect.height() - mBorderWidth) / <span class="number">2</span>, (mBorderRect.width() - mBorderWidth) / <span class="number">2</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 设置图片显示区域：即View的大小区域减去边界的大小</span></span><br><span class="line">        mDrawableRect.set(mBorderWidth, mBorderWidth, mBorderRect.width() - mBorderWidth, mBorderRect.height() - mBorderWidth);</span><br><span class="line">        <span class="comment">// 计算图片区域的半径</span></span><br><span class="line">        mDrawableRadius = Math.min(mDrawableRect.height() / <span class="number">2</span>, mDrawableRect.width() / <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">        updateShaderMatrix();</span><br><span class="line">        invalidate();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">updateShaderMatrix</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">float</span> scale;</span><br><span class="line">        <span class="keyword">float</span> dx = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">float</span> dy = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        mShaderMatrix.set(<span class="keyword">null</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 如果位图的高度*显示图片区域的高度 大于 位图高度 * 图片区域宽度</span></span><br><span class="line">        <span class="keyword">if</span> (mBitmapWidth * mDrawableRect.height() &gt; mDrawableRect.width() * mBitmapHeight) &#123;</span><br><span class="line">        	<span class="comment">// 按高计算缩放比例</span></span><br><span class="line">            scale = mDrawableRect.height() / (<span class="keyword">float</span>) mBitmapHeight;</span><br><span class="line">            dx = (mDrawableRect.width() - mBitmapWidth * scale) * <span class="number">0.5f</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        	<span class="comment">// 按宽计算缩放比例</span></span><br><span class="line">            scale = mDrawableRect.width() / (<span class="keyword">float</span>) mBitmapWidth;</span><br><span class="line">            dy = (mDrawableRect.height() - mBitmapHeight * scale) * <span class="number">0.5f</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// shaeder的变换矩阵，我们这里主要用于放大或者缩小。</span></span><br><span class="line">        mShaderMatrix.setScale(scale, scale);</span><br><span class="line">        <span class="comment">// 平移</span></span><br><span class="line">        mShaderMatrix.postTranslate((<span class="keyword">int</span>) (dx + <span class="number">0.5f</span>) + mBorderWidth, (<span class="keyword">int</span>) (dy + <span class="number">0.5f</span>) + mBorderWidth);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置变换矩阵</span></span><br><span class="line">        mBitmapShader.setLocalMatrix(mShaderMatrix);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
   
     <nav id="page-nav">
-      <span class="pages">第 2 页，共 3 页</span>
-      <a class="extend prev" rel="prev" href="/archives/">&laquo;</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/">&raquo;</a>
+      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/">Next &raquo;</a>
     </nav>
   
-
-
-            </div>
-          </section>
-          <aside id="sidebar">
-  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
-  <div class="sidebar-top">
-    <p>关注我 :</p>
-    <ul class="social-links">
-      
-        <li><a class="social-tooltip" title="twitter" href="/" target="_blank"><i id="icon-twitter" class="icon"></i></a></li>
-      
-        <li><a class="social-tooltip" title="facebook" href="/" target="_blank"><i id="icon-facebook" class="icon"></i></a></li>
-      
-        <li><a class="social-tooltip" title="google_plus" href="/" target="_blank"><i id="icon-google_plus" class="icon"></i></a></li>
-      
-        <li><a class="social-tooltip" title="github" href="https://github.com/devilWwj" target="_blank"><i id="icon-github" class="icon"></i></a></li>
-      
-        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/wulmaycry" target="_blank"><i id="icon-weibo" class="icon"></i></a></li>
-      
-        <li><a class="social-tooltip" title="rss" href="/atom.xml" target="_blank"><i id="icon-rss" class="icon"></i></a></li>
-      
-    </ul>
-  </div>
-  
-  <div class="widgets-container">
-    
-      
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul id="recent-post" class="">
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2015/09/19/A013-animator资源/" class="thumbnail">
-  
-    <span style="background-image:url(http://img.blog.csdn.net/20150919175049457
-)" alt="A013-animator资源" class="thumbnail-image"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-              <p class="item-title"><a href="/2015/09/19/A013-animator资源/" class="title">A013-animator资源</a></p>
-              <p class="item-date"><time datetime="2015-09-19T11:24:42.000Z" itemprop="datePublished">2015-09-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2015/09/19/A012-anim资源/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-              <p class="item-title"><a href="/2015/09/19/A012-anim资源/" class="title">A012-anim资源</a></p>
-              <p class="item-date"><time datetime="2015-09-19T11:24:29.000Z" itemprop="datePublished">2015-09-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2015/09/19/A011-raw资源/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-              <p class="item-title"><a href="/2015/09/19/A011-raw资源/" class="title">A011-raw资源</a></p>
-              <p class="item-date"><time datetime="2015-09-19T11:24:13.000Z" itemprop="datePublished">2015-09-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2015/09/19/A010-menu资源/" class="thumbnail">
-  
-    <span style="background-image:url(http://img.blog.csdn.net/20150824234120524
-)" alt="A010-menu资源" class="thumbnail-image"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-              <p class="item-title"><a href="/2015/09/19/A010-menu资源/" class="title">A010-menu资源</a></p>
-              <p class="item-date"><time datetime="2015-09-19T11:22:54.000Z" itemprop="datePublished">2015-09-19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2015/08/23/A009-layout资源/" class="thumbnail">
-  
-    <span style="background-image:url(http://img.blog.csdn.net/20150823201233940
-)" alt="A009-layout资源" class="thumbnail-image"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
-              <p class="item-title"><a href="/2015/08/23/A009-layout资源/" class="title">A009-layout资源</a></p>
-              <p class="item-date"><time datetime="2015-08-23T13:51:52.000Z" itemprop="datePublished">2015-08-23</time></p>
-            </div>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget-wrap widget-list">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/养猫记/">养猫记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔/">随笔</a><span class="category-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget-wrap widget-list">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget-wrap widget-list">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cat/">cat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a><span class="tag-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget-wrap widget-float">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Android/" style="font-size: 20px;">Android</a><a href="/tags/android/" style="font-size: 16.67px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a><a href="/tags/随笔/" style="font-size: 13.33px;">随笔</a>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget-wrap widget-list">
-    <h3 class="widget-title">链接</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="http://hexo.io">Hexo</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-
-    
-  </div>
-</aside>
-        </div>
-      </div>
-    </div>
-    <footer id="footer">
-  
-  <div class="container">
-    <div class="container-inner">
-      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
-      <div class="credit">
-        <h1 class="logo-wrap">
-          <a href="/" class="logo"></a>
-        </h1>
-        <p>&copy; 2015 devilwwj</p>
-        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
-      </div>
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 devilwwj
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
     </div>
   </div>
 </footer>
+    </div>
     
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
 <script>
-  var disqus_shortname = 'devilwwj';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: false,
+		isArchive: true,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
 </script>
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
-
-  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-
-
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-
-
-
-  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
-  <script src="/scrollLoading/main.js" type="text/javascript"></script>
-
-
-<script src="/js/html-patch.js" type="text/javascript"></script>
-<script src="/js/script.js" type="text/javascript"></script>
 
   </div>
 </body>
