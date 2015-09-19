@@ -15,306 +15,372 @@
 <meta name="twitter:title" content="IT_xiao小巫">
 <meta name="twitter:description" content="IT_xiao小巫的blog | Android | java | Mac">
   
-    <link rel="alternative" href="/atom.xml" title="IT_xiao小巫" type="application/atom+xml">
-  
   
     <link rel="icon" href="/favicon.png">
   
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
+  
+  
+
+
+  
+    <style type="text/css">
+      .logo { background-image:url(/images/logo.png); }
+    </style>
+  
+
+  
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
 </head>
+
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="null" class="js-avatar">
-			
-		</a>
-
-		<hgroup>
-		  <h1 class="header-author"><a href="/">devilwwj</a></h1>
-		</hgroup>
-
-		
-		<p class="header-subtitle">在浮躁的世界安安静静敲代码</p>
-		
-
-		
-			<div class="switch-btn">
-				<div class="icon">
-					<div class="icon-ctn">
-						<div class="icon-wrap icon-house" data-idx="0">
-							<div class="birdhouse"></div>
-							<div class="birdhouse_holes"></div>
-						</div>
-						<div class="icon-wrap icon-ribbon hide" data-idx="1">
-							<div class="ribbon"></div>
-						</div>
-						
-						<div class="icon-wrap icon-link hide" data-idx="2">
-							<div class="loopback_l"></div>
-							<div class="loopback_r"></div>
-						</div>
-						
-						
-						<div class="icon-wrap icon-me hide" data-idx="3">
-							<div class="user"></div>
-							<div class="shoulder"></div>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="tips-box hide">
-					<div class="tips-arrow"></div>
-					<ul class="tips-inner">
-						<li>菜单</li>
-						<li>标签</li>
-						
-						<li>友情链接</li>
-						
-						
-						<li>关于我</li>
-						
-					</ul>
-				</div>
-			</div>
-		
-
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-								<a class="github" target="_blank" href="/#" title="github">github</a>
-					        
-								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
-					        
-								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
-					        
-								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
-					        
-						</div>
-					</nav>
-				</section>
-				
-				
-				<section class="switch-part switch-part2">
-					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Android/" style="font-size: 20px;">Android</a><a href="/tags/android/" style="font-size: 16.67px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a><a href="/tags/随笔/" style="font-size: 13.33px;">随笔</a>
-					</div>
-				</section>
-				
-				
-				
-				<section class="switch-part switch-part3">
-					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
-			        
-			        </div>
-				</section>
-				
-
-				
-				
-				<section class="switch-part switch-part4">
-				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
-				</section>
-				
-			</div>
-		</div>
-	</header>				
-</div>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+            <h2 class="subtitle-wrap">
+              <p class="subtitle">在浮躁的世界安安静静敲代码</p>
+            </h2>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Android/">Android</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/养猫记/">养猫记</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/技术/">技术</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/日志/">日志</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/随笔/">随笔</a></li></ul>
+                  
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
+              
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="q" value="site:http://www.devilwwj.com"></form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">devilwwj</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				<img lazy-src="null" class="js-avatar">
-			</div>
-			<hgroup>
-			  <h1 class="header-author">devilwwj</h1>
-			</hgroup>
-			
-			<p class="header-subtitle">在浮躁的世界安安静静敲代码</p>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-						<a class="github" target="_blank" href="/#" title="github">github</a>
-			        
-						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
-			        
-						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
-			        
-						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
-			        
-				</div>
-			</nav>
-		</header>				
-	</div>
-</nav>
-      <div class="body-wrap">
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header"><i class="icon" id="icon-tag"></i>标签：<em>cat</em></h1>
+            </div>
+            <div class="main-body-content">
+              
   
-    <article id="post-Cat-remember-1" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2015/06/01/Cat-remember-1/" class="article-date">
-  	<time datetime="2015-06-01T15:27:52.000Z" itemprop="datePublished">2015-06-01</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year"><i class="icon" id="icon-calendar-o"></i>2015</a>
+        </div>
+        <div class="archives">
+    
+    
+    
+      <div class="article-row">
+    
         
+  <article class="article article-summary">
+    <div class="article-summary-inner">
+      
+<a href="/2015/06/01/Cat-remember-1/" class="thumbnail">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/01/Cat-remember-1/">养猫记-领养篇</a>
-    </h1>
+    <span style="background-image:url(http://www.devilwwj.com/images/P50524-184911-001.jpg
+)" alt="养猫记-领养篇" class="thumbnail-image"></span>
+  
+</a>
+
+      <div class="article-meta">
+        <p class="category"><a class="article-category-link" href="/categories/养猫记/">养猫记</a></p>
+        <p class="date"><time datetime="2015-06-01T15:27:52.000Z" itemprop="datePublished">2015-06-01</time></p>
+      </div>
+      <h2 class="article-title">
+        <a href="/2015/06/01/Cat-remember-1/" class="title">养猫记-领养篇</a>
+      </h2>
+      <p class="article-excerpt">
+        
+        2015年5月24日这天，小黑猫被我从别人那里抓回来，这是我第二次去抓它，第一次由于下班之后天黑，喂食它的大妈没出现，它一直躲在车底盘下，爬上爬下怎么也抓不住它，它旁边又有一只成年母猫守着，而那只母猫并不是它的母亲，听阿宅说，那只母猫不养自己的孩子，却养别人家的孩子，总之关系很乱，我也搞不清楚。先说一下小巫为什么会有念头领养一只猫咪，其实这个念头似乎有了很久了，小的时候在家里也见过野猫，但都是比较
+      </p>
+    </div>
+  </article>
+
+    
+      </div>
+    
+  
+  
+    </div></section>
+  
   
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2015年5月24日这天，小黑猫被我从别人那里抓回来，这是我第二次去抓它，第一次由于下班之后天黑，喂食它的大妈没出现，它一直躲在车底盘下，爬上爬下怎么也抓不住它，它旁边又有一只成年母猫守着，而那只母猫并不是它的母亲，听阿宅说，那只母猫不养自己的孩子，却养别人家的孩子，总之关系很乱，我也搞不清楚。先说一下小巫为什么会有念头领养一只猫咪，其实这个念头似乎有了很久了，小的时候在家里也见过野猫，但都是比较野的，人一靠近就会很凶的哈人，我也挺怕的，那时候猫在我的印象中就是一个不温和的动物，跟家里养的狗不一样。长大后，总是忙着学业，似乎没怎么闲过来，看似很认真的样子，却也没成为多出色的人，记得在大学的时候，看了一部叫做《夏目友人帐》的动漫，这是我看过最治愈的动漫了，真如我自己一样，一直在尝试治愈自己，所以才会对这部动漫感到治愈吧。如果看过这部动漫的人，一定会知道伴随主人公夏目的一只大肥猫，叫做斑，它是一只妖怪，有一天被主人公阴差阳错破了封印，把它放了出来，为了得到夏目的奶奶遗留给夏目的友人帐，就跟夏目定下约定，守护在他身边帮他它把友人帐的姓名还给跟夏目奶奶决斗过的妖怪，在跟夏目相处的过程中，斑逐渐跟主人公产生羁绊，它一直默默的守护在夏目身边，并帮他排除万难。具体的细节，大家可以去看这部动漫，一共四季，非常好看。也许正是这部动漫，让我有了养一只猫的念头，并对猫有了比较向往的情景。在以往有好多次，都想抓住机会去领养一只猫，因为一些比较好的品种价格都比较贵，所以就打消去买一只，而更好的选择是去领养一只流浪猫，终于在今年五月份，阿宅告诉我他们楼下有很多流浪猫，并且帮我留意了一只小黑猫，我看到之后也很兴奋，并且想抓住这次机会领养一只，经过两次的折腾，并且是在下雨天，我跟呆呆风雨不阻一起去他们楼下去抓，最后在喂养这些流浪猫的大妈的协助下，把小黑猫抓住了，用一个袋子把猫咪带回到宿舍里。整个过程还不算太艰辛，最终小黑猫成为了我今后回家的一个责任，用心去呵护它，喂养它是我每天要做的事情，相信它也会很庆幸拥有我这么一个爱猫之人，有很多称呼，铲屎管，猫奴，我想这些都是美好的称呼，也有幸拥有我这只可爱好动的小黑猫。<br>最后奉上，领养回来，小黑猫的一张美照：<br><img src="http://www.devilwwj.com/images/P50524-184911-001.jpg" alt=""></p>
 
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>关注我 :</p>
+    <ul class="social-links">
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <li><a class="social-tooltip" title="twitter" href="/" target="_blank"><i id="icon-twitter" class="icon"></i></a></li>
       
+        <li><a class="social-tooltip" title="facebook" href="/" target="_blank"><i id="icon-facebook" class="icon"></i></a></li>
       
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cat/">cat</a></li></ul>
-	</div>
-
+        <li><a class="social-tooltip" title="google_plus" href="/" target="_blank"><i id="icon-google_plus" class="icon"></i></a></li>
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/养猫记/">养猫记</a>
-	</div>
-
-
+        <li><a class="social-tooltip" title="github" href="https://github.com/devilWwj" target="_blank"><i id="icon-github" class="icon"></i></a></li>
       
-      <div class="clearfix"></div>
-    </div>
-    
+        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/wulmaycry" target="_blank"><i id="icon-weibo" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="rss" href="/atom.xml" target="_blank"><i id="icon-rss" class="icon"></i></a></li>
+      
+    </ul>
   </div>
   
-</article>
-
-
-
-
-
-
-
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A013-animator资源/" class="thumbnail">
   
+    <span style="background-image:url(http://img.blog.csdn.net/20150919175049457
+)" alt="A013-animator资源" class="thumbnail-image"></span>
   
-</div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2015 devilwwj
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A013-animator资源/" class="title">A013-animator资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:24:42.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A012-anim资源/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A012-anim资源/" class="title">A012-anim资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:24:29.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A011-raw资源/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A011-raw资源/" class="title">A011-raw资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:24:13.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A010-menu资源/" class="thumbnail">
+  
+    <span style="background-image:url(http://img.blog.csdn.net/20150824234120524
+)" alt="A010-menu资源" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A010-menu资源/" class="title">A010-menu资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:22:54.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/08/23/A009-layout资源/" class="thumbnail">
+  
+    <span style="background-image:url(http://img.blog.csdn.net/20150823201233940
+)" alt="A009-layout资源" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/08/23/A009-layout资源/" class="title">A009-layout资源</a></p>
+              <p class="item-date"><time datetime="2015-08-23T13:51:52.000Z" itemprop="datePublished">2015-08-23</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/养猫记/">养猫记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔/">随笔</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cat/">cat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-float">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Android/" style="font-size: 20px;">Android</a><a href="/tags/android/" style="font-size: 16.67px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a><a href="/tags/随笔/" style="font-size: 13.33px;">随笔</a>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 devilwwj</p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+      </div>
     </div>
   </div>
 </footer>
-    </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-
-
 <script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: false,
-		isPost: false,
-		isArchive: false,
-		isTag: true,
-		isCategory: false,
-		open_in_new: false
-	}
-</script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
-
-
-
-
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
+  var disqus_shortname = 'devilwwj';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
+  <script src="/scrollLoading/main.js" type="text/javascript"></script>
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
 
   </div>
 </body>

@@ -15,226 +15,102 @@
 <meta name="twitter:title" content="A006-AndroidManifest.xml">
 <meta name="twitter:description" content="AndroidManifest.xml这个文件在Android中很重要，包含了应用程序的所有配置，包含SDK版本、应用权限、四大组件、扩展数据等等，它包含很多标签，每个标签都有具体的作用，标签下都会有不同的属性，也有通用的属性，不同的属性可能会影响我们应用程序的效果，所以我们详细了解具体标签的具体属性的使用场景是非常必要的，下面笔者会以做过的一个项目的完整配置来给大家系统介绍一下这个文件的使用方法">
   
-    <link rel="alternative" href="/atom.xml" title="IT_xiao小巫" type="application/atom+xml">
-  
   
     <link rel="icon" href="/favicon.png">
   
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
+  
+  
+
+
+  
+    <style type="text/css">
+      .logo { background-image:url(/images/logo.png); }
+    </style>
+  
+
+  
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
 </head>
+
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="null" class="js-avatar">
-			
-		</a>
-
-		<hgroup>
-		  <h1 class="header-author"><a href="/">devilwwj</a></h1>
-		</hgroup>
-
-		
-		<p class="header-subtitle">在浮躁的世界安安静静敲代码</p>
-		
-
-		
-			<div class="switch-btn">
-				<div class="icon">
-					<div class="icon-ctn">
-						<div class="icon-wrap icon-house" data-idx="0">
-							<div class="birdhouse"></div>
-							<div class="birdhouse_holes"></div>
-						</div>
-						<div class="icon-wrap icon-ribbon hide" data-idx="1">
-							<div class="ribbon"></div>
-						</div>
-						
-						<div class="icon-wrap icon-link hide" data-idx="2">
-							<div class="loopback_l"></div>
-							<div class="loopback_r"></div>
-						</div>
-						
-						
-						<div class="icon-wrap icon-me hide" data-idx="3">
-							<div class="user"></div>
-							<div class="shoulder"></div>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="tips-box hide">
-					<div class="tips-arrow"></div>
-					<ul class="tips-inner">
-						<li>菜单</li>
-						<li>标签</li>
-						
-						<li>友情链接</li>
-						
-						
-						<li>关于我</li>
-						
-					</ul>
-				</div>
-			</div>
-		
-
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-								<a class="github" target="_blank" href="/#" title="github">github</a>
-					        
-								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
-					        
-								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
-					        
-								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
-					        
-						</div>
-					</nav>
-				</section>
-				
-				
-				<section class="switch-part switch-part2">
-					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Android/" style="font-size: 20px;">Android</a><a href="/tags/android/" style="font-size: 16.67px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a><a href="/tags/随笔/" style="font-size: 13.33px;">随笔</a>
-					</div>
-				</section>
-				
-				
-				
-				<section class="switch-part switch-part3">
-					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
-			        
-			        </div>
-				</section>
-				
-
-				
-				
-				<section class="switch-part switch-part4">
-				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
-				</section>
-				
-			</div>
-		</div>
-	</header>				
-</div>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+            <h2 class="subtitle-wrap">
+              <p class="subtitle">在浮躁的世界安安静静敲代码</p>
+            </h2>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Android/">Android</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/养猫记/">养猫记</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/技术/">技术</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/日志/">日志</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/随笔/">随笔</a></li></ul>
+                  
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
+              
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="q" value="site:http://www.devilwwj.com"></form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">devilwwj</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				<img lazy-src="null" class="js-avatar">
-			</div>
-			<hgroup>
-			  <h1 class="header-author">devilwwj</h1>
-			</hgroup>
-			
-			<p class="header-subtitle">在浮躁的世界安安静静敲代码</p>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-						<a class="github" target="_blank" href="/#" title="github">github</a>
-			        
-						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
-			        
-						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
-			        
-						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
-			        
-				</div>
-			</nav>
-		</header>				
-	</div>
-</nav>
-      <div class="body-wrap"><article id="post-A006-AndroidManifest-xml" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/08/23/A006-AndroidManifest-xml/" class="article-date">
-  	<time datetime="2015-08-23T13:50:48.000Z" itemprop="datePublished">2015-08-23</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header"><a class="page-title-link" href="/categories/Android/">Android</a></h1>
+            </div>
+            <div class="main-body-content">
+              
+  <article id="post-A006-AndroidManifest-xml" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
   
     <h1 class="article-title" itemprop="name">
       A006-AndroidManifest.xml
     </h1>
   
 
-      </header>
+        </header>
       
-      <div class="article-info article-info-post">
-        
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
-	</div>
-
-        
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Android/">Android</a>
-	</div>
-
-
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+      <p class="article-byline">
+        <a href="/2015/08/23/A006-AndroidManifest-xml/" class="article-date">
+  <time datetime="2015-08-23T13:50:48.000Z" itemprop="datePublished">2015-08-23</time>
+</a>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
         <p>AndroidManifest.xml这个文件在Android中很重要，包含了应用程序的所有配置，包含SDK版本、应用权限、四大组件、扩展数据等等，它包含很多标签，每个标签都有具体的作用，标签下都会有不同的属性，也有通用的属性，不同的属性可能会影响我们应用程序的效果，所以我们详细了解具体标签的具体属性的使用场景是非常必要的，下面笔者会以做过的一个项目的完整配置来给大家系统介绍一下这个文件的使用方法。</p>
 <h1 id="AndroidManifest-xml配置例子">AndroidManifest.xml配置例子</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="utf-8" standalone="no"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">manifest</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">    <span class="attribute">package</span>=<span class="value">"com.infzm.o2o"</span></span><br><span class="line">    <span class="attribute">android:versionCode</span>=<span class="value">"1"</span></span><br><span class="line">    <span class="attribute">android:versionName</span>=<span class="value">"1.0.2"</span> &gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-sdk</span></span><br><span class="line">        <span class="attribute">android:minSdkVersion</span>=<span class="value">"14"</span></span><br><span class="line">        <span class="attribute">android:targetSdkVersion</span>=<span class="value">"19"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.INTERNET"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_NETWORK_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.MOUNT_UNMOUNT_FILESYSTEMS"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_WIFI_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.READ_PHONE_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.READ_LOGS"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"com.android.vending.CHECK_LICENSE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.WAKE_LOCK"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.VIBRATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.WRITE_SETTINGS"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.CALL_PHONE"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 极光推送需要配置的权限 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">permission</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.permission.JPUSH_MESSAGE"</span></span><br><span class="line">        <span class="attribute">android:protectionLevel</span>=<span class="value">"signature"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Required  一些系统要求的权限，如访问网络等 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.permission.JPUSH_MESSAGE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.RECEIVE_USER_PRESENT"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.INTERNET"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.WAKE_LOCK"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.READ_PHONE_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.READ_EXTERNAL_STORAGE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.WRITE_SETTINGS"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.VIBRATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.MOUNT_UNMOUNT_FILESYSTEMS"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_NETWORK_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.SYSTEM_ALERT_WINDOW"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Optional for location --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_COARSE_LOCATION"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_WIFI_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.CHANGE_WIFI_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_FINE_LOCATION"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.CHANGE_NETWORK_STATE"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 极光推送权限配置end --&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 友盟升级权限配置start --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_NETWORK_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_WIFI_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.READ_PHONE_STATE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_COARSE_LOCATION"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.ACCESS_FINE_LOCATION"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.INTERNET"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.READ_LOGS"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.CALL_PHONE"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- Permission for Unit Test --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">uses-permission</span> <span class="attribute">android:name</span>=<span class="value">"android.permission.GET_TASKS"</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 友盟升级权限配置end --&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">application</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">".global.O2OApplication"</span></span><br><span class="line">        <span class="attribute">android:allowBackup</span>=<span class="value">"true"</span></span><br><span class="line">        <span class="attribute">android:icon</span>=<span class="value">"@drawable/ic_launcher"</span></span><br><span class="line">        <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">        <span class="attribute">android:theme</span>=<span class="value">"@style/AppTheme"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.SplashActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@android:style/Theme.NoTitleBar.Fullscreen"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.MAIN"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.LAUNCHER"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.MainActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:uiOptions</span>=<span class="value">""</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">                <span class="attribute">android:name</span>=<span class="value">"android.support.UI_OPTIONS"</span></span><br><span class="line">                <span class="attribute">android:value</span>=<span class="value">"splitActionBarWhenNarrow"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.SettingsFeedback"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.BrowserActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.AboutUsActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.MoreSettingActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.SignUpActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.LoginAcivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.AddressActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:windowSoftInputMode</span>=<span class="value">"adjustPan|stateHidden"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.CameristInfoActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.ThemeInfolActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.SettingActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.ReserveActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:windowSoftInputMode</span>=<span class="value">"adjustPan|stateHidden"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.OrderReserveActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.OrderCheckActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.PictureActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@style/PicShowTheme"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.OrderDetailActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.ForgetpasswordActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.MyFavoritesActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.WelcomeGuideActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> </span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@android:style/Theme.Black.NoTitleBar.Fullscreen"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.ClipImageViewActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.MeActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.OnlineSelectPic"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.ImagePagerActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@android:style/Theme.Black.NoTitleBar.Fullscreen"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.CalendarViewActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.MessageActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.CameristCommentActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.PayActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:windowSoftInputMode</span>=<span class="value">"adjustPan|stateVisible"</span></span><br><span class="line">            &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.activity.MessageDetailActivity"</span></span><br><span class="line">            <span class="attribute">android:label</span>=<span class="value">"@string/app_name"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 极光推送配置 --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Required SDK核心功能 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.ui.PushActivity"</span></span><br><span class="line">            <span class="attribute">android:configChanges</span>=<span class="value">"orientation|keyboardHidden"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@android:style/Theme.Translucent.NoTitleBar"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.ui.PushActivity"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.DEFAULT"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Required  SDK核心功能 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">service</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.service.DownloadService"</span></span><br><span class="line">            <span class="attribute">android:enabled</span>=<span class="value">"true"</span></span><br><span class="line">            <span class="attribute">android:exported</span>=<span class="value">"false"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">service</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- Required SDK 核心功能 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">service</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.service.PushService"</span></span><br><span class="line">            <span class="attribute">android:enabled</span>=<span class="value">"true"</span></span><br><span class="line">            <span class="attribute">android:exported</span>=<span class="value">"false"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.REGISTER"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.REPORT"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.PushService"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.PUSH_TIME"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">service</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- Required SDK核心功能 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">receiver</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.service.PushReceiver"</span></span><br><span class="line">            <span class="attribute">android:enabled</span>=<span class="value">"true"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span> <span class="attribute">android:priority</span>=<span class="value">"1000"</span> &gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- Required  显示通知栏 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.USER_PRESENT"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.net.conn.CONNECTIVITY_CHANGE"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- Optional --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.PACKAGE_ADDED"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.PACKAGE_REMOVED"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;<span class="title">data</span> <span class="attribute">android:scheme</span>=<span class="value">"package"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">receiver</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- Required SDK核心功能 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">receiver</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.service.AlarmReceiver"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- User defined.  For test only  用户自定义的广播接收器 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">receiver</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o.receiver.MyReceiver"</span></span><br><span class="line">            <span class="attribute">android:enabled</span>=<span class="value">"true"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.REGISTRATION"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- Required  用户注册SDK的intent --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.UNREGISTRATION"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.MESSAGE_RECEIVED"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- Required  用户接收SDK消息的intent --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.NOTIFICATION_RECEIVED"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- Required  用户接收SDK通知栏信息的intent --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.NOTIFICATION_OPENED"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- Required  用户打开自定义通知栏的intent --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- Optional 用户接受Rich Push Javascript 回调函数的intent --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"cn.jpush.android.intent.CONNECTION"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 接收网络变化 连接/断开 since 1.6.3 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"com.infzm.o2o"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">receiver</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- Required  . Enable it you can get statistics data with channel --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"JPUSH_CHANNEL"</span></span><br><span class="line">            <span class="attribute">android:value</span>=<span class="value">"developer-default"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"JPUSH_APPKEY"</span></span><br><span class="line">            <span class="attribute">android:value</span>=<span class="value">"815b618e1263a55325d958f1"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- &lt;/&gt;值来自开发者平台取得的AppKey --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 极光推送配置end --&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 友盟更新sdk --&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- Update Activitys Start --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.umeng.update.UpdateDialogActivity"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@android:style/Theme.Translucent.NoTitleBar"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- Update Activitys End --&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- Caution! Do not change this app key. It is only for demo usage. --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"UMENG_APPKEY"</span></span><br><span class="line">            <span class="attribute">android:value</span>=<span class="value">"552c9094fd98c5ee45000866"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">meta-data</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"UMENG_CHANNEL"</span></span><br><span class="line">            <span class="attribute">android:value</span>=<span class="value">"Umeng"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">meta-data</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="title">service</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.umeng.update.net.DownloadingService"</span></span><br><span class="line">            <span class="attribute">android:process</span>=<span class="value">":DownloadingService"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">service</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 友盟更新end --&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 友盟分享配置start --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- ###################注册SDK使用的Activity###################### --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 分享编辑页 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.umeng.socialize.view.ShareActivity"</span></span><br><span class="line">            <span class="attribute">android:configChanges</span>=<span class="value">"orientation|keyboard"</span></span><br><span class="line">            <span class="attribute">android:launchMode</span>=<span class="value">"singleTask"</span></span><br><span class="line">            <span class="attribute">android:noHistory</span>=<span class="value">"true"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@style/Theme.UMDialog"</span></span><br><span class="line">            <span class="attribute">android:windowSoftInputMode</span>=<span class="value">"stateVisible|adjustResize"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.tencent.tauth.AuthActivity"</span></span><br><span class="line">            <span class="attribute">android:launchMode</span>=<span class="value">"singleTask"</span></span><br><span class="line">            <span class="attribute">android:noHistory</span>=<span class="value">"true"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">action</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.action.VIEW"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.DEFAULT"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">category</span> <span class="attribute">android:name</span>=<span class="value">"android.intent.category.BROWSABLE"</span> /&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">data</span> <span class="attribute">android:scheme</span>=<span class="value">"tencent100424468"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"com.tencent.connect.common.AssistActivity"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@android:style/Theme.Translucent.NoTitleBar"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">".wxapi.WXEntryActivity"</span></span><br><span class="line">            <span class="attribute">android:configChanges</span>=<span class="value">"keyboardHidden|orientation|screenSize"</span></span><br><span class="line">            <span class="attribute">android:exported</span>=<span class="value">"true"</span></span><br><span class="line">            <span class="attribute">android:screenOrientation</span>=<span class="value">"portrait"</span></span><br><span class="line">            <span class="attribute">android:theme</span>=<span class="value">"@android:style/Theme.Translucent.NoTitleBar"</span> /&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 友盟分享配置end --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">application</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">manifest</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>看到上面这么多配置，初学者可能会疯掉，大呼：“这什么鬼啊？看不懂，看不懂？大家先不要怕，其实它就只是个xml文件，先了解一下xml文件的结构，我们知道一个xml文件都会有</p>
@@ -274,149 +150,290 @@
 <h2 id="更多">更多</h2><p>activity里面标签属性是最多的，其他标签大家可以自行查询SDK文档<br><a href="http://www.android-doc.com/guide/topics/manifest/manifest-intro.html" target="_blank" rel="external">http://www.android-doc.com/guide/topics/manifest/manifest-intro.html</a></p>
 <p>光是一个AndroidManifest.xml文件涉及到内容就如此之多，初学者想要一下吃个胖子是不可能的事情，最好的办法是从最简单的学起，遇到不熟悉的标签属性的时候才去查询文档，笔者对里面的一些东西也不太熟悉，或者根本就没有使用过，只有当遇到一些问题的时候才会去查询，建议最好不要死记硬背，学到的时候才去查询，并且要结合具体场景，这样才能更好的掌握知识。</p>
 
-      
+      </div>
+      <footer class="article-footer">
+        <a data-url="http://www.devilwwj.com/2015/08/23/A006-AndroidManifest-xml/" data-id="cier1umv3001lvo1zagdnmcjy" class="article-share-link">分享到</a>
+        
+          <a href="http://www.devilwwj.com/2015/08/23/A006-AndroidManifest-xml/#comments" class="article-comment-link">评论</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+
+      </footer>
     </div>
-    
+  </article>
+  
+    <section id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </section>
+  
+
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>关注我 :</p>
+    <ul class="social-links">
+      
+        <li><a class="social-tooltip" title="twitter" href="/" target="_blank"><i id="icon-twitter" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="facebook" href="/" target="_blank"><i id="icon-facebook" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="google_plus" href="/" target="_blank"><i id="icon-google_plus" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="github" href="https://github.com/devilWwj" target="_blank"><i id="icon-github" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/wulmaycry" target="_blank"><i id="icon-weibo" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="rss" href="/atom.xml" target="_blank"><i id="icon-rss" class="icon"></i></a></li>
+      
+    </ul>
   </div>
   
     
 <nav id="article-nav">
   
     <a href="/2015/08/23/A007-Assets资源/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
+      <strong class="article-nav-caption">下一篇</strong>
+      <p class="article-nav-title">
         
           A007-Assets资源
         
-      </div>
+      </p>
+      <i class="icon" id="icon-chevron-right"></i>
     </a>
   
   
     <a href="/2015/08/10/A005-AS项目结构解析/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">A005-AS项目结构解析</div>
-      <strong class="article-nav-caption">></strong>
+      <strong class="article-nav-caption">上一篇</strong>
+      <p class="article-nav-title">A005-AS项目结构解析</p>
+      <i class="icon" id="icon-chevron-left"></i>
     </a>
   
 </nav>
 
   
-</article>
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A013-animator资源/" class="thumbnail">
+  
+    <span style="background-image:url(http://img.blog.csdn.net/20150919175049457
+)" alt="A013-animator资源" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A013-animator资源/" class="title">A013-animator资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:24:42.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A012-anim资源/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A012-anim资源/" class="title">A012-anim资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:24:29.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A011-raw资源/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A011-raw资源/" class="title">A011-raw资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:24:13.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/09/19/A010-menu资源/" class="thumbnail">
+  
+    <span style="background-image:url(http://img.blog.csdn.net/20150824234120524
+)" alt="A010-menu资源" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/09/19/A010-menu资源/" class="title">A010-menu资源</a></p>
+              <p class="item-date"><time datetime="2015-09-19T11:22:54.000Z" itemprop="datePublished">2015-09-19</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/08/23/A009-layout资源/" class="thumbnail">
+  
+    <span style="background-image:url(http://img.blog.csdn.net/20150823201233940
+)" alt="A009-layout资源" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+              <p class="item-title"><a href="/2015/08/23/A009-layout资源/" class="title">A009-layout资源</a></p>
+              <p class="item-date"><time datetime="2015-08-23T13:51:52.000Z" itemprop="datePublished">2015-08-23</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/养猫记/">养猫记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔/">随笔</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
 
 
-<div class="share">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到：</span>
-		<a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
 
 
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="A006-AndroidManifest-xml" data-title="A006-AndroidManifest.xml" data-url="http://www.devilwwj.com/2015/08/23/A006-AndroidManifest-xml/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cat/">cat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/个人/">个人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
 
 
+    
+      
+  <div class="widget-wrap widget-float">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Android/" style="font-size: 20px;">Android</a><a href="/tags/android/" style="font-size: 16.67px;">android</a><a href="/tags/cat/" style="font-size: 10px;">cat</a><a href="/tags/hexo/" style="font-size: 10px;">hexo</a><a href="/tags/个人/" style="font-size: 10px;">个人</a><a href="/tags/日志/" style="font-size: 10px;">日志</a><a href="/tags/随笔/" style="font-size: 13.33px;">随笔</a>
+    </div>
+  </div>
 
 
-<section id="comments">
-  <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'devilwwj'; // required: replace example with your forum shortname
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
 
-</div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2015 devilwwj
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 devilwwj</p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+      </div>
     </div>
   </div>
 </footer>
-    </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-
-
 <script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: false,
-		isPost: true,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false
-	}
-</script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
-
-
-
-
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
+  var disqus_shortname = 'devilwwj';
+  
+  var disqus_url = 'http://www.devilwwj.com/2015/08/23/A006-AndroidManifest-xml/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
+  <script src="/scrollLoading/main.js" type="text/javascript"></script>
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
 
   </div>
 </body>
