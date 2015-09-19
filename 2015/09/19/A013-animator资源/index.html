@@ -3,20 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>A007-Assets资源 | IT_xiao小巫</title>
+  <title>A013-animator资源 | IT_xiao小巫</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项">
+  <meta name="description" content="上一节课介绍了关于anim资源的知识点，这节课来给大家介绍animator资源，它跟anim资源同样是res下在资源，它是另外一种动画资源，上节课讲的是View Animation，是Android3.0之前使用较多的动画方式，然而Android 3.0推出之后，也带给我们一种新的动画实现方式——Property Animation（属性动画），它们有什么不一样的地方？
+不同点：
+
+View An">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A007-Assets资源">
-<meta property="og:url" content="http://www.devilwwj.com/2015/08/23/A007-Assets资源/index.html">
+<meta property="og:title" content="A013-animator资源">
+<meta property="og:url" content="http://www.devilwwj.com/2015/09/19/A013-animator资源/index.html">
 <meta property="og:site_name" content="IT_xiao小巫">
-<meta property="og:description" content="本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项">
-<meta property="og:image" content="http://img.blog.csdn.net/20150814172952551">
-<meta property="og:image" content="http://img.blog.csdn.net/20150814173151225">
-<meta property="og:image" content="http://img.blog.csdn.net/20150814173315700">
+<meta property="og:description" content="上一节课介绍了关于anim资源的知识点，这节课来给大家介绍animator资源，它跟anim资源同样是res下在资源，它是另外一种动画资源，上节课讲的是View Animation，是Android3.0之前使用较多的动画方式，然而Android 3.0推出之后，也带给我们一种新的动画实现方式——Property Animation（属性动画），它们有什么不一样的地方？
+不同点：
+
+View An">
+<meta property="og:image" content="http://img.blog.csdn.net/20150919175049457">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A007-Assets资源">
-<meta name="twitter:description" content="本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项">
+<meta name="twitter:title" content="A013-animator资源">
+<meta name="twitter:description" content="上一节课介绍了关于anim资源的知识点，这节课来给大家介绍animator资源，它跟anim资源同样是res下在资源，它是另外一种动画资源，上节课讲的是View Animation，是Android3.0之前使用较多的动画方式，然而Android 3.0推出之后，也带给我们一种新的动画实现方式——Property Animation（属性动画），它们有什么不一样的地方？
+不同点：
+
+View An">
   
   
     <link rel="icon" href="/favicon.png">
@@ -94,7 +101,7 @@
             </div>
             <div class="main-body-content">
               
-  <article id="post-A007-Assets资源" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <article id="post-A013-animator资源" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
       <!--  -->
       
@@ -102,36 +109,62 @@
           
   
     <h1 class="article-title" itemprop="name">
-      A007-Assets资源
+      A013-animator资源
     </h1>
   
 
         </header>
       
       <p class="article-byline">
-        <a href="/2015/08/23/A007-Assets资源/" class="article-date">
-  <time datetime="2015-08-23T13:51:27.000Z" itemprop="datePublished">2015-08-23</time>
+        <a href="/2015/09/19/A013-animator资源/" class="article-date">
+  <time datetime="2015-09-19T11:24:42.000Z" itemprop="datePublished">2015-09-19</time>
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
-        <p>本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项目成apk，然后更改它的后缀名为.zip，再进行解压，可以看到assets目录的文件。</p>
-<p>上面是对assset资源的一些介绍，我们实际开发中如何获取assets目录下的资源呢：</p>
-<ol>
-<li>获取文件输入流<br>Context.getAssets().open(“filename”)</li>
-<li>assets资源的绝对路径<br>  file:///android_asset/文件名</li>
-</ol>
-<p>比如在assets目录下有个test.txt文件，可以通过下面这种方式获取：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">assetsText.setText(getFromAssets(<span class="string">"test.txt"</span>));</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> String <span class="title">getFromAssets</span><span class="params">(String filename)</span> </span>&#123;</span><br><span class="line">       String result = <span class="string">""</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           InputStream in = getResources().getAssets().open(filename);</span><br><span class="line">           <span class="keyword">int</span> length = in.available();</span><br><span class="line">           </span><br><span class="line">           <span class="keyword">byte</span>[] buffer = <span class="keyword">new</span> <span class="keyword">byte</span>[length];</span><br><span class="line">           </span><br><span class="line">           in.read(buffer);</span><br><span class="line">           </span><br><span class="line">           result = EncodingUtils.getString(buffer, <span class="string">"UTF-8"</span>);</span><br><span class="line">           </span><br><span class="line">       &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> result;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>思考：这里需要大家去区分Android的一些资源，像assets这种资源是不会被编译成字节码，然而像raw、drawable资源是Android指定的资源，可以通过R.xxx.filename来进行引用，如果在res自定义一个目录是不可以通过这种方式获取资源，引用的话会R.xxx.xxx cannot be resolved” 的错误。</p>
-<p>这里补充一点就是，我们使用AS开发不会默认给我们创建assets目录，需要我们按一下方法去创建目录：<br><img src="http://img.blog.csdn.net/20150814172952551" alt="assets目录"></p>
-<p>然后我们创建的项目有个.iml的配置文件，会有相应的配置，大家下去可以研究一下<br><img src="http://img.blog.csdn.net/20150814173151225" alt="iml配置文件"></p>
-<p><img src="http://img.blog.csdn.net/20150814173315700" alt="/src/main/assets"></p>
+        <p>上一节课介绍了关于anim资源的知识点，这节课来给大家介绍animator资源，它跟anim资源同样是res下在资源，它是另外一种动画资源，上节课讲的是View Animation，是Android3.0之前使用较多的动画方式，然而Android 3.0推出之后，也带给我们一种新的动画实现方式——Property Animation（属性动画），它们有什么不一样的地方？</p>
+<p>不同点：</p>
+<ul>
+<li>View Animation技术较老，只能作用于View</li>
+<li>Property Animation技术相对较新，可以作用于任何对象，并且能真正改变对象的属性</li>
+<li>前者不具备良好的扩展性，后者具备较好的扩展性</li>
+</ul>
+<h2 id="如何使用？">如何使用？</h2><p>文件路径：res/animator/filename.xml<br>资源指向<strong>ValueAnimator</strong>、<strong>ObjectAnimator</strong>或者<strong>AnimatorSet</strong>。<br>资源引用：</p>
+<ul>
+<li>在Java中：R.animator.filename</li>
+<li>在XML中：@animator/filename</li>
+</ul>
+<h2 id="语法">语法</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">set</span></span><br><span class="line">  <span class="attribute">android:ordering</span>=<span class="value">["together"</span> | "<span class="attribute">sequentially</span>"]&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">objectAnimator</span></span><br><span class="line">        <span class="attribute">android:propertyName</span>=<span class="value">"string"</span></span><br><span class="line">        <span class="attribute">android:duration</span>=<span class="value">"int"</span></span><br><span class="line">        <span class="attribute">android:valueFrom</span>=<span class="value">"float | int | color"</span></span><br><span class="line">        <span class="attribute">android:valueTo</span>=<span class="value">"float | int | color"</span></span><br><span class="line">        <span class="attribute">android:startOffset</span>=<span class="value">"int"</span></span><br><span class="line">        <span class="attribute">android:repeatCount</span>=<span class="value">"int"</span></span><br><span class="line">        <span class="attribute">android:repeatMode</span>=<span class="value">["repeat"</span> | "<span class="attribute">reverse</span>"]</span><br><span class="line">        <span class="attribute">android:valueType</span>=<span class="value">["intType"</span> | "<span class="attribute">floatType</span>"]/&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">animator</span></span><br><span class="line">        <span class="attribute">android:duration</span>=<span class="value">"int"</span></span><br><span class="line">        <span class="attribute">android:valueFrom</span>=<span class="value">"float | int | color"</span></span><br><span class="line">        <span class="attribute">android:valueTo</span>=<span class="value">"float | int | color"</span></span><br><span class="line">        <span class="attribute">android:startOffset</span>=<span class="value">"int"</span></span><br><span class="line">        <span class="attribute">android:repeatCount</span>=<span class="value">"int"</span></span><br><span class="line">        <span class="attribute">android:repeatMode</span>=<span class="value">["repeat"</span> | "<span class="attribute">reverse</span>"]</span><br><span class="line">        <span class="attribute">android:valueType</span>=<span class="value">["intType"</span> | "<span class="attribute">floatType</span>"]/&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">set</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">    <span class="tag">&lt;/<span class="title">set</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">set</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>文件必须包含上面其中一种根标签<figure class="highlight"><figcaption><span><objectanimator> <animator>```,其中```<set>```可以包含其他两个标签。</set></animator></objectanimator></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;###&#20803;&#32032;&#35299;&#26512;&#10;&#10;###```&#60;set&#62;</span><br></pre></td></tr></table></figure></p>
+<p>android:ordering<br>指定动画的播放顺序在set当中</p>
+<table>
+<thead>
+<tr>
+<th>value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sequentially</td>
+<td>在这组动画动画中顺序播放</td>
+</tr>
+<tr>
+<td>together（默认）</td>
+<td>在这组动画中一起播放</td>
+</tr>
+</tbody>
+</table>
+<h3 id="<!-￼2->"><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android:propertyName&#10;&#23646;&#24615;&#21517;&#10;&#10;| value | description |&#10;| : -- : | : -- : |&#10;|alpha|&#36879;&#26126;&#24230; |&#10;|scaleX|&#22312;X&#36724;&#26041;&#21521;&#19978;&#32553;&#25918;|&#10;|scaleY|&#22312;Y&#36724;&#26041;&#21521;&#19978;&#32553;&#25918;|&#10;|rotation|&#26059;&#36716;|&#10;|translationX|&#22312;X&#36724;&#26041;&#21521;&#19978;&#20559;&#31227;|&#10;|translationY|&#22312;Y&#36724;&#26041;&#21521;&#19978;&#20559;&#31227;|&#10;&#27880;&#65306;&#23646;&#24615;&#21160;&#30011;&#19981;&#20165;&#20165;&#23616;&#38480;&#20110;&#31227;&#21160;&#12289;&#32553;&#25918;&#12289;&#26059;&#36716;&#21644;&#28129;&#20837;&#28129;&#20986;&#35270;&#35273;&#19978;&#30340;&#25913;&#21464;&#65292;&#19978;&#38754;&#21482;&#26159;&#35270;&#35273;&#19978;&#30340;&#19968;&#20123;&#23646;&#24615;&#65292;&#23427;&#21487;&#20197;&#26159;&#20219;&#20309;&#23545;&#35937;&#30340;&#20219;&#24847;&#23646;&#24615;&#12290;&#10;&#10;android:valueTo&#10;&#21160;&#30011;&#24320;&#22987;&#26102;&#30340;&#23646;&#24615;&#20540;&#10;&#10;android:valueFrom&#10;&#21160;&#30011;&#32467;&#26463;&#26102;&#30340;&#23646;&#24615;&#20540;&#10;&#10;android:duration&#10;&#21160;&#30011;&#30340;&#25345;&#32493;&#26102;&#38388;&#10;&#10;android:startOffset&#10;&#21160;&#30011;&#30340;&#24310;&#36831;&#25773;&#25918;&#26102;&#38388;&#10;&#10;android:repeatCount&#10;&#21160;&#30011;&#37325;&#22797;&#25773;&#25918;&#27425;&#25968; &#21462;&#20540;&#20026;-1&#34920;&#31034;&#26080;&#38480;&#24490;&#29615;&#65292;1&#34920;&#31034;&#24490;&#29615;&#19968;&#27425;&#10;&#10;android:repeatMode&#10;&#34;repeat&#34;&#34920;&#31034;&#37325;&#22797;&#25773;&#25918;&#65292;&#34;reverse&#34;&#34920;&#31034;&#21160;&#30011;&#36870;&#36716;&#25773;&#25918;&#10;&#10;android:valueType&#10;&#22914;&#26524;&#26159;&#20540;&#26159;&#39068;&#33394;&#65292;&#23601;&#19981;&#38656;&#35201;&#25351;&#23450;&#36825;&#20010;&#23646;&#24615;&#10;&#10;| value | description |&#10;| : -- : | : -- : |&#10;|intType|&#25351;&#23450;&#21160;&#30011;&#23646;&#24615;&#20540;&#20026;integers|&#10;|floatType(&#40664;&#35748;&#65289;|&#25351;&#23450;&#21160;&#30011;&#23646;&#24615;&#20540;&#20026;floats|&#10;&#10;##&#20030;&#20363;&#10;```xml&#10;&#60;set android:ordering=&#34;sequentially&#34;&#62;&#10;    &#60;set&#62;&#10;        &#60;objectAnimator&#10;            android:propertyName=&#34;x&#34;&#10;            android:duration=&#34;500&#34;&#10;            android:valueTo=&#34;400&#34;&#10;            android:valueType=&#34;intType&#34;/&#62;&#10;        &#60;objectAnimator&#10;            android:propertyName=&#34;y&#34;&#10;            android:duration=&#34;500&#34;&#10;            android:valueTo=&#34;300&#34;&#10;            android:valueType=&#34;intType&#34;/&#62;&#10;    &#60;/set&#62;&#10;    &#60;objectAnimator&#10;        android:propertyName=&#34;alpha&#34;&#10;        android:duration=&#34;500&#34;&#10;        android:valueTo=&#34;1f&#34;/&#62;&#10;&#60;/set&#62;</span><br></pre></td></tr></table></figure></h3><p>如果想运行这个动画，你必须在你的代码中inflate这个xml资源变成一个AnimationSet对象，然后在播放这个动画之前设置所有动画的目标对象。Java代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(myContext,</span><br><span class="line">    R.anim.property_animator);</span><br><span class="line">set.setTarget(myObject);</span><br><span class="line">set.start();</span><br></pre></td></tr></table></figure>
+<h2 id="总结">总结</h2><p>本节课介绍了Android中的属性动画资源的使用，关于属性动画还有很多内容，会在之后讲到属性动画的时候再继续讨论，学完本节课相信大家对animator资源有了一定的认识，资源的时候方式都是类似，更多的API使用需要大家多看一下官方的文档。</p>
+<hr>
+<p>本博客的所有的内容会同步到我的微信公众号，欢迎大家扫码关注<br><img src="http://img.blog.csdn.net/20150919175049457" alt="wwjblog"></p>
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://www.devilwwj.com/2015/08/23/A007-Assets资源/" data-id="cieqzr6cw001i8z1zmap2n9su" class="article-share-link">分享到</a>
+        <a data-url="http://www.devilwwj.com/2015/09/19/A013-animator资源/" data-id="cieqzr6c900108z1z4z2ws6wx" class="article-share-link">分享到</a>
         
-          <a href="http://www.devilwwj.com/2015/08/23/A007-Assets资源/#comments" class="article-comment-link">评论</a>
+          <a href="http://www.devilwwj.com/2015/09/19/A013-animator资源/#comments" class="article-comment-link">评论</a>
         
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
@@ -173,20 +206,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/08/23/A008-drawable资源/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <p class="article-nav-title">
-        
-          A008-drawable资源
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
   
-  
-    <a href="/2015/08/23/A006-AndroidManifest-xml/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/09/19/A012-anim资源/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
-      <p class="article-nav-title">A006-AndroidManifest.xml</p>
+      <p class="article-nav-title">A012-anim资源</p>
       <i class="icon" id="icon-chevron-left"></i>
     </a>
   
@@ -384,7 +407,7 @@
 <script>
   var disqus_shortname = 'devilwwj';
   
-  var disqus_url = 'http://www.devilwwj.com/2015/08/23/A007-Assets资源/';
+  var disqus_url = 'http://www.devilwwj.com/2015/09/19/A013-animator资源/';
   
   (function(){
     var dsq = document.createElement('script');

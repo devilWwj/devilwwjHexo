@@ -3,20 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>A007-Assets资源 | IT_xiao小巫</title>
+  <title>Tag: Android | IT_xiao小巫</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项">
-<meta property="og:type" content="article">
-<meta property="og:title" content="A007-Assets资源">
-<meta property="og:url" content="http://www.devilwwj.com/2015/08/23/A007-Assets资源/index.html">
+  <meta name="description" content="IT_xiao小巫的blog | Android | java | Mac">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IT_xiao小巫">
+<meta property="og:url" content="http://www.devilwwj.com/tags/Android/page/2/index.html">
 <meta property="og:site_name" content="IT_xiao小巫">
-<meta property="og:description" content="本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项">
-<meta property="og:image" content="http://img.blog.csdn.net/20150814172952551">
-<meta property="og:image" content="http://img.blog.csdn.net/20150814173151225">
-<meta property="og:image" content="http://img.blog.csdn.net/20150814173315700">
+<meta property="og:description" content="IT_xiao小巫的blog | Android | java | Mac">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A007-Assets资源">
-<meta name="twitter:description" content="本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项">
+<meta name="twitter:title" content="IT_xiao小巫">
+<meta name="twitter:description" content="IT_xiao小巫的blog | Android | java | Mac">
   
   
     <link rel="icon" href="/favicon.png">
@@ -90,62 +87,101 @@
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header"><a class="page-title-link" href="/categories/Android/">Android</a></h1>
+              <h1 class="header"><i class="icon" id="icon-tag"></i>标签：<em>Android</em></h1>
             </div>
             <div class="main-body-content">
               
-  <article id="post-A007-Assets资源" class="article article-single article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-      <!--  -->
-      
-        <header class="article-header">
-          
   
-    <h1 class="article-title" itemprop="name">
-      A007-Assets资源
-    </h1>
   
-
-        </header>
+    
+    
       
-      <p class="article-byline">
-        <a href="/2015/08/23/A007-Assets资源/" class="article-date">
-  <time datetime="2015-08-23T13:51:27.000Z" itemprop="datePublished">2015-08-23</time>
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year"><i class="icon" id="icon-calendar-o"></i>2015</a>
+        </div>
+        <div class="archives">
+    
+    
+    
+      <div class="article-row">
+    
+        
+  <article class="article article-summary">
+    <div class="article-summary-inner">
+      
+<a href="/2015/08/05/A002-开发工具介绍/" class="thumbnail">
+  
+    <span style="background-image:url(http://img.blog.csdn.net/20150804091926727
+)" alt="A002-开发工具介绍" class="thumbnail-image"></span>
+  
 </a>
-      </p>
-      <div class="article-entry" itemprop="articleBody">
-        <p>本节课开始讲Android中所用到的一些资源，首先来讲assets资源，它是Android的其中一种资源，跟raw和drawable资源有点不同，我们获取这个目录下的文件需要指定文件的路径，它里面的文件不会映射到R.java文件中，而res目录下的资源文件时会自动映射到R.java中，我们打包成apk的时候，assets目录下的文件不会被编译成二进制文件，而是直接打包到apk文件中。我们可以打包项目成apk，然后更改它的后缀名为.zip，再进行解压，可以看到assets目录的文件。</p>
-<p>上面是对assset资源的一些介绍，我们实际开发中如何获取assets目录下的资源呢：</p>
-<ol>
-<li>获取文件输入流<br>Context.getAssets().open(“filename”)</li>
-<li>assets资源的绝对路径<br>  file:///android_asset/文件名</li>
-</ol>
-<p>比如在assets目录下有个test.txt文件，可以通过下面这种方式获取：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">assetsText.setText(getFromAssets(<span class="string">"test.txt"</span>));</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> String <span class="title">getFromAssets</span><span class="params">(String filename)</span> </span>&#123;</span><br><span class="line">       String result = <span class="string">""</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           InputStream in = getResources().getAssets().open(filename);</span><br><span class="line">           <span class="keyword">int</span> length = in.available();</span><br><span class="line">           </span><br><span class="line">           <span class="keyword">byte</span>[] buffer = <span class="keyword">new</span> <span class="keyword">byte</span>[length];</span><br><span class="line">           </span><br><span class="line">           in.read(buffer);</span><br><span class="line">           </span><br><span class="line">           result = EncodingUtils.getString(buffer, <span class="string">"UTF-8"</span>);</span><br><span class="line">           </span><br><span class="line">       &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> result;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>思考：这里需要大家去区分Android的一些资源，像assets这种资源是不会被编译成字节码，然而像raw、drawable资源是Android指定的资源，可以通过R.xxx.filename来进行引用，如果在res自定义一个目录是不可以通过这种方式获取资源，引用的话会R.xxx.xxx cannot be resolved” 的错误。</p>
-<p>这里补充一点就是，我们使用AS开发不会默认给我们创建assets目录，需要我们按一下方法去创建目录：<br><img src="http://img.blog.csdn.net/20150814172952551" alt="assets目录"></p>
-<p>然后我们创建的项目有个.iml的配置文件，会有相应的配置，大家下去可以研究一下<br><img src="http://img.blog.csdn.net/20150814173151225" alt="iml配置文件"></p>
-<p><img src="http://img.blog.csdn.net/20150814173315700" alt="/src/main/assets"></p>
 
+      <div class="article-meta">
+        <p class="category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+        <p class="date"><time datetime="2015-08-05T03:02:19.000Z" itemprop="datePublished">2015-08-05</time></p>
       </div>
-      <footer class="article-footer">
-        <a data-url="http://www.devilwwj.com/2015/08/23/A007-Assets资源/" data-id="cieqzr6cw001i8z1zmap2n9su" class="article-share-link">分享到</a>
+      <h2 class="article-title">
+        <a href="/2015/08/05/A002-开发工具介绍/" class="title">A002-开发工具介绍</a>
+      </h2>
+      <p class="article-excerpt">
         
-          <a href="http://www.devilwwj.com/2015/08/23/A007-Assets资源/#comments" class="article-comment-link">评论</a>
-        
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
-
-      </footer>
+        关于Android的开发工具有很多，基本上都可以在SDK中找到，下面我们逐个来看一下：
+首先我们使用的是Java语言进行Android应用的开发，那么Java的运行环境是少不了的了，我们需要在我们的PC中配置好jdk的环境变量，才能让我们的IDE跑起来。前面博文，小巫发表过一篇如何在macosx中配置java环境变量，如果大家不记得如何配置的话，可以参考那边博文，关于SDK的环境变量配置类似：Ma
+      </p>
     </div>
   </article>
+
+    
   
-    <section id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+    
+    
+        
+  <article class="article article-summary">
+    <div class="article-summary-inner">
+      
+<a href="/2015/08/04/A001-课程介绍/" class="thumbnail">
+  
+    <span style="background-image:url(www.devilwwj.com/images/Snip20150804_10.png
+)" alt="A001-课程介绍" class="thumbnail-image"></span>
+  
+</a>
+
+      <div class="article-meta">
+        <p class="category"><a class="article-category-link" href="/categories/Android/">Android</a></p>
+        <p class="date"><time datetime="2015-08-04T00:22:35.000Z" itemprop="datePublished">2015-08-04</time></p>
       </div>
-    </section>
+      <h2 class="article-title">
+        <a href="/2015/08/04/A001-课程介绍/" class="title">A001-课程介绍</a>
+      </h2>
+      <p class="article-excerpt">
+        
+        课程目标针对人群：Android初学者&amp;amp;稍有基础的Android学员课程要求：Java编程语言基础&amp;amp;面向对象思维课程计划：大约70个课时课程目标：熟练掌握Android基础知识和掌握主流开发框架的使用，熟悉app开发流程
+
+如果大家只是入门，可以学习本套课程，如果大家有相应的基础，可以通过本套课程进行巩固，学习一些新的东西。
+
+授课方式真实API教学最新Android Studio
+      </p>
+    </div>
+  </article>
+
+    
+      </div>
+    
   
+  
+    </div></section>
+  
+  
+    <nav id="page-nav">
+      <span class="pages">第 2 页，共 2 页</span>
+      <a class="extend prev" rel="prev" href="/tags/Android/">&laquo;</a><a class="page-number" href="/tags/Android/">1</a><span class="page-number current">2</span>
+    </nav>
+  
+
 
             </div>
           </section>
@@ -169,29 +205,6 @@
       
     </ul>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015/08/23/A008-drawable资源/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <p class="article-nav-title">
-        
-          A008-drawable资源
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
-  
-  
-    <a href="/2015/08/23/A006-AndroidManifest-xml/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <p class="article-nav-title">A006-AndroidManifest.xml</p>
-      <i class="icon" id="icon-chevron-left"></i>
-    </a>
-  
-</nav>
-
   
   <div class="widgets-container">
     
@@ -384,13 +397,11 @@
 <script>
   var disqus_shortname = 'devilwwj';
   
-  var disqus_url = 'http://www.devilwwj.com/2015/08/23/A007-Assets资源/';
-  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
